@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Letreiro Online - Create your custom digital LED messages with adjustable fonts, colors, and speeds. Letreiro Online helps you design eye-catching digital signs for advertising or fun!"></meta>
+    <meta name="keywords" content="letreiro online, digital LED signs, online marquee tool, custom LED message">
+    <meta name="author" content="LetreiroOnline.com">
+    <title>Letreiro Online - Create Your Custom Digital LED Sign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            color: #1e88e5;
+        }
+
+        #marquee-container {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        #marquee-text {
+            display: inline-block;
+            position: absolute;
+            animation-name: marquee;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes marquee {
+            from { left: 100%; }
+            to { left: -100%; }
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        input[type="text"], input[type="color"], input[type="number"] {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Letreiro Online</h1>
+        <p>Create your custom digital LED sign messages with our easy-to-use online tool. Letreiro Online helps you design personalized marquees for any occasion.</p>
+        <div id="marquee-container">
+            <div id="marquee-text">Your custom text will appear here...</div>
+        </div>
+        <div class="controls">
+            <input type="text" id="inputText" placeholder="Enter your marquee text here">
+            <input type="color" id="fontColor" value="#000000" title="Font Color">
+            <input type="color" id="bgColor" value="#ffffff" title="Background Color">
+            <input type="number" id="speed" min="1" max="20" value="5" title="Scroll Speed">
+            <button onclick="updateMarquee()">Update Marquee</button>
+        </div>
+        <section>
+            <h2>What is Letreiro Online?</h2>
+            <p>Letreiro Online is an innovative web tool that allows you to create eye-catching digital LED signs right from your browser. The term "letreiro" is associated with digital LED displays often used for advertising, conveying messages, and grabbing attention in public spaces. Here at Letreiro Online, we give you the power to design and customize your very own digital marquee messages.</p>
+            <p>Digital LED signs are a great way to attract attention, whether you are promoting a business, sharing important information, or just having fun with creative messages. Our tool offers a simple and efficient way to design these signs without needing expensive software or complex hardware. Whether you need a scrolling sign for a shop window, an event, or a personal project, Letreiro Online has got you covered.</p>
+        </section>
+        <section>
+            <h2>Why Use Letreiro Online?</h2>
+            <ul>
+                <li><strong>Easy to Use:</strong> With our intuitive interface, you can create digital LED signs in minutes.</li>
+                <li><strong>Customizable:</strong> Adjust the text, font color, background color, and scroll speed to match your needs.</li>
+                <li><strong>No Software Installation:</strong> Letreiro Online works directly in your browser. No downloads or installations are needed.</li>
+                <li><strong>Perfect for Businesses and Events:</strong> Use it for advertising, promotions, or simply making your message stand out.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>How to Use Letreiro Online?</h2>
+            <p>Using Letreiro Online is simple and straightforward. Follow these steps to create your custom marquee:</p>
+            <ol>
+                <li>Enter your desired text in the input box labeled "Enter your marquee text here."</li>
+                <li>Select the font color and background color to personalize your sign.</li>
+                <li>Set the scroll speed to control how fast your message moves across the screen.</li>
+                <li>Click on "Update Marquee" to see your changes in action.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Applications of Letreiro Online</h2>
+            <p>Letreiro Online can be used for various applications:</p>
+            <ul>
+                <li><strong>Commercial Advertising:</strong> Perfect for shops, restaurants, and businesses looking to create dynamic window displays to attract customers.</li>
+                <li><strong>Events and Parties:</strong> Display messages for birthday parties, weddings, or any gathering to make the atmosphere more engaging.</li>
+                <li><strong>Personal Projects:</strong> Whether it's a personal hobby or an experimental project, our tool lets you have fun with digital signage.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>About Letreiro Online</h2>
+            <p>Letreiro Online was designed with simplicity and accessibility in mind. We understand the need for customizable and attractive digital signs, especially in today’s fast-paced world. Whether you are a business owner, an event organizer, or someone who loves creative messaging, our online tool gives you all the capabilities you need. Unlike complex digital signage systems, Letreiro Online aims to make the process easy, affordable, and quick.</p>
+        </section>
+        <footer>
+            <p>&copy; 2024 LetreiroOnline.com. All rights reserved. <br> Enhance your digital messaging experience with Letreiro Online!</p>
+        </footer>
+    </div>
+    <script>
+        function updateMarquee() {
+            const textElement = document.getElementById('marquee-text');
+            const inputText = document.getElementById('inputText').value;
+            const fontColor = document.getElementById('fontColor').value;
+            const bgColor = document.getElementById('bgColor').value;
+            const speed = document.getElementById('speed').value;
+
+            textElement.innerText = inputText;
+            textElement.style.color = fontColor;
+            document.getElementById('marquee-container').style.backgroundColor = bgColor;
+
+            textElement.style.animationDuration = (21 - speed) + 's';
+        }
+    </script>
+</body>
+</html>
