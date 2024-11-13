@@ -1,10 +1,10 @@
 {
   "functions": {
     "app/**/*": {
-      "runtime": "@vercel/node@18"
+      "runtime": "nodejs18.x"
     },
     "middleware.ts": {
-      "runtime": "@vercel/node@18"
+      "runtime": "nodejs18.x"
     }
   },
   "buildCommand": "npm run build",
