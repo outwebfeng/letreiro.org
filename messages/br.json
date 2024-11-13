@@ -1,0 +1,199 @@
+{
+  "Common": {
+    "loading": "carregando..."
+  },
+  "Metadata": {
+    "home": {
+      "title": "Letreiro Digital – Simulador de Letreiro LED Online para Mensagens Rolantes Personalizadas",
+      "description": "Crie letreiros dinâmicos no estilo LED com o simulador baseado em navegador do Letreiro Digital. Personalize texto, cores, velocidade de rolagem e efeitos.",
+      "keywords": ""
+    }
+  },
+  "Navigation": {
+    "title": "Letreiro Digital – Simulador de Letreiro LED Online para Mensagens Rolantes Personalizadas",
+    "logoAlt": "Logo do Letreiro Digital",
+    "logoTitle": "Letreiro Digital",
+    "features": "Recursos",
+    "introduction": "Introdução",
+    "howToUse": "Como Usar",
+    "faq": "Perguntas Frequentes",
+    "toggleMenu": "Alternar Menu"
+  },
+  "NotFound": {
+    "title": "404 Não Encontrado",
+    "goHome": "voltar ao início"
+  },
+  "Home": {
+    "title": "Letreiro Digital",
+    "subTitle": "Bem-vindo ao Letreiro Digital – Seu Simulador de Letreiro LED Online. Crie letreiros dinâmicos no estilo LED com o simulador baseado em navegador do Letreiro Digital. Personalize texto, cores, velocidade de rolagem e efeitos.",
+    "marquee": {
+      "title": "Simulador de Letreiro LED",
+      "inputPlaceholder": "Digite o texto a ser exibido",
+      "textColor": "Cor do Texto",
+      "bgColor": "Cor de Fundo",
+      "speed": "Velocidade de Rolagem",
+      "defaultText": "Digite o texto aqui...",
+      "fullscreen": "Tela Cheia",
+      "rotate": "Girar"
+    },
+    "Welcome": {
+      "title": "Bem-vindo ao Letreiro Digital – Seu Simulador de Letreiro LED Online",
+      "description": "O Letreiro Digital é um simulador de letreiro LED poderoso, baseado em navegador, que permite criar letreiros digitais instantaneamente. Ideal para negócios, eventos e mensagens pessoais, o Letreiro Digital oferece recursos como texto personalizado, cores ajustáveis, velocidade de rolagem, opções de inversão e modo de tela cheia. Sem necessidade de downloads ou configurações complexas, o Letreiro Digital transforma qualquer dispositivo em um painel de letreiro LED, ideal para atrair atenção e transmitir mensagens dinâmicas."
+    },
+    "WhatIs": {
+      "title": "O Que é o Letreiro Digital?",
+      "description": "O Letreiro Digital (simulador de display digital LED) replica o efeito de displays de LED no seu navegador. Ele permite que os usuários insiram texto e configurem várias opções para criar letreiros digitais chamativos. Com o Letreiro Digital, não há necessidade de painéis de LED físicos; nossa plataforma proporciona o mesmo visual dinâmico diretamente na sua tela, ideal para compartilhar anúncios, promoções ou mensagens divertidas de forma rápida e eficaz."
+    },
+    "Features": {
+      "title": "Principais Recursos do Simulador do Letreiro Digital",
+      "items": [
+        {
+          "title": "Entrada de Texto Personalizado",
+          "description": "Digite sua mensagem diretamente no campo de entrada e veja-a ganhar vida na tela. Com o Letreiro Digital, você pode criar letreiros digitais personalizados para qualquer ocasião."
+        },
+        {
+          "title": "Cores Ajustáveis de Texto e Fundo",
+          "description": "Escolha de um espectro completo de cores para texto e fundo, criando um visual vibrante e de alto contraste. O Letreiro Digital permite que você combine as cores do seu display com sua marca ou estilo."
+        },
+        {
+          "title": "Controle de Velocidade de Rolagem",
+          "description": "Ajuste a velocidade para criar o efeito de rolagem perfeito para sua mensagem. Reduza para uma leitura mais fácil ou aumente para criar empolgação e urgência."
+        },
+        {
+          "title": "Opções de Inversão e Exibição ao Contrário",
+          "description": "Adicione estilo extra com as opções de inversão e exibição ao contrário, tornando sua mensagem mais envolvente e interativa. Essas configurações permitem mudar o visual do seu display instantaneamente."
+        },
+        {
+          "title": "Modo de Tela Cheia",
+          "description": "Maximize o impacto alternando para o modo de tela cheia, transformando qualquer tela em um painel de letreiro LED em grande escala, ideal para eventos ou ambientes movimentados."
+        }
+      ]
+    },
+    "HowToUse": {
+      "title": "Como Usar o Letreiro Digital para Criar Displays Estilo LED",
+      "steps": [
+        {
+          "step": "Digite Sua Mensagem",
+          "description": "Comece digitando seu texto na área de entrada. O Letreiro Digital suporta uma variedade de caracteres, permitindo criar desde pequenos anúncios até mensagens divertidas."
+        },
+        {
+          "step": "Selecione Suas Cores",
+          "description": "Escolha cores para o texto e o fundo, selecionando tons que combinem com sua marca ou tema desejado."
+        },
+        {
+          "step": "Ajuste a Velocidade de Rolagem",
+          "description": "Defina a velocidade ideal para sua mensagem. Quer você prefira texto mais lento e legível ou uma rolagem mais rápida e dinâmica, o Letreiro Digital oferece total controle."
+        },
+        {
+          "step": "Aplique Efeitos",
+          "description": "Experimente as configurações de inversão e exibição ao contrário para adicionar interesse e profundidade ao seu display."
+        },
+        {
+          "step": "Ative o Modo Tela Cheia",
+          "description": "Use o modo de tela cheia para ocupar toda a tela, ideal para áreas públicas ou eventos onde você deseja máxima visibilidade."
+        }
+      ]
+    },
+    "WhyChoose": {
+      "title": "Por Que Escolher o Letreiro Digital para Suas Necessidades de Display LED?",
+      "items": [
+        {
+          "title": "Não Requer Downloads de Software",
+          "description": "Acesse o Letreiro Digital diretamente do navegador, facilitando o uso em qualquer dispositivo."
+        },
+        {
+          "title": "Interface Intuitiva",
+          "description": "Nossa interface simples facilita a criação de displays LED para qualquer pessoa, sem necessidade de conhecimentos técnicos."
+        },
+        {
+          "title": "Múltiplas Aplicações",
+          "description": "De promoções a mensagens pessoais, o Letreiro Digital é versátil o suficiente para atender qualquer necessidade."
+        }
+      ]
+    },
+    "DesignTips": {
+      "title": "Dicas de Design para um Display LED Eficaz",
+      "tips": [
+        {
+          "tip": "Mantenha o Texto Curto e Simples",
+          "description": "Use frases concisas para garantir que sua mensagem seja rapidamente entendida."
+        },
+        {
+          "tip": "Use Cores de Alto Contraste",
+          "description": "Garanta a legibilidade usando cores contrastantes para texto e fundo."
+        },
+        {
+          "tip": "Escolha Velocidades de Rolagem Apropriadas",
+          "description": "Ajuste a velocidade com base no seu público. Velocidades lentas funcionam bem para mensagens informativas, enquanto a rolagem rápida adiciona emoção."
+        },
+        {
+          "tip": "Experimente Diferentes Efeitos",
+          "description": "Experimente as opções de inversão e exibição ao contrário para destacar sua mensagem."
+        }
+      ]
+    },
+    "Faq": {
+      "title": "Perguntas Frequentes sobre o Letreiro Digital",
+      "questions": [
+        {
+          "question": "O Letreiro Digital é gratuito?",
+          "answer": "Sim, nossos recursos básicos estão disponíveis sem custo, permitindo criar displays digitais sem taxas."
+        },
+        {
+          "question": "Funciona em dispositivos móveis?",
+          "answer": "Sim! O Letreiro Digital é otimizado para dispositivos móveis, tornando-o acessível em qualquer dispositivo com navegador."
+        },
+        {
+          "question": "Posso usar o Letreiro Digital para displays públicos?",
+          "answer": "Sim, com o modo de tela cheia, o Letreiro Digital pode ser usado como sinalização digital em lojas, eventos ou outros locais públicos."
+        },
+        {
+          "question": "Posso usar o Letreiro Digital sem conexão com a internet?",
+          "answer": "Não, o Letreiro Digital requer uma conexão com a internet, pois é uma plataforma baseada em navegador. Qualquer dispositivo com conexão ativa pode acessar e utilizar todos os recursos."
+        },
+        {
+          "question": "É possível integrar o Letreiro Digital com telas externas?",
+          "answer": "Sim, o Letreiro Digital pode ser exibido em qualquer tela que se conecte a um navegador, facilitando a integração com monitores externos, projetores ou TVs inteligentes."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "title": "Letreiro Digital",
+    "subTitle": "Bem-vindo ao Letreiro Digital – Seu Simulador de Letreiro LED Online.",
+    "support": "Suporte",
+    "privacy": "Política de Privacidade",
+    "termsConditions": "Termos e Condições"
+  },
+  "FooterNavigation": {
+    "privacyPolicy": {
+      "1-h1": "Política de Privacidade para Letreiro Digital",
+      "1-p": "O Letreiro Digital opera o site https://letreiro.org e está comprometido em proteger sua privacidade. Esta política de privacidade descreve como lidamos com as informações quando você usa nosso simulador de letreiro LED online.",
+      "2-h2": "Coleta de Informações",
+      "2-h3-1": "Dados Pessoais",
+      "2-p-1": "Não coletamos informações de identificação pessoal de usuários. Nosso serviço é projetado para ser usado sem a necessidade de dados pessoais.",
+      "2-h3-2": "Dados Não Pessoais",
+      "2-p-3": "Coletamos dados não pessoais através de cookies, incluindo estatísticas de uso e preferências, para melhorar nosso serviço e experiência do usuário. Isso pode incluir configurações de exibição e preferências de personalização.",
+      "3-h2": "Uso de Dados",
+      "3-p": "Qualquer dado não pessoal coletado é utilizado exclusivamente para melhorar a funcionalidade do nosso simulador de letreiro LED e a experiência do usuário. Não compartilhamos dados com terceiros.",
+      "4-h2": "Atualizações para Esta Política de Privacidade",
+      "6-h2": "Contate-Nos",
+      "6-p": "Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato pelo e-mail support@letreiro.org."
+    },
+    "termsConditions": {
+      "1-h1": "Termos de Serviço para Letreiro Digital",
+      "1-p": "Bem-vindo ao Letreiro Digital. Ao acessar nosso site (https://letreiro.org), você concorda com estes Termos de Serviço. Nosso serviço oferece um simulador de letreiro LED online para criar sinalização digital.",
+      "2-h2": "1. Propriedade",
+      "2-p": "Todo o conteúdo do site, incluindo o simulador de letreiro LED, elementos de design e materiais relacionados, é propriedade intelectual do Letreiro Digital, salvo indicação em contrário. O conteúdo textual criado pelos usuários permanece como propriedade dos mesmos.",
+      "3-h2": "2. Diretrizes de Uso",
+      "3-p": "Nosso serviço é fornecido para a criação de displays digitais LED. Os usuários são responsáveis pelo conteúdo que criam e não devem utilizar o serviço para fins ilegais ou prejudiciais.",
+      "4-h2": "3. Legislação Aplicável",
+      "4-p": "Estes Termos são regidos pelas leis aplicáveis, sem considerar princípios de conflitos de leis.",
+      "5-h2": "4. Alterações nos Termos",
+      "5-p": "O Letreiro Digital reserva-se o direito de modificar estes Termos a qualquer momento. Alterações serão efetivas imediatamente após serem publicadas no site. O uso contínuo do serviço constitui aceitação das mudanças.",
+      "6-h2": "5. Informações de Contato",
+      "6-p": "Se você tiver dúvidas sobre estes Termos, entre em contato pelo e-mail support@letreiro.org.",
+      "last-p": "Ao usar o Letreiro Digital, você reconhece que leu e concorda com estes Termos de Serviço."
+    }
+  }
+}

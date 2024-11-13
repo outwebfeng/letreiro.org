@@ -1,0 +1,199 @@
+{
+  "Common": {
+    "loading": "載入中..."
+  },
+  "Metadata": {
+    "home": {
+      "title": "Letreiro Digital – 線上LED滾動顯示模擬器",
+      "description": "使用Letreiro Digital的瀏覽器模擬器創建動態LED風格的顯示。自定義文字、顏色、滾動速度和效果。",
+      "keywords": ""
+    }
+  },
+  "Navigation": {
+    "title": "Letreiro Digital – 線上LED滾動顯示模擬器",
+    "logoAlt": "Letreiro Digital標誌",
+    "logoTitle": "Letreiro Digital",
+    "features": "功能",
+    "introduction": "介紹",
+    "howToUse": "使用方法",
+    "faq": "常見問題",
+    "toggleMenu": "切換選單"
+  },
+  "NotFound": {
+    "title": "404 找不到頁面",
+    "goHome": "返回首頁"
+  },
+  "Home": {
+    "title": "Letreiro Digital",
+    "subTitle": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器。使用Letreiro Digital的瀏覽器模擬器創建動態LED風格的顯示。自定義文字、顏色、滾動速度和效果。",
+    "marquee": {
+      "title": "LED顯示模擬器",
+      "inputPlaceholder": "輸入顯示文字",
+      "textColor": "文字顏色",
+      "bgColor": "背景顏色",
+      "speed": "滾動速度",
+      "defaultText": "在此輸入文字...",
+      "fullscreen": "全螢幕",
+      "rotate": "旋轉"
+    },
+    "Welcome": {
+      "title": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器",
+      "description": "Letreiro Digital是一款強大的瀏覽器LED顯示模擬器，可讓您立即創建LED風格的數位標牌。適合商業、活動和個人訊息，Letreiro Digital提供自定義文字、可調顏色、滾動速度、翻轉選項和全螢幕模式等功能。無需下載或複雜設置，Letreiro Digital可將任何裝置轉變為LED顯示板，適合吸引注意並傳播動態訊息。"
+    },
+    "WhatIs": {
+      "title": "什麼是Letreiro Digital？",
+      "description": "Letreiro Digital（LED數位顯示模擬器）在您的瀏覽器中模擬LED顯示效果。它允許用戶輸入文字並配置各種設置來創建引人注目的數位標牌。使用Letreiro Digital，無需實體LED看板；我們的平台提供相同的動態外觀和感覺，直接顯示在螢幕上，非常適合快速有效地分享公告、促銷或趣味訊息。"
+    },
+    "Features": {
+      "title": "Letreiro Digital模擬器的主要功能",
+      "items": [
+        {
+          "title": "自定義文字輸入",
+          "description": "直接在輸入框中輸入您的訊息，並在顯示中看到它變得生動。通過Letreiro Digital，您可以為任何場合創建個性化的數位標牌。"
+        },
+        {
+          "title": "可調文字和背景顏色",
+          "description": "從整個色譜中選擇文字和背景顏色，創造出高對比度的生動外觀。Letreiro Digital允許您將顯示顏色與品牌或風格相匹配。"
+        },
+        {
+          "title": "滾動速度控制",
+          "description": "調整速度以創建適合訊息的滾動效果。放慢速度以便於閱讀或加快速度以創造興奮和緊迫感。"
+        },
+        {
+          "title": "翻轉和反向顯示選項",
+          "description": "使用翻轉和反向選項增加額外的風格，使您的訊息更加引人入勝和互動。這些設置讓您即時改變顯示的外觀。"
+        },
+        {
+          "title": "全螢幕模式",
+          "description": "切換到全螢幕模式以最大化影響，將任何螢幕轉變為全尺寸的LED看板，非常適合活動或繁忙場所。"
+        }
+      ]
+    },
+    "HowToUse": {
+      "title": "如何使用Letreiro Digital來創建LED風格顯示",
+      "steps": [
+        {
+          "step": "輸入您的訊息",
+          "description": "首先將您的文字輸入到輸入區域中。Letreiro Digital支援多種字符，您可以創建從短公告到有趣訊息的任何內容。"
+        },
+        {
+          "step": "選擇您的顏色",
+          "description": "為文字和背景選擇顏色，選擇與您的品牌或期望的主題相匹配的色調。"
+        },
+        {
+          "step": "調整滾動速度",
+          "description": "設置您的訊息理想的速度。無論您需要慢速可讀的文字還是快速動態的滾動，Letreiro Digital都為您提供全方位控制。"
+        },
+        {
+          "step": "應用效果",
+          "description": "嘗試翻轉和反向設置，為您的顯示增加趣味和深度。"
+        },
+        {
+          "step": "啟用全螢幕",
+          "description": "使用全螢幕模式來佔據整個顯示，非常適合公共區域或需要最大能見度的活動。"
+        }
+      ]
+    },
+    "WhyChoose": {
+      "title": "為何選擇Letreiro Digital滿足您的LED顯示需求？",
+      "items": [
+        {
+          "title": "無需下載軟體",
+          "description": "直接從瀏覽器訪問Letreiro Digital，使其在任何裝置上快速且易於使用。"
+        },
+        {
+          "title": "直觀的界面",
+          "description": "我們的簡單佈局使任何人都能輕鬆創建LED顯示，無需技術專業知識。"
+        },
+        {
+          "title": "多種應用",
+          "description": "無論是促銷還是個人訊息，Letreiro Digital足以滿足任何需求。"
+        }
+      ]
+    },
+    "DesignTips": {
+      "title": "設計有效LED顯示的技巧",
+      "tips": [
+        {
+          "tip": "保持文字簡短和簡單",
+          "description": "使用簡潔的短語來確保訊息迅速被理解。"
+        },
+        {
+          "tip": "使用高對比度的顏色",
+          "description": "通過使用對比色的文字和背景來確保可讀性。"
+        },
+        {
+          "tip": "選擇合適的滾動速度",
+          "description": "根據您的觀眾調整速度。慢速適合資訊性訊息，快速滾動則增添興奮感。"
+        },
+        {
+          "tip": "嘗試不同的效果",
+          "description": "試用翻轉和反向選項，使您的訊息更加引人注目。"
+        }
+      ]
+    },
+    "Faq": {
+      "title": "關於Letreiro Digital的常見問題",
+      "questions": [
+        {
+          "question": "Letreiro Digital是免費的嗎？",
+          "answer": "是的，我們的基本功能免費提供，讓您可以免費創建數位顯示。"
+        },
+        {
+          "question": "它適用於行動裝置嗎？",
+          "answer": "當然！Letreiro Digital針對行動裝置進行了優化，使其在任何帶有瀏覽器的裝置上都能使用。"
+        },
+        {
+          "question": "我可以將Letreiro Digital用於公共顯示嗎？",
+          "answer": "是的，使用全螢幕模式後，Letreiro Digital可用於商店、活動或其他公共場合的數位標牌。"
+        },
+        {
+          "question": "我可以在沒有網路連線的情況下使用Letreiro Digital嗎？",
+          "answer": "不行，Letreiro Digital需要網路連線，因為它是一個基於瀏覽器的平台。不過，任何具備網路的裝置都可以訪問並使用Letreiro Digital的所有功能。"
+        },
+        {
+          "question": "是否可以將Letreiro Digital整合到外部螢幕或顯示器中？",
+          "answer": "可以，Letreiro Digital可以顯示在任何連接到瀏覽器的螢幕上，方便整合到外部監視器、投影機或智慧電視中。"
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "title": "Letreiro Digital",
+    "subTitle": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器。",
+    "support": "支援",
+    "privacy": "隱私政策",
+    "termsConditions": "條款與條件"
+  },
+  "FooterNavigation": {
+    "privacyPolicy": {
+      "1-h1": "Letreiro Digital的隱私政策",
+      "1-p": "Letreiro Digital經營網站https://letreiro.org，並致力於保護您的隱私。本隱私政策概述我們在您使用我們的線上LED顯示模擬器時如何處理您的資訊。",
+      "2-h2": "資訊收集",
+      "2-h3-1": "個人資料",
+      "2-p-1": "我們不會收集任何用戶的個人身份資訊。我們的服務設計為不需要個人資料即可使用。",
+      "2-h3-2": "非個人資料",
+      "2-p-3": "我們通過網頁cookies收集非個人資料，包括使用統計和偏好，以改善我們的服務和使用者體驗。這可能包括您的顯示設置和自訂偏好。",
+      "3-h2": "資料使用",
+      "3-p": "任何收集的非個人資料僅用於提升我們的LED顯示模擬器的功能和改進使用者體驗。我們不與第三方共享任何數據。",
+      "4-h2": "隱私政策更新",
+      "6-h2": "聯絡我們",
+      "6-p": "如果您對本隱私政策有任何疑問，請聯絡我們：support@letreiro.org。"
+    },
+    "termsConditions": {
+      "1-h1": "Letreiro Digital的服務條款",
+      "1-p": "歡迎來到Letreiro Digital。透過訪問我們的網站（https://letreiro.org），您同意這些服務條款。我們的服務提供了一個線上LED顯示模擬器，以便創建數位標牌。",
+      "2-h2": "1. 所有權",
+      "2-p": "除非另有說明，網站上的所有內容，包括LED顯示模擬器、設計元素和相關資料，均為Letreiro Digital的智慧財產權。用戶創建的文字內容仍屬於用戶的財產。",
+      "3-h2": "2. 使用指南",
+      "3-p": "我們的服務是為創建數位LED顯示提供的。用戶對其創建的內容負責，不得將服務用於非法或有害的用途。",
+      "4-h2": "3. 適用法律",
+      "4-p": "本條款應適用於相關法律，無需考慮法律衝突原則。",
+      "5-h2": "4. 條款變更",
+      "5-p": "Letreiro Digital保留隨時修改本條款的權利。更改將在網站發布後立即生效。您持續使用服務即表示接受任何更改。",
+      "6-h2": "5. 聯絡資訊",
+      "6-p": "如果您對本條款有任何疑問，請聯絡我們：support@letreiro.org。",
+      "last-p": "使用Letreiro Digital即表示您已閱讀並同意這些服務條款。"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+Sitemap: https://letreiro.org/sitemap.xml
+
+User-agent: *
+Allow: /

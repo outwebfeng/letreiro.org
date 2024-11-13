@@ -1,0 +1,199 @@
+{
+  "Common": {
+    "loading": "loading..."
+  },
+  "Metadata": {
+    "home": {
+      "title": "Letreiro Digital – Online LED Display Simulator for Custom Scrolling Signs",
+      "description": "Create dynamic, LED-style displays with Letreiro Digital's browser-based simulator. Customize text, colors, scrolling speed, and effects.",
+      "keywords": ""
+    }
+  },
+  "Navigation": {
+    "title": "Letreiro Digital – Online LED Display Simulator for Custom Scrolling Signs",
+    "logoAlt": "Letreiro Digital Logo",
+    "logoTitle": "Letreiro Digital",
+    "features": "Features",
+    "introduction": "Introduction",
+    "howToUse": "How to Use",
+    "faq": "FAQ",
+    "toggleMenu": "Toggle menu"
+  },
+  "NotFound": {
+    "title": "404 Not Found",
+    "goHome": "go home"
+  },
+  "Home": {
+    "title": "Letreiro Digital",
+    "subTitle": "Welcome to Letreiro Digital – Your Online LED Display Simulator.Create dynamic, LED-style displays with Letreiro Digital's browser-based simulator. Customize text, colors, scrolling speed, and effects.",
+    "marquee": {
+      "title": "LED Display Simulator",
+      "inputPlaceholder": "Enter text to display",
+      "textColor": "Text Color",
+      "bgColor": "Background Color",
+      "speed": "Scroll Speed",
+      "defaultText": "Enter text here...",
+      "fullscreen": "Fullscreen",
+      "rotate": "Rotate"
+    },
+    "Welcome": {
+      "title": "Welcome to Letreiro Digital – Your Online LED Display Simulator",
+      "description": "Letreiro Digital is a powerful, browser-based LED display simulator that lets you create LED-style digital signs instantly. Perfect for businesses, events, and personal messages, Letreiro Digital offers features like custom text, adjustable colors, scrolling speed, flipping options, and a full-screen mode. Without any downloads or complex setup, Letreiro Digital lets you transform any device into an LED display board, ideal for grabbing attention and broadcasting dynamic messages."
+    },
+    "WhatIs": {
+      "title": "What is Letreiro Digital?",
+      "description": "Letreiro Digital (LED digital display simulator) replicates the effect of LED displays in your browser. It allows users to input text and configure various settings to create eye-catching digital signs. With Letreiro Digital, there’s no need for physical LED boards; our platform gives you the same dynamic look and feel directly on your screen. This makes it ideal for sharing announcements, promotions, or fun messages quickly and effectively."
+    },
+    "Features": {
+      "title": "Key Features of Letreiro Digital’s Simulator",
+      "items": [
+        {
+          "title": "Custom Text Input",
+          "description": "Enter your message directly into the input field, and watch it come to life on the display. With Letreiro Digital, you can create personalized digital signs for any occasion."
+        },
+        {
+          "title": "Adjustable Text and Background Colors",
+          "description": "Choose from a full color spectrum for both text and background, creating a high-contrast, vibrant look. Letreiro Digital enables you to match the colors of your display to your brand or style."
+        },
+        {
+          "title": "Scrolling Speed Control",
+          "description": "Adjust the speed to create the perfect scrolling effect for your message. Slow down for readable information or speed up to create excitement and urgency."
+        },
+        {
+          "title": "Flip and Reverse Display Options",
+          "description": "Add extra style with flip and reverse options, making your message more engaging and interactive. These settings let you change up the look of your display instantly."
+        },
+        {
+          "title": "Full-Screen Mode",
+          "description": "Maximize your impact by switching to full-screen mode, transforming any screen into a full-scale LED signboard that’s ideal for events or busy settings."
+        }
+      ]
+    },
+    "HowToUse": {
+      "title": "How to Use Letreiro Digital to Create LED-Style Displays",
+      "steps": [
+        {
+          "step": "Enter Your Message",
+          "description": "Begin by typing your text into the input area. Letreiro Digital supports a range of characters, so you can craft anything from short announcements to fun messages."
+        },
+        {
+          "step": "Select Your Colors",
+          "description": "Choose colors for both the text and background, selecting shades that match your brand or desired theme."
+        },
+        {
+          "step": "Adjust Scroll Speed",
+          "description": "Set the ideal speed for your message. Whether you want slow, readable text or a faster, dynamic scroll, Letreiro Digital gives you full control."
+        },
+        {
+          "step": "Apply Effects",
+          "description": "Experiment with flip and reverse settings to add interest and depth to your display."
+        },
+        {
+          "step": "Go Full Screen",
+          "description": "Use full-screen mode to take over your display, ideal for public areas or events where you want maximum visibility."
+        }
+      ]
+    },
+    "WhyChoose": {
+      "title": "Why Choose Letreiro Digital for Your LED Display Needs?",
+      "items": [
+        {
+          "title": "No Software Downloads Required",
+          "description": "Access Letreiro Digital directly from your browser, making it quick and easy to use on any device."
+        },
+        {
+          "title": "Intuitive Interface",
+          "description": "Our simple layout makes it easy for anyone to create LED displays, no technical expertise needed."
+        },
+        {
+          "title": "Multiple Applications",
+          "description": "From promotions to personal messages, Letreiro Digital is versatile enough to suit any need."
+        }
+      ]
+    },
+    "DesignTips": {
+      "title": "Design Tips for an Effective LED Display",
+      "tips": [
+        {
+          "tip": "Keep Text Short and Simple",
+          "description": "Use concise phrases to make sure your message is quickly understood."
+        },
+        {
+          "tip": "Use High-Contrast Colors",
+          "description": "Ensure readability by using contrasting text and background colors."
+        },
+        {
+          "tip": "Choose Appropriate Scroll Speeds",
+          "description": "Adjust speed based on your audience. Slow speeds work well for informational messages, while fast scrolling adds excitement."
+        },
+        {
+          "tip": "Try Different Effects",
+          "description": "Experiment with flip and reverse options to make your message stand out."
+        }
+      ]
+    },
+    "Faq": {
+      "title": "Frequently Asked Questions about Letreiro Digital",
+      "questions": [
+        {
+          "question": "Is Letreiro Digital free?",
+          "answer": "Yes, our basic features are available at no cost, allowing you to create digital displays without any fees."
+        },
+        {
+          "question": "Does it work on mobile devices?",
+          "answer": "Absolutely! Letreiro Digital is optimized for mobile, making it accessible on any device with a browser."
+        },
+        {
+          "question": "Can I use Letreiro Digital for public displays?",
+          "answer": "Yes, with full-screen mode, Letreiro Digital can be used for digital signage in stores, events, or other public settings."
+        },
+        {
+          "question": "Can I use Letreiro Digital without an internet connection?",
+          "answer": "No, Letreiro Digital requires an internet connection as it is a browser-based platform. However, any device with an active internet connection can access and utilize all features of Letreiro Digital."
+        },
+        {
+          "question": "Is it possible to integrate Letreiro Digital with external screens or displays?",
+          "answer": "Yes, Letreiro Digital can be displayed on any screen that connects to a browser, making it easy to integrate with external monitors, projectors, or smart TVs."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "title": "Letreiro Digital",
+    "subTitle": "Welcome to Letreiro Digital – Your Online LED Display Simulator.",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions"
+  },
+  "FooterNavigation": {
+    "privacyPolicy": {
+      "1-h1": "Privacy Policy for Letreiro Digital",
+      "1-p": "Letreiro Digital operates the website https://letreiro.org and is committed to protecting your privacy. This privacy policy outlines how we handle information when you use our online LED display simulator.",
+      "2-h2": "Information Collection",
+      "2-h3-1": "Personal Data",
+      "2-p-1": "We do not collect any personal identification information from users. Our service is designed to be used without requiring personal data.",
+      "2-h3-2": "Non-Personal Data",
+      "2-p-3": "We collect non-personal data through web cookies, including usage statistics and preferences, to improve our service and user experience. This may include your display settings and customization preferences.",
+      "3-h2": "Data Usage",
+      "3-p": "Any collected non-personal data is used solely to enhance the functionality of our LED display simulator and improve user experience. We do not share any data with third parties.",
+      "4-h2": "Updates to This Privacy Policy",
+      "6-h2": "Contact Us",
+      "6-p": "If you have any questions about this Privacy Policy, please contact us at support@letreiro.org."
+    },
+    "termsConditions": {
+      "1-h1": "Terms of Service for Letreiro Digital",
+      "1-p": "Welcome to Letreiro Digital. By accessing our website (https://letreiro.org), you agree to these Terms of Service. Our service provides an online LED display simulator for creating digital signage.",
+      "2-h2": "1. Ownership",
+      "2-p": "All content on the Website, including the LED display simulator, design elements, and related materials, is the intellectual property of Letreiro Digital unless otherwise stated. The text content created by users remains their property.",
+      "3-h2": "2. Usage Guidelines",
+      "3-p": "Our service is provided for creating digital LED displays. Users are responsible for the content they create and should not use the service for any illegal or harmful purposes.",
+      "4-h2": "3. Governing Law",
+      "4-p": "These Terms shall be governed by applicable laws, without regard to conflicts of law principles.",
+      "5-h2": "4. Changes to Terms",
+      "5-p": "Letreiro Digital reserves the right to modify these Terms at any time. Changes will be effective immediately upon posting to the website. Your continued use of the service constitutes acceptance of any changes.",
+      "6-h2": "5. Contact Information",
+      "6-p": "If you have any questions about these Terms, please contact us at support@letreiro.org.",
+      "last-p": "By using Letreiro Digital, you acknowledge that you have read and agree to these Terms of Service."
+    }
+  }
+}
