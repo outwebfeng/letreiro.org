@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sitemapData = sitemapRoutes.flatMap((route) =>
     locales.map((locale) => {
-      const lang = locale === 'en' ? '' : `/${locale}`;
+      const lang = locale === 'br' ? '' : `/${locale}`;
       const routeUrl = route.url === '' ? '' : `/${route.url}`;
       return {
         ...route,
