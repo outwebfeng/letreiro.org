@@ -4,17 +4,16 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  env: {
-    NEXT_BASE_API: process.env.NEXT_BASE_API,
-  },
   experimental: {
     serverActions: {
       allowedOrigins: ['localhost:3000', 'letreiro.org'],
     },
   },
-  experimental: {
-    runtime: 'nodejs',
-    serverComponents: true,
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals.push('ua-parser-js');
+    }
+    return config;
   }
 };
 
