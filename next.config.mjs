@@ -20,8 +20,21 @@ const nextConfig = {
   },
   productionBrowserSourceMaps: false,
   experimental: {
-    instrumentationHook: false
-  }
+    instrumentationHook: false,
+    serverComponentsExternalPackages: ['ua-parser-js'],
+    runtime: 'nodejs',
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
+  },
+  webpack: (config) => {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+    };
+    return config;
+  },
 };
 
 export default withNextIntl(nextConfig);
