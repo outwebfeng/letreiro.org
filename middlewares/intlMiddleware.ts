@@ -4,7 +4,6 @@ import { locales } from '../i18n';
 
 export const config = {
   matcher: ['/((?!api|_next|_vercel|.*\\..*).*)', '/'],
-  runtime: 'experimental-edge',
 };
 
 const intlMiddleware = createMiddleware({
