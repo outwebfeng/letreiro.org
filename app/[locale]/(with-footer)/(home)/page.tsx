@@ -11,7 +11,7 @@ export default function Page() {
 
   return (
     <div className='relative w-full'>
-      <div className='relative mx-auto w-full max-w-4xl flex-1 px-4 sm:px-6 lg:px-8'>
+      <div className='relative mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8'>
         <div className='mb-8 flex flex-col items-center text-center sm:mb-12 lg:mx-auto'>
           <h1 className='mb-3 text-2xl font-extrabold text-[#FF782C] sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl'>
             {t('title')}
