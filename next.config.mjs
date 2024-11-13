@@ -19,6 +19,9 @@ const nextConfig = {
     unoptimized: true,
   },
   productionBrowserSourceMaps: false,
+  experimental: {
+    instrumentationHook: false
+  }
 };
 
 export default withNextIntl(nextConfig);
