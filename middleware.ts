@@ -2,17 +2,15 @@ import createMiddleware from 'next-intl/middleware';
 
 import { locales } from './i18n';
 
-export default createMiddleware({
+export const config = {
+  runtime: 'nodejs',
+  matcher: ['/((?!api|_next|.*\\..*).*)'],
+};
+
+const middleware = createMiddleware({
   locales,
   defaultLocale: 'br',
   localePrefix: 'always',
 });
 
-export const config = {
-  matcher: [
-    // 跳过所有内部路径(_next)
-    '/((?!api|_next|.*\\..*).*)',
-    // 可选: 仅在根路径时运行
-    '/',
-  ],
-};
+export default middleware;
