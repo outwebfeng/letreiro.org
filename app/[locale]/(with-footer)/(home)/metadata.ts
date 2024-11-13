@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
+import { BASE_URL } from '@/lib/env';
+
 export default async function generateMetadata({
   params: { locale },
 }: {
@@ -12,7 +14,7 @@ export default async function generateMetadata({
   });
 
   return {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL as string),
+    metadataBase: new URL(BASE_URL),
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
