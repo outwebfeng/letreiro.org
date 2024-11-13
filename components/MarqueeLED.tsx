@@ -94,7 +94,7 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
 
         <div className='flex flex-col space-y-2'>
           <label htmlFor='scroll-speed' className='text-sm font-medium text-gray-700'>
-            {t('marquee.speed')}
+            {t('marquee.speed')} ({speed})
           </label>
           <input
             id='scroll-speed'
@@ -120,7 +120,7 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
             className='absolute whitespace-nowrap font-bold'
             style={{
               color: textColor,
-              animation: `marquee ${120 / speed}s linear infinite`,
+              animation: `marquee ${(120 * 1.5) / speed}s linear infinite`,
               fontSize: isFullscreen ? 'calc(80vh * 0.8)' : 'calc(16rem * 0.8)',
               lineHeight: '1',
               paddingLeft: '100%',

@@ -7,6 +7,12 @@ const intlMiddleware = createMiddleware({
   defaultLocale: 'br',
   localePrefix: 'as-needed',
   localeDetection: false,
+  domains: undefined,
+  pathnames: undefined,
 });
 
 export default intlMiddleware;
+
+export const config = {
+  matcher: ['/((?!api|_next|.*\\..*).*)'],
+};
