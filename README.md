@@ -57,7 +57,7 @@ The application supports multiple languages through next-intl:
 
 ### Installation
 1. Clone the repository:
-> git clone https://github.com/yourusername/letreiro-digital.git
+> git clone https://github.com/outwebfeng/letreiro.org
 
 
 2. Install dependencies:
@@ -121,7 +121,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 For support or queries:
 - Email: support@letreiro.org
-- GitHub Issues: [Create an issue](https://github.com/yourusername/letreiro-digital/issues)
+- GitHub Issues: [Create an issue](https://github.com/outwebfeng/letreiro.org/issues)
 
 ## 🙏 Acknowledgments
 - Next.js team for the amazing framework
