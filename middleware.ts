@@ -4,6 +4,7 @@ import { locales } from './i18n';
 
 export const config = {
   matcher: ['/((?!api|_next|.*\\..*).*)'],
+  runtime: 'edge',
 };
 
 const middleware = createMiddleware({

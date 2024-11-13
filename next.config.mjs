@@ -10,9 +10,6 @@ const nextConfig = {
     },
   },
   webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.externals.push('ua-parser-js');
-    }
     return config;
   }
 };
