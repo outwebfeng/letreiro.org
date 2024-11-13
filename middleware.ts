@@ -15,5 +15,4 @@ export const config = {
     // 可选: 仅在根路径时运行
     '/',
   ],
-  runtime: 'nodejs',
 };
