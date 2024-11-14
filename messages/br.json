@@ -17,7 +17,8 @@
     "introduction": "Introdução",
     "howToUse": "Como Usar",
     "faq": "Perguntas Frequentes",
-    "toggleMenu": "Alternar Menu"
+    "toggleMenu": "Alternar Menu",
+    "marqueeLED": "Mostrar"
   },
   "NotFound": {
     "title": "404 Não Encontrado",
@@ -34,7 +35,9 @@
       "speed": "Velocidade de Rolagem",
       "defaultText": "Digite o texto aqui...",
       "fullscreen": "Tela Cheia",
-      "rotate": "Girar"
+      "rotate": "Girar",
+      "normalMode": "Normal",
+      "ledMode": "LED"
     },
     "Welcome": {
       "title": "Bem-vindo ao Letreiro Digital – Seu Simulador de Letreiro LED Online",

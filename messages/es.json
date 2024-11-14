@@ -17,7 +17,8 @@
     "introduction": "Introducción",
     "howToUse": "Cómo Usar",
     "faq": "Preguntas Frecuentes",
-    "toggleMenu": "Alternar Menú"
+    "toggleMenu": "Alternar Menú",
+    "marqueeLED": "Mostrar"
   },
   "NotFound": {
     "title": "404 No Encontrado",
@@ -34,7 +35,9 @@
       "speed": "Velocidad de Desplazamiento",
       "defaultText": "Introduce el texto aquí...",
       "fullscreen": "Pantalla Completa",
-      "rotate": "Rotar"
+      "rotate": "Rotar",
+      "normalMode": "Normal",
+      "ledMode": "LED"
     },
     "Welcome": {
       "title": "Bienvenido a Letreiro Digital – Tu Simulador de Pantalla LED Online",

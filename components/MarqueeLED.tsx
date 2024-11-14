@@ -12,6 +12,7 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
   const [bgColor, setBgColor] = useState('#000000');
   const [speed, setSpeed] = useState(5);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isLEDMode, setIsLEDMode] = useState(false);
   const fullscreenRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,10 +39,16 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
   };
 
   return (
-    <div className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
+    <div id='marqueeLED' className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
       <div className='mb-4 flex items-center justify-between'>
         <h2 className='text-xl font-semibold text-[#FF782C]'>{t('marquee.title')}</h2>
         <div className='flex gap-2'>
+          <button
+            onClick={() => setIsLEDMode(!isLEDMode)}
+            className='rounded-lg bg-[#FF782C] px-4 py-2 text-white transition-colors hover:bg-[#FF682C]'
+          >
+            {isLEDMode ? t('marquee.normalMode') : t('marquee.ledMode')}
+          </button>
           <button
             onClick={handleFullscreen}
             className='rounded-lg bg-[#FF782C] px-4 py-2 text-white transition-colors hover:bg-[#FF682C]'
@@ -117,7 +124,7 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
           style={{ backgroundColor: bgColor }}
         >
           <div
-            className='absolute whitespace-nowrap font-bold'
+            className={`absolute whitespace-nowrap font-bold ${isLEDMode ? 'led-effect' : ''}`}
             style={{
               color: textColor,
               animation: `marquee ${(120 * 1.5) / speed}s linear infinite`,
@@ -128,9 +135,13 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
               display: 'flex',
               alignItems: 'center',
               height: '100%',
+              ...(isLEDMode && {
+                textShadow: `0 0 5px ${textColor}, 0 0 10px ${textColor}, 0 0 20px ${textColor}`,
+                filter: 'brightness(1.2) contrast(1.2)',
+              }),
             }}
           >
-            <span className='inline-block'>
+            <span className={`inline-block ${isLEDMode ? 'led-text' : ''}`}>
               {`${text}\u2005\u2005\u2005\u2005\u2005${text}\u2005\u2005\u2005\u2005\u2005${text}`}
             </span>
           </div>

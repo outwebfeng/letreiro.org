@@ -17,7 +17,8 @@
     "introduction": "Introduction",
     "howToUse": "How to Use",
     "faq": "FAQ",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle menu",
+    "marqueeLED": "Show"
   },
   "NotFound": {
     "title": "404 Not Found",
@@ -34,7 +35,9 @@
       "speed": "Scroll Speed",
       "defaultText": "Enter text here...",
       "fullscreen": "Fullscreen",
-      "rotate": "Rotate"
+      "rotate": "Rotate",
+      "normalMode": "Normal",
+      "ledMode": "LED"
     },
     "Welcome": {
       "title": "Welcome to Letreiro Digital – Your Online LED Display Simulator",

@@ -8,6 +8,7 @@ export default function QuickMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
+    { id: 'marqueeLED', label: 'marqueeLED' },
     { id: 'features', label: 'features' },
     { id: 'what-is', label: 'introduction' },
     { id: 'how-to-use', label: 'howToUse' },

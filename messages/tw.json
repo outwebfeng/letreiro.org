@@ -17,7 +17,8 @@
     "introduction": "介紹",
     "howToUse": "使用方法",
     "faq": "常見問題",
-    "toggleMenu": "切換選單"
+    "toggleMenu": "切換選單",
+    "marqueeLED": "顯示"
   },
   "NotFound": {
     "title": "404 找不到頁面",
@@ -34,7 +35,9 @@
       "speed": "滾動速度",
       "defaultText": "在此輸入文字...",
       "fullscreen": "全螢幕",
-      "rotate": "旋轉"
+      "rotate": "旋轉",
+      "normalMode": "正常模式",
+      "ledMode": "LED模式"
     },
     "Welcome": {
       "title": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器",

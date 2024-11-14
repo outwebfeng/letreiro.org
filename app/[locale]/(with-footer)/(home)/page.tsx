@@ -16,7 +16,7 @@ export default function Page() {
           <h1 className='mb-3 text-2xl font-extrabold text-[#FF782C] sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl'>
             {t('title')}
           </h1>
-          <div className='max-w-2xl text-sm font-semibold text-black/70 sm:text-base md:text-lg lg:text-xl'>
+          <div className='max-w-6xl text-sm font-semibold text-black/70 sm:text-base md:text-lg lg:text-xl'>
             {t('subTitle')}
           </div>
         </div>

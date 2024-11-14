@@ -123,3 +123,30 @@
   display: inline-block;
   white-space: nowrap;
 }
+
+.led-text {
+  background-image: radial-gradient(
+    circle at center,
+    transparent 0%,
+    transparent 45%,
+    rgba(0, 0, 0, 0.2) 45%,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 50%
+  );
+  background-size: 0.1em 0.1em;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.led-effect {
+  animation: flicker 0.1s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.97;
+  }
+  100% {
+    opacity: 1;
+  }
+}
