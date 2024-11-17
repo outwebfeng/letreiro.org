@@ -1,0 +1,202 @@
+{
+  "Common": {
+    "loading": "chargement..."
+  },
+  "Metadata": {
+    "home": {
+      "title": "Letreiro Digital – Simulateur d'affichage LED en ligne pour panneaux défilants personnalisés",
+      "description": "Créez des affichages dynamiques de style LED avec le simulateur basé sur navigateur de Letreiro Digital. Personnalisez le texte, les couleurs, la vitesse de défilement et les effets.",
+      "keywords": ""
+    }
+  },
+  "Navigation": {
+    "title": "Letreiro Digital – Simulateur d'affichage LED en ligne pour panneaux défilants personnalisés",
+    "logoAlt": "Logo Letreiro Digital",
+    "logoTitle": "Letreiro Digital",
+    "features": "Fonctionnalités",
+    "introduction": "Introduction",
+    "howToUse": "Mode d'emploi",
+    "faq": "FAQ",
+    "toggleMenu": "Basculer le menu",
+    "marqueeLED": "Afficher"
+  },
+  "NotFound": {
+    "title": "404 Page Non Trouvée",
+    "goHome": "retour à l'accueil"
+  },
+  "Home": {
+    "title": "Letreiro Digital",
+    "subTitle": "Bienvenue sur Letreiro Digital – Votre simulateur d'affichage LED en ligne. Créez des affichages dynamiques de style LED avec le simulateur basé sur navigateur de Letreiro Digital. Personnalisez le texte, les couleurs, la vitesse de défilement et les effets.",
+    "marquee": {
+      "title": "Simulateur d'Affichage LED",
+      "inputPlaceholder": "Entrez le texte à afficher",
+      "textColor": "Couleur du Texte",
+      "bgColor": "Couleur de Fond",
+      "speed": "Vitesse de Défilement",
+      "defaultText": "Entrez votre texte ici...",
+      "fullscreen": "Plein écran",
+      "rotate": "Rotation",
+      "normalMode": "Normal",
+      "ledMode": "LED"
+    },
+    "Welcome": {
+      "title": "Bienvenue sur Letreiro Digital – Votre simulateur d'affichage LED en ligne",
+      "description": "Letreiro Digital est un puissant simulateur d'affichage LED basé sur navigateur qui vous permet de créer instantanément des enseignes numériques de style LED. Parfait pour les entreprises, les événements et les messages personnels, Letreiro Digital offre des fonctionnalités telles que le texte personnalisé, les couleurs ajustables, la vitesse de défilement, les options de retournement et un mode plein écran. Sans téléchargement ni configuration complexe, Letreiro Digital vous permet de transformer n'importe quel appareil en panneau d'affichage LED, idéal pour attirer l'attention et diffuser des messages dynamiques."
+    },
+    "WhatIs": {
+      "title": "Qu'est-ce que Letreiro Digital ?",
+      "description": "Letreiro Digital (simulateur d'affichage LED numérique) reproduit l'effet des affichages LED dans votre navigateur. Il permet aux utilisateurs de saisir du texte et de configurer divers paramètres pour créer des enseignes numériques attrayantes. Avec Letreiro Digital, pas besoin de panneaux LED physiques ; notre plateforme vous offre le même aspect dynamique directement sur votre écran. C'est idéal pour partager des annonces, des promotions ou des messages amusants rapidement et efficacement."
+    },
+    "Features": {
+      "title": "Fonctionnalités Clés du Simulateur Letreiro Digital",
+      "items": [
+        {
+          "title": "Saisie de Texte Personnalisée",
+          "description": "Entrez votre message directement dans le champ de saisie et regardez-le prendre vie sur l'affichage. Avec Letreiro Digital, vous pouvez créer des enseignes numériques personnalisées pour toute occasion."
+        },
+        {
+          "title": "Couleurs de Texte et de Fond Ajustables",
+          "description": "Choisissez parmi un spectre complet de couleurs pour le texte et le fond, créant un look contrasté et vibrant. Letreiro Digital vous permet d'assortir les couleurs de votre affichage à votre marque ou votre style."
+        },
+        {
+          "title": "Contrôle de la Vitesse de Défilement",
+          "description": "Ajustez la vitesse pour créer l'effet de défilement parfait pour votre message. Ralentissez pour des informations lisibles ou accélérez pour créer de l'excitation et de l'urgence."
+        },
+        {
+          "title": "Options de Retournement et d'Inversion",
+          "description": "Ajoutez du style avec les options de retournement et d'inversion, rendant votre message plus engageant et interactif. Ces paramètres vous permettent de changer instantanément l'apparence de votre affichage."
+        },
+        {
+          "title": "Mode Plein Écran",
+          "description": "Maximisez votre impact en passant en mode plein écran, transformant n'importe quel écran en panneau LED grandeur nature, idéal pour les événements ou les endroits très fréquentés."
+        }
+      ]
+    },
+    "HowToUse": {
+      "title": "Comment Utiliser Letreiro Digital pour Créer des Affichages de Style LED",
+      "steps": [
+        {
+          "step": "Entrez Votre Message",
+          "description": "Commencez par taper votre texte dans la zone de saisie. Letreiro Digital prend en charge une variété de caractères, vous permettant de créer aussi bien des annonces courtes que des messages amusants."
+        },
+        {
+          "step": "Sélectionnez Vos Couleurs",
+          "description": "Choisissez les couleurs pour le texte et le fond, en sélectionnant des teintes qui correspondent à votre marque ou au thème souhaité."
+        },
+        {
+          "step": "Ajustez la Vitesse de Défilement",
+          "description": "Définissez la vitesse idéale pour votre message. Que vous souhaitiez un texte lent et lisible ou un défilement plus dynamique, Letreiro Digital vous donne un contrôle total."
+        },
+        {
+          "step": "Appliquez les Effets",
+          "description": "Expérimentez avec les paramètres de retournement et d'inversion pour ajouter de l'intérêt et de la profondeur à votre affichage."
+        },
+        {
+          "step": "Passez en Plein Écran",
+          "description": "Utilisez le mode plein écran pour prendre le contrôle de votre affichage, idéal pour les lieux publics ou les événements où vous souhaitez une visibilité maximale."
+        }
+      ]
+    },
+    "WhyChoose": {
+      "title": "Pourquoi Choisir Letreiro Digital pour Vos Besoins d'Affichage LED ?",
+      "items": [
+        {
+          "title": "Aucun Téléchargement Requis",
+          "description": "Accédez à Letreiro Digital directement depuis votre navigateur, le rendant rapide et facile à utiliser sur n'importe quel appareil."
+        },
+        {
+          "title": "Interface Intuitive",
+          "description": "Notre mise en page simple permet à n'importe qui de créer des affichages LED, sans expertise technique nécessaire."
+        },
+        {
+          "title": "Applications Multiples",
+          "description": "Des promotions aux messages personnels, Letreiro Digital est assez polyvalent pour répondre à tous les besoins."
+        }
+      ]
+    },
+    "DesignTips": {
+      "title": "Conseils de Design pour un Affichage LED Efficace",
+      "tips": [
+        {
+          "tip": "Gardez le Texte Court et Simple",
+          "description": "Utilisez des phrases concises pour vous assurer que votre message est rapidement compris."
+        },
+        {
+          "tip": "Utilisez des Couleurs Contrastées",
+          "description": "Assurez la lisibilité en utilisant des couleurs contrastées pour le texte et le fond."
+        },
+        {
+          "tip": "Choisissez des Vitesses Appropriées",
+          "description": "Ajustez la vitesse en fonction de votre public. Les vitesses lentes conviennent aux messages informatifs, tandis que le défilement rapide ajoute de l'excitation."
+        },
+        {
+          "tip": "Essayez Différents Effets",
+          "description": "Expérimentez avec les options de retournement et d'inversion pour faire ressortir votre message."
+        }
+      ]
+    },
+    "Faq": {
+      "title": "Questions Fréquemment Posées sur Letreiro Digital",
+      "questions": [
+        {
+          "question": "Letreiro Digital est-il gratuit ?",
+          "answer": "Oui, nos fonctionnalités de base sont disponibles gratuitement, vous permettant de créer des affichages numériques sans frais."
+        },
+        {
+          "question": "Fonctionne-t-il sur les appareils mobiles ?",
+          "answer": "Absolument ! Letreiro Digital est optimisé pour mobile, le rendant accessible sur n'importe quel appareil avec un navigateur."
+        },
+        {
+          "question": "Puis-je utiliser Letreiro Digital pour des affichages publics ?",
+          "answer": "Oui, avec le mode plein écran, Letreiro Digital peut être utilisé pour la signalisation numérique dans les magasins, les événements ou d'autres lieux publics."
+        },
+        {
+          "question": "Puis-je utiliser Letreiro Digital sans connexion Internet ?",
+          "answer": "Non, Letreiro Digital nécessite une connexion Internet car c'est une plateforme basée sur navigateur. Cependant, tout appareil avec une connexion Internet active peut accéder et utiliser toutes les fonctionnalités de Letreiro Digital."
+        },
+        {
+          "question": "Est-il possible d'intégrer Letreiro Digital avec des écrans externes ?",
+          "answer": "Oui, Letreiro Digital peut être affiché sur n'importe quel écran qui se connecte à un navigateur, facilitant l'intégration avec des moniteurs externes, des projecteurs ou des smart TV."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "title": "Letreiro Digital",
+    "subTitle": "Bienvenue sur Letreiro Digital – Votre simulateur d'affichage LED en ligne.",
+    "support": "Support",
+    "privacy": "Politique de Confidentialité",
+    "termsConditions": "Conditions d'Utilisation"
+  },
+  "FooterNavigation": {
+    "privacyPolicy": {
+      "1-h1": "Politique de Confidentialité pour Letreiro Digital",
+      "1-p": "Letreiro Digital exploite le site web https://letreiro.org et s'engage à protéger votre vie privée. Cette politique de confidentialité décrit comment nous gérons les informations lorsque vous utilisez notre simulateur d'affichage LED en ligne.",
+      "2-h2": "Collecte d'Informations",
+      "2-h3-1": "Données Personnelles",
+      "2-p-1": "Nous ne collectons aucune information d'identification personnelle des utilisateurs. Notre service est conçu pour être utilisé sans nécessiter de données personnelles.",
+      "2-h3-2": "Données Non Personnelles",
+      "2-p-3": "Nous collectons des données non personnelles via des cookies web, y compris les statistiques d'utilisation et les préférences, pour améliorer notre service et l'expérience utilisateur. Cela peut inclure vos paramètres d'affichage et préférences de personnalisation.",
+      "3-h2": "Utilisation des Données",
+      "3-p": "Toutes les données non personnelles collectées sont utilisées uniquement pour améliorer la fonctionnalité de notre simulateur d'affichage LED et améliorer l'expérience utilisateur. Nous ne partageons aucune donnée avec des tiers.",
+      "4-h2": "Mises à Jour de Cette Politique",
+      "6-h2": "Contactez-nous",
+      "6-p": "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à support@letreiro.org."
+    },
+    "termsConditions": {
+      "1-h1": "Conditions d'Utilisation de Letreiro Digital",
+      "1-p": "Bienvenue sur Letreiro Digital. En accédant à notre site web (https://letreiro.org), vous acceptez ces Conditions d'Utilisation. Notre service fournit un simulateur d'affichage LED en ligne pour créer de la signalisation numérique.",
+      "2-h2": "1. Propriété",
+      "2-p": "Tout le contenu du Site Web, y compris le simulateur d'affichage LED, les éléments de design et les matériaux associés, est la propriété intellectuelle de Letreiro Digital sauf indication contraire. Le contenu textuel créé par les utilisateurs reste leur propriété.",
+      "3-h2": "2. Directives d'Utilisation",
+      "3-p": "Notre service est fourni pour créer des affichages LED numériques. Les utilisateurs sont responsables du contenu qu'ils créent et ne doivent pas utiliser le service à des fins illégales ou nuisibles.",
+      "4-h2": "3. Loi Applicable",
+      "4-p": "Ces Conditions seront régies par les lois applicables, sans égard aux principes de conflits de lois.",
+      "5-h2": "4. Modifications des Conditions",
+      "5-p": "Letreiro Digital se réserve le droit de modifier ces Conditions à tout moment. Les modifications seront effectives immédiatement après leur publication sur le site web. Votre utilisation continue du service constitue l'acceptation de toute modification.",
+      "6-h2": "5. Informations de Contact",
+      "6-p": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à support@letreiro.org.",
+      "last-p": "En utilisant Letreiro Digital, vous reconnaissez avoir lu et accepté ces Conditions d'Utilisation."
+    }
+  }
+} 
