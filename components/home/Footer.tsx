@@ -23,6 +23,13 @@ function InfoLink({
 export default function Footer() {
   const t = useTranslations('Footer');
 
+  const SupportLinks = [
+    {
+      title: 'holocure',
+      href: 'https://holocure.fun/',
+    },
+  ];
+
   const INFO_LIST = [
     {
       title: t('privacy'),
@@ -43,7 +50,7 @@ export default function Footer() {
             <p className='text-center text-sm text-black/40 sm:text-left'>{t('subTitle')}</p>
           </div>
           <div className='flex flex-col items-center sm:items-end'>
-            {/* <div className='mb-4 flex flex-col items-center sm:mb-2 sm:items-end'>
+            <div className='mb-4 flex flex-col items-center sm:mb-2 sm:items-end'>
               <p className='mb-2 font-bold'>{t('support')}</p>
               {SupportLinks.map((item) => (
                 <a
@@ -57,7 +64,7 @@ export default function Footer() {
                   {item.title}
                 </a>
               ))}
-            </div> */}
+            </div>
             <div className='flex flex-col items-center space-y-2 sm:items-end'>
               {INFO_LIST.map((item) => (
                 <InfoLink key={item.href} href={item.href} title={item.title} />
