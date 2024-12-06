@@ -1,12 +1,17 @@
 import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
 
-// en-US, fr-HT, pt-BR, es-ES, zh-TW
+// en-US, fr-HT, pt-BR, es-ES, zh-TW, bg-BG
 export const languages = [
   {
     code: 'en-US',
     lang: 'en',
     label: 'English',
+  },
+  {
+    code: 'bg-BG',
+    lang: 'bg',
+    label: 'Български',
   },
   {
     code: 'fr-HT',
@@ -30,7 +35,7 @@ export const languages = [
   },
 ];
 
-export const locales = ['en', 'fr', 'br', 'es', 'tw'];
+export const locales = ['en', 'bg', 'fr', 'br', 'es', 'tw'];
 
 export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) notFound();
