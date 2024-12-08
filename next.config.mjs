@@ -8,6 +8,9 @@ const nextConfig = {
     serverActions: {
       allowedOrigins: ['localhost:3000', 'letreiro.org'],
     },
+  },
+  eslint: {
+    ignoreDuringBuilds: ['app/sw.js'],
   }
 };
 
