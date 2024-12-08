@@ -7,3 +7,4 @@ messages
 components.json
 components/ui/
 api/
+app/sw.js
