@@ -13,10 +13,10 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix --quiet --ignore-pattern 'app/sw.js'",
+      "eslint --fix --quiet --ignore-pattern 'public/sw.js'",
       "prettier --write"
     ],
-    "app/sw.js": [
+    "public/sw.js": [
       "prettier --write"
     ]
   },
