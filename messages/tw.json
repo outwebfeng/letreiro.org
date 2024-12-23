@@ -37,7 +37,8 @@
       "fullscreen": "全螢幕",
       "rotate": "旋轉",
       "normalMode": "正常模式",
-      "ledMode": "LED模式"
+      "ledMode": "LED模式",
+      "generator": "生成器"
     },
     "Welcome": {
       "title": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器",

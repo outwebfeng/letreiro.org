@@ -37,7 +37,8 @@
       "fullscreen": "Plein écran",
       "rotate": "Rotation",
       "normalMode": "Normal",
-      "ledMode": "LED"
+      "ledMode": "LED",
+      "generator": "Générateur"
     },
     "Welcome": {
       "title": "Bienvenue sur Letreiro Digital – Votre simulateur d'affichage LED en ligne",

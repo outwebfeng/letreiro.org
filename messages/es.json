@@ -37,7 +37,8 @@
       "fullscreen": "Pantalla Completa",
       "rotate": "Rotar",
       "normalMode": "Normal",
-      "ledMode": "LED"
+      "ledMode": "LED",
+      "generator": "Generador"
     },
     "Welcome": {
       "title": "Bienvenido a Letreiro Digital – Tu Simulador de Pantalla LED Online",

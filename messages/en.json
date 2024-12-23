@@ -37,7 +37,8 @@
       "fullscreen": "Fullscreen",
       "rotate": "Rotate",
       "normalMode": "Normal",
-      "ledMode": "LED"
+      "ledMode": "LED",
+      "generator": "Generator"
     },
     "Welcome": {
       "title": "Welcome to Letreiro Digital – Your Online LED Display Simulator",

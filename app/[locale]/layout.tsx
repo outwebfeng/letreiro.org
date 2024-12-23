@@ -1,7 +1,6 @@
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 import { Toaster } from '@/components/ui/sonner';
-import Navigation from '@/components/home/Navigation';
 
 import './globals.css';
 
@@ -41,7 +40,6 @@ export default function RootLayout({
               },
             }}
           />
-          <Navigation />
           <Suspense fallback={<Loading />}>{children}</Suspense>
         </NextIntlClientProvider>
         <SeoScript />

@@ -37,7 +37,8 @@
       "fullscreen": "Tela Cheia",
       "rotate": "Girar",
       "normalMode": "Normal",
-      "ledMode": "LED"
+      "ledMode": "LED",
+      "generator": "Генератор"
     },
     "Welcome": {
       "title": "Bem-vindo ao Letreiro Digital – Seu Simulador de Letreiro LED Online",
