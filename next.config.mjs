@@ -10,7 +10,7 @@ const nextConfig = {
     },
   },
   eslint: {
-    ignoreDuringBuilds: ['public/sw.js'],
+    ignoreDuringBuilds: true,
   }
 };
 

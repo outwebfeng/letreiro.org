@@ -1,0 +1,202 @@
+{
+    "Common": {
+        "loading": "cargando..."
+    },
+    "Metadata": {
+        "home": {
+            "title": "Letreiro Digital – Simulador de Pantalla LED en Línea para Carteles Desplegables Personalizados",
+            "description": "Crea pantallas dinámicas estilo LED con el simulador basado en navegador de Letreiro Digital. Personaliza texto, colores, velocidad de desplazamiento y efectos.",
+            "keywords": ""
+        }
+    },
+    "Navigation": {
+        "title": "Letreiro Digital – Simulador de Pantalla LED en Línea para Carteles Desplegables Personalizados",
+        "logoAlt": "Logo de Letreiro Digital",
+        "logoTitle": "Letreiro Digital",
+        "features": "Características",
+        "introduction": "Introducción",
+        "howToUse": "Cómo Usar",
+        "faq": "FAQ",
+        "toggleMenu": "Alternar menú",
+        "marqueeLED": "Mostrar"
+    },
+    "NotFound": {
+        "title": "404 No Encontrado",
+        "goHome": "ir a inicio"
+    },
+    "Home": {
+        "title": "Letreiro Digital",
+        "subTitle": "Bienvenido a Letreiro Digital – Tu Simulador de Pantalla LED en Línea. Crea pantallas dinámicas estilo LED con el simulador basado en navegador de Letreiro Digital. Personaliza texto, colores, velocidad de desplazamiento y efectos.",
+        "marquee": {
+            "title": "Simulador de Pantalla LED",
+            "inputPlaceholder": "Ingresa el texto para mostrar",
+            "textColor": "Color del texto",
+            "bgColor": "Color de fondo",
+            "speed": "Velocidad de desplazamiento",
+            "defaultText": "Escribe el texto aquí...",
+            "fullscreen": "Pantalla completa",
+            "rotate": "Rotar",
+            "normalMode": "Normal",
+            "ledMode": "LED"
+        },
+        "Welcome": {
+            "title": "Bienvenido a Letreiro Digital – Tu Simulador de Pantalla LED en Línea",
+            "description": "Letreiro Digital es un potente simulador de pantalla LED basado en navegador que te permite crear carteles digitales estilo LED al instante. Perfecto para negocios, eventos y mensajes personales, Letreiro Digital ofrece funciones como texto personalizado, colores ajustables, velocidad de desplazamiento, opciones de inversión y modo de pantalla completa. Sin necesidad de descargas ni configuraciones complejas, Letreiro Digital convierte cualquier dispositivo en una pizarra digital LED, ideal para captar la atención y transmitir mensajes dinámicos."
+        },
+        "WhatIs": {
+            "title": "¿Qué es Letreiro Digital?",
+            "description": "Letreiro Digital (simulador de pantalla digital LED) replica el efecto de pantallas LED en tu navegador. Permite a los usuarios ingresar texto y configurar varias opciones para crear carteles digitales llamativos. Con Letreiro Digital, no necesitas paneles LED físicos; nuestra plataforma te ofrece el mismo efecto dinámico directamente en tu pantalla. Esto lo hace ideal para compartir anuncios, promociones o mensajes divertidos de manera rápida y efectiva."
+        },
+        "Features": {
+            "title": "Características Clave del Simulador de Letreiro Digital",
+            "items": [
+                {
+                    "title": "Entrada de Texto Personalizada",
+                    "description": "Ingresa tu mensaje directamente en el campo de entrada y míralo cobrar vida en la pantalla. Con Letreiro Digital, puedes crear carteles digitales personalizados para cualquier ocasión."
+                },
+                {
+                    "title": "Colores Ajustables para Texto y Fondo",
+                    "description": "Elige entre un espectro completo de colores para el texto y el fondo, creando un aspecto vibrante de alto contraste. Letreiro Digital te permite ajustar los colores de tu pantalla según tu marca o estilo."
+                },
+                {
+                    "title": "Control de Velocidad de Desplazamiento",
+                    "description": "Ajusta la velocidad para crear el efecto de desplazamiento perfecto para tu mensaje. Redúcela para que el texto sea legible o acelérala para generar emoción y urgencia."
+                },
+                {
+                    "title": "Opciones de Inversión y Volteo",
+                    "description": "Añade estilo extra con opciones de inversión y volteo, haciendo que tu mensaje sea más atractivo e interactivo. Estos ajustes te permiten cambiar el aspecto de tu pantalla al instante."
+                },
+                {
+                    "title": "Modo de Pantalla Completa",
+                    "description": "Maximiza tu impacto cambiando al modo de pantalla completa, transformando cualquier pantalla en una pizarra LED a gran escala, ideal para eventos o lugares concurridos."
+                }
+            ]
+        },
+        "HowToUse": {
+            "title": "Cómo Usar Letreiro Digital para Crear Pantallas Estilo LED",
+            "steps": [
+                {
+                    "step": "Ingresa tu Mensaje",
+                    "description": "Comienza escribiendo tu texto en el área de entrada. Letreiro Digital admite una variedad de caracteres, por lo que puedes crear desde anuncios cortos hasta mensajes divertidos."
+                },
+                {
+                    "step": "Selecciona tus Colores",
+                    "description": "Elige los colores tanto para el texto como para el fondo, seleccionando tonos que coincidan con tu marca o tema deseado."
+                },
+                {
+                    "step": "Ajusta la Velocidad de Desplazamiento",
+                    "description": "Configura la velocidad ideal para tu mensaje. Ya sea que desees un texto lento y legible o un desplazamiento rápido y dinámico, Letreiro Digital te da control total."
+                },
+                {
+                    "step": "Aplica Efectos",
+                    "description": "Experimenta con configuraciones de inversión y volteo para agregar interés y profundidad a tu pantalla."
+                },
+                {
+                    "step": "Usa Pantalla Completa",
+                    "description": "Usa el modo de pantalla completa para ocupar toda tu pantalla, ideal para áreas públicas o eventos donde deseas la máxima visibilidad."
+                }
+            ]
+        },
+        "WhyChoose": {
+            "title": "¿Por qué Elegir Letreiro Digital para tus Necesidades de Pantallas LED?",
+            "items": [
+                {
+                    "title": "No Requiere Descargas de Software",
+                    "description": "Accede a Letreiro Digital directamente desde tu navegador, lo que lo hace rápido y fácil de usar en cualquier dispositivo."
+                },
+                {
+                    "title": "Interfaz Intuitiva",
+                    "description": "Nuestra disposición sencilla facilita que cualquiera cree pantallas LED, sin necesidad de conocimientos técnicos."
+                },
+                {
+                    "title": "Aplicaciones Múltiples",
+                    "description": "Desde promociones hasta mensajes personales, Letreiro Digital es lo suficientemente versátil como para adaptarse a cualquier necesidad."
+                }
+            ]
+        },
+        "DesignTips": {
+            "title": "Consejos de Diseño para una Pantalla LED Eficaz",
+            "tips": [
+                {
+                    "tip": "Mantén el Texto Corto y Simple",
+                    "description": "Usa frases concisas para asegurarte de que tu mensaje se entienda rápidamente."
+                },
+                {
+                    "tip": "Usa Colores de Alto Contraste",
+                    "description": "Asegura la legibilidad utilizando colores de texto y fondo contrastantes."
+                },
+                {
+                    "tip": "Elige Velocidades de Desplazamiento Apropiadas",
+                    "description": "Ajusta la velocidad según tu audiencia. Las velocidades lentas son buenas para mensajes informativos, mientras que el desplazamiento rápido añade emoción."
+                },
+                {
+                    "tip": "Prueba Diferentes Efectos",
+                    "description": "Experimenta con opciones de inversión y volteo para que tu mensaje se destaque."
+                }
+            ]
+        },
+        "Faq": {
+            "title": "Preguntas Frecuentes sobre Letreiro Digital",
+            "questions": [
+                {
+                    "question": "¿Es Letreiro Digital gratuito?",
+                    "answer": "Sí, nuestras características básicas están disponibles sin costo, permitiéndote crear pantallas digitales sin cargos."
+                },
+                {
+                    "question": "¿Funciona en dispositivos móviles?",
+                    "answer": "¡Absolutamente! Letreiro Digital está optimizado para móviles, por lo que es accesible desde cualquier dispositivo con navegador."
+                },
+                {
+                    "question": "¿Puedo usar Letreiro Digital para pantallas públicas?",
+                    "answer": "Sí, con el modo de pantalla completa, Letreiro Digital puede usarse para señalización digital en tiendas, eventos u otros lugares públicos."
+                },
+                {
+                    "question": "¿Puedo usar Letreiro Digital sin conexión a Internet?",
+                    "answer": "No, Letreiro Digital requiere conexión a Internet ya que es una plataforma basada en navegador. Sin embargo, cualquier dispositivo con conexión activa a Internet puede acceder y utilizar todas las funciones de Letreiro Digital."
+                },
+                {
+                    "question": "¿Es posible integrar Letreiro Digital con pantallas externas?",
+                    "answer": "Sí, Letreiro Digital se puede mostrar en cualquier pantalla que se conecte a un navegador, lo que facilita la integración con monitores externos, proyectores o televisores inteligentes."
+                }
+            ]
+        }
+    },
+    "Footer": {
+        "title": "Letreiro Digital",
+        "subTitle": "Bienvenido a Letreiro Digital – Tu Simulador de Pantalla LED en Línea.",
+        "support": "Soporte",
+        "privacy": "Política de Privacidad",
+        "termsConditions": "Términos y Condiciones"
+    },
+    "FooterNavigation": {
+        "privacyPolicy": {
+            "1-h1": "Política de Privacidad de Letreiro Digital",
+            "1-p": "Letreiro Digital opera el sitio web https://letreiro.org y se compromete a proteger tu privacidad. Esta política de privacidad describe cómo manejamos la información cuando usas nuestro simulador de pantalla LED en línea.",
+            "2-h2": "Recolección de Información",
+            "2-h3-1": "Datos Personales",
+            "2-p-1": "No recopilamos información personal identificable de los usuarios. Nuestro servicio está diseñado para ser utilizado sin necesidad de datos personales.",
+            "2-h3-2": "Datos No Personales",
+            "2-p-3": "Recopilamos datos no personales a través de cookies, incluidas estadísticas de uso y preferencias, para mejorar nuestro servicio y la experiencia del usuario. Esto puede incluir tus configuraciones de pantalla y preferencias de personalización.",
+            "3-h2": "Uso de Datos",
+            "3-p": "Cualquier dato no personal recopilado se utiliza exclusivamente para mejorar la funcionalidad de nuestro simulador de pantalla LED y la experiencia del usuario. No compartimos datos con terceros.",
+            "4-h2": "Actualizaciones a Esta Política de Privacidad",
+            "6-h2": "Contáctanos",
+            "6-p": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos en support@letreiro.org."
+        },
+        "termsConditions": {
+            "1-h1": "Términos de Servicio de Letreiro Digital",
+            "1-p": "Bienvenido a Letreiro Digital. Al acceder a nuestro sitio web (https://letreiro.org), aceptas estos Términos de Servicio. Nuestro servicio ofrece un simulador de pantalla LED en línea para crear señalización digital.",
+            "2-h2": "1. Propiedad",
+            "2-p": "Todo el contenido del sitio web, incluido el simulador de pantalla LED, elementos de diseño y materiales relacionados, es propiedad intelectual de Letreiro Digital, salvo que se indique lo contrario. El contenido textual creado por los usuarios permanece como propiedad de ellos.",
+            "3-h2": "2. Directrices de Uso",
+            "3-p": "Nuestro servicio está diseñado para la creación de pantallas digitales LED. Los usuarios son responsables del contenido que crean y no deben utilizar el servicio para fines ilegales o perjudiciales.",
+            "4-h2": "3. Ley Aplicable",
+            "4-p": "Estos Términos se rigen por las leyes aplicables, sin considerar principios de conflictos de leyes.",
+            "5-h2": "4. Cambios en los Términos",
+            "5-p": "Letreiro Digital se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios serán efectivos inmediatamente después de ser publicados en el sitio web. Tu uso continuo del servicio constituye aceptación de los cambios.",
+            "6-h2": "5. Información de Contacto",
+            "6-p": "Si tienes alguna pregunta sobre estos Términos, contáctanos en support@letreiro.org.",
+            "last-p": "Al usar Letreiro Digital, reconoces que has leído y aceptas estos Términos de Servicio."
+        }
+    }
+}
