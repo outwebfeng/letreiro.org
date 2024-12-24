@@ -38,7 +38,9 @@
       "rotate": "Rotation",
       "normalMode": "Normal",
       "ledMode": "LED",
-      "generator": "Générateur"
+      "generator": "Générateur",
+      "blur": "Défocalisation",
+      "default": "Prédéfini"
     },
     "Welcome": {
       "title": "Bienvenue sur Letreiro Digital – Votre simulateur d'affichage LED en ligne",

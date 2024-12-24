@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import LEDDisplay from './LEDDisplay';
+import { TrueLEDDisplay } from './TrueLEDDisplay';
+import { Button } from '@/components/ui/button';
 
 interface MarqueeLEDProps {
   t: (key: string) => string;
@@ -14,9 +16,9 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
     textColor: '#FFFFFF',
     bgColor: '#000000',
     speed: 5,
-    isLEDMode: false,
   });
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [displayMode, setDisplayMode] = useState<'default' | 'blur' | 'led'>('default');
   const fullscreenRef = useRef<HTMLDivElement>(null);
 
   // 全屏相关逻辑
@@ -45,51 +47,75 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
     setConfig(prev => ({ ...prev, [key]: value }));
   };
 
-  const handleOpenGenerator = () => {
-    const params = new URLSearchParams();
-    
-    // 先添加其他参数
-    params.append('textColor', config.textColor.replace('#', ''));
-    params.append('bgColor', config.bgColor.replace('#', ''));
-    params.append('speed', config.speed.toString());
-    params.append('isLEDMode', config.isLEDMode.toString());
-    
-    // 最后添加 text 参数
-    params.append('text', encodeURIComponent(config.text));
-    
-    // 修改为新的路径
-    window.open(`/generator?${params.toString()}`, '_blank');
-  };
-
   return (
     <div id='marqueeLED' className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
       <div className='mb-4 flex items-center justify-between'>
         <h2 className='text-xl font-semibold text-[#FF782C]'>{t('marquee.title')}</h2>
         <div className='flex gap-2'>
-          <button
-            onClick={() => updateConfig('isLEDMode', !config.isLEDMode)}
-            className='rounded-lg bg-[#FF782C] px-4 py-2 text-white transition-colors hover:bg-[#FF682C]'
+          <Button
+            variant={displayMode === 'default' ? 'default' : 'outline'}
+            onClick={() => setDisplayMode('default')}
+            className={`${
+              displayMode === 'default'
+                ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
+                : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
+            } transition-all duration-200`}
           >
-            {config.isLEDMode ? t('marquee.normalMode') : t('marquee.ledMode')}
-          </button>
-          <button
+            {t('marquee.default')}
+          </Button>
+          <Button
+            variant={displayMode === 'blur' ? 'default' : 'outline'}
+            onClick={() => setDisplayMode('blur')}
+            className={`${
+              displayMode === 'blur'
+                ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
+                : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
+            } transition-all duration-200`}
+          >
+            {t('marquee.blur')}
+          </Button>
+          <Button
+            variant={displayMode === 'led' ? 'default' : 'outline'}
+            onClick={() => setDisplayMode('led')}
+            className={`${
+              displayMode === 'led'
+                ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
+                : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
+            } transition-all duration-200`}
+          >
+            {t('marquee.ledMode')}
+          </Button>
+          <Button
             onClick={handleFullscreen}
-            className='rounded-lg bg-[#FF782C] px-4 py-2 text-white transition-colors hover:bg-[#FF682C]'
+            variant="outline"
+            className={`bg-blue-500 text-white hover:bg-blue-600 border-blue-500 transition-all duration-200 ${
+              isFullscreen ? 'shadow-lg scale-105 font-bold' : ''
+            }`}
           >
             {t('marquee.fullscreen')}
-          </button>
-          <button
-            onClick={handleOpenGenerator}
-            className='rounded-lg bg-[#FF782C] px-4 py-2 text-white transition-colors hover:bg-[#FF682C]'
+          </Button>
+          <Button
+            onClick={() => {
+              const params = new URLSearchParams({
+                text: encodeURIComponent(config.text),
+                textColor: config.textColor.replace('#', ''),
+                bgColor: config.bgColor.replace('#', ''),
+                speed: String(config.speed),
+                displayMode: displayMode,
+              });
+              window.open(`/generator?${params.toString()}`, '_blank');
+            }}
+            variant="outline"
+            className="bg-blue-500 text-white hover:bg-blue-600 border-blue-500 transition-all duration-200"
           >
             {t('marquee.generator')}
-          </button>
+          </Button>
         </div>
       </div>
 
-      <div className='space-y-4'>
+      <div className='grid gap-4 auto-rows-min'>
         {/* 文本输入 */}
-        <div className='flex flex-col space-y-2'>
+        <div className='flex flex-col gap-2'>
           <label htmlFor='led-text' className='text-sm font-medium text-gray-700'>
             {t('marquee.inputPlaceholder')}
           </label>
@@ -104,34 +130,36 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
         </div>
 
         {/* 颜色选择器 */}
-        <div className='flex flex-col space-y-2'>
-          <label htmlFor='text-color' className='text-sm font-medium text-gray-700'>
-            {t('marquee.textColor')}
-          </label>
-          <input
-            id='text-color'
-            type='color'
-            value={config.textColor}
-            onChange={(e) => updateConfig('textColor', e.target.value)}
-            className='h-10 w-full cursor-pointer rounded-md border border-gray-300'
-          />
-        </div>
+        <div className='grid grid-cols-2 gap-4'>
+          <div className='flex flex-col gap-2'>
+            <label htmlFor='text-color' className='text-sm font-medium text-gray-700'>
+              {t('marquee.textColor')}
+            </label>
+            <input
+              id='text-color'
+              type='color'
+              value={config.textColor}
+              onChange={(e) => updateConfig('textColor', e.target.value)}
+              className='h-10 w-full cursor-pointer rounded-md border border-gray-300'
+            />
+          </div>
 
-        <div className='flex flex-col space-y-2'>
-          <label htmlFor='bg-color' className='text-sm font-medium text-gray-700'>
-            {t('marquee.bgColor')}
-          </label>
-          <input
-            id='bg-color'
-            type='color'
-            value={config.bgColor}
-            onChange={(e) => updateConfig('bgColor', e.target.value)}
-            className='h-10 w-full cursor-pointer rounded-md border border-gray-300'
-          />
+          <div className='flex flex-col gap-2'>
+            <label htmlFor='bg-color' className='text-sm font-medium text-gray-700'>
+              {t('marquee.bgColor')}
+            </label>
+            <input
+              id='bg-color'
+              type='color'
+              value={config.bgColor}
+              onChange={(e) => updateConfig('bgColor', e.target.value)}
+              className='h-10 w-full cursor-pointer rounded-md border border-gray-300'
+            />
+          </div>
         </div>
 
         {/* 速度控制 */}
-        <div className='flex flex-col space-y-2'>
+        <div className='flex flex-col gap-2'>
           <label htmlFor='scroll-speed' className='text-sm font-medium text-gray-700'>
             {t('marquee.speed')} ({config.speed})
           </label>
@@ -147,11 +175,25 @@ export default function MarqueeLED({ t }: MarqueeLEDProps) {
         </div>
 
         {/* LED显示组件 */}
-        <LEDDisplay
-          {...config}
-          isFullscreen={isFullscreen}
-          fullscreenRef={fullscreenRef}
-        />
+        <div ref={fullscreenRef} className="w-full h-64 relative">
+          {displayMode === 'led' ? (
+            <TrueLEDDisplay
+              text={config.text}
+              textColor={config.textColor}
+              bgColor={config.bgColor}
+              speed={Math.max(2, 20 - config.speed * 1.8)}
+              isFullscreen={isFullscreen}
+              fullscreenRef={fullscreenRef}
+            />
+          ) : (
+            <LEDDisplay
+              {...config}
+              isFullscreen={isFullscreen}
+              fullscreenRef={fullscreenRef}
+              isLEDMode={displayMode === 'blur'}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

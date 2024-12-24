@@ -38,7 +38,9 @@
       "rotate": "Rotar",
       "normalMode": "Normal",
       "ledMode": "LED",
-      "generator": "Generador"
+      "generator": "Generador",
+      "blur": "Desenfocar",
+      "default": "Predeterminado"
     },
     "Welcome": {
       "title": "Bienvenido a Letreiro Digital – Tu Simulador de Pantalla LED Online",

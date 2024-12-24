@@ -38,7 +38,7 @@ export default function LEDDisplay({
 
   const textStyles = {
     color: textColor,
-    animation: `marquee ${(120 * 1.5) / speed}s linear infinite`,
+    animation: `marquee ${4 * displayText.length / speed * (isFullscreen ? 2 : 1)}s linear infinite`,
     fontSize: isFullscreen ? 'calc(80vh * 0.8)' : 'calc(16rem * 0.8)',
     lineHeight: '1',
     paddingLeft: '100%',

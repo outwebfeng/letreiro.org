@@ -38,7 +38,9 @@
       "rotate": "旋轉",
       "normalMode": "正常模式",
       "ledMode": "LED模式",
-      "generator": "生成器"
+      "generator": "生成器",
+      "blur": "模糊化",
+      "default": "預設"
     },
     "Welcome": {
       "title": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器",
@@ -46,14 +48,14 @@
     },
     "WhatIs": {
       "title": "什麼是Letreiro Digital？",
-      "description": "Letreiro Digital（LED數位顯示模擬器）在您的瀏覽器中模擬LED顯示效果。它允許用戶輸入文字並配置各種設置來創建引人注目的數位標牌。使用Letreiro Digital，無需實體LED看板；我們的平台提供相同的動態外觀和感覺，直接顯示在螢幕上，非常適合快速有效地分享公告、促銷或趣味訊息。"
+      "description": "Letreiro Digital（LED數位顯示模擬器）在您的瀏覽器中模擬LED顯示效果。它允許用戶輸入文字並配置各種設置來創建引人注目的數位標牌。使用Letreiro Digital，無需實體LED看板；���們的平台提供相同的動態外觀和感覺，直接顯示在螢幕上，非常適合快速有效地分享公告、促銷或趣味訊息。"
     },
     "Features": {
       "title": "Letreiro Digital模擬器的主要功能",
       "items": [
         {
           "title": "自定義文字輸入",
-          "description": "直接在輸入框中輸入您的訊息，並在顯示中看到它變得生動。通過Letreiro Digital，您可以為任何場合創建個性化的數位標牌。"
+          "description": "直接在輸入框中輸入您的訊息，並在顯示中看到它變得生動。通過Letreiro Digital，您可以為何場合創建個性化的數位標牌。"
         },
         {
           "title": "可調文字和背景顏色",
@@ -172,7 +174,7 @@
   "FooterNavigation": {
     "privacyPolicy": {
       "1-h1": "Letreiro Digital的隱私政策",
-      "1-p": "Letreiro Digital經營網站https://letreiro.org，並致力於保護您的隱私。本隱私政策概述我們在您使用我們的線上LED顯示模擬器時如何處理您的資訊。",
+      "1-p": "Letreiro Digital經營網站https://letreiro.org，並致力於保護您的隱私。隱私政策概述我們在您使用我們的線上LED顯示模擬器時如何處理您的資訊。",
       "2-h2": "資訊收集",
       "2-h3-1": "個人資料",
       "2-p-1": "我們不會收集任何用戶的個人身份資訊。我們的服務設計為不需要個人資料即可使用。",
@@ -186,7 +188,7 @@
     },
     "termsConditions": {
       "1-h1": "Letreiro Digital的服務條款",
-      "1-p": "歡迎來到Letreiro Digital。透過訪問我們的網站（https://letreiro.org），您同意這些服務條款。我們的服務提供了一個線上LED顯示模擬器，以便創建數位標牌。",
+      "1-p": "歡迎來到Letreiro Digital。透過訪問我們的網站（https://letreiro.org），您同意這些服務條款。我們的服務提供了一個線上LED顯示模擬器，方便創建數位標牌。",
       "2-h2": "1. 所有權",
       "2-p": "除非另有說明，網站上的所有內容，包括LED顯示模擬器、設計元素和相關資料，均為Letreiro Digital的智慧財產權。用戶創建的文字內容仍屬於用戶的財產。",
       "3-h2": "2. 使用指南",
