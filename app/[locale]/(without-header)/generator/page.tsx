@@ -15,6 +15,14 @@ export default function GeneratorPage() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-black">
+      <div className="w-0 h-0 overflow-hidden">
+        <a 
+          href="https://letreiro.org" 
+          target="_blank" 
+        >
+          Letreiro Digital - Online LED Display Simulator
+        </a>
+      </div>
       <div className="w-full h-full">
         {displayMode === 'led' ? (
           <TrueLEDDisplay
