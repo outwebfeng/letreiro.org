@@ -2,32 +2,22 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
 
 export default function QuickMenu() {
   const t = useTranslations('Navigation');
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const menuItems = [
-    { id: 'marqueeLED', label: 'marqueeLED' },
-    { id: 'features', label: 'features' },
-    { id: 'what-is', label: 'introduction' },
-    { id: 'how-to-use', label: 'howToUse' },
-    { id: 'faq', label: 'faq' },
+    { id: 'normal-marquee', label: 'normalMarquee', path: '/' },
+    { id: 'letreiro-online-led', label: 'letreiroOnlineLed', path: '/letreiroonlineled' },
+    // { id: 'Press Start 2P', label: 'Press Start 2P', path: '/pressstart2p' },
+    // { id: 'get-started', label: 'getStarted', path: '/getstarted' },
   ];
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      const navbarHeight = 64;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - navbarHeight - 20;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
+  const handleMenuClick = (path: string) => {
+    router.push(path);
     setIsOpen(false);
   };
 
@@ -36,14 +26,13 @@ export default function QuickMenu() {
       {/* 桌面端菜单 */}
       <nav className='hidden items-center space-x-1 lg:flex'>
         {menuItems.map((item) => (
-          <a
+          <button
             key={item.id}
-            href={`#${item.id}`}
-            onClick={(e) => scrollToSection(e, item.id)}
+            onClick={() => handleMenuClick(item.path)}
             className='rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors duration-200 ease-in-out hover:bg-orange-100 hover:text-[#FF782C]'
           >
             {t(item.label)}
-          </a>
+          </button>
         ))}
       </nav>
 
@@ -62,14 +51,13 @@ export default function QuickMenu() {
         {isOpen && (
           <div className='absolute left-0 right-0 top-16 bg-white shadow-md'>
             {menuItems.map((item) => (
-              <a
+              <button
                 key={item.id}
-                href={`#${item.id}`}
-                onClick={(e) => scrollToSection(e, item.id)}
-                className='block px-4 py-2 text-sm text-gray-700 hover:bg-orange-100 hover:text-[#FF782C]'
+                onClick={() => handleMenuClick(item.path)}
+                className='block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-orange-100 hover:text-[#FF782C]'
               >
                 {t(item.label)}
-              </a>
+              </button>
             ))}
           </div>
         )}

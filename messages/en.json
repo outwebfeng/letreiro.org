@@ -7,6 +7,11 @@
       "title": "Letreiro Digital - letreiro online led display simulator",
       "description": "create dynamic letreiro online led displays with letreiro digital! customize text, colors, speeds, and more for eye-catching messages.",
       "keywords": ""
+    },
+    "letreiroonlineled": {
+      "title": "LED Mode - Letreiro Online LED | Digital Scrolling Display",
+      "description": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -18,7 +23,10 @@
     "howToUse": "How to Use",
     "faq": "FAQ",
     "toggleMenu": "Toggle menu",
-    "marqueeLED": "Show"
+    "marqueeLED": "Show",
+    "normalMarquee": "Normal Mode",
+    "letreiroOnlineLed": "LED Mode",
+    "ledModeDescription": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!"
   },
   "NotFound": {
     "title": "404 Not Found",
@@ -30,7 +38,7 @@
     "marquee": {
       "title": "LED Display Simulator",
       "inputPlaceholder": "Enter text to display",
-      "textColor": "Text Color",
+      "textColor": "Text Color", 
       "bgColor": "Background Color",
       "speed": "Scroll Speed",
       "defaultText": "Enter text here...",
@@ -48,10 +56,10 @@
     },
     "WhatIs": {
       "title": "What is Letreiro Digital?",
-      "description": "Letreiro Digital (LED digital display simulator) replicates the effect of LED displays in your browser. It allows users to input text and configure various settings to create eye-catching digital signs. With Letreiro Digital, there’s no need for physical LED boards; our platform gives you the same dynamic look and feel directly on your screen. This makes it ideal for sharing announcements, promotions, or fun messages quickly and effectively."
+      "description": "Letreiro Digital (LED digital display simulator) replicates the effect of LED displays in your browser. It allows users to input text and configure various settings to create eye-catching digital signs. With Letreiro Digital, there's no need for physical LED boards; our platform gives you the same dynamic look and feel directly on your screen. This makes it ideal for sharing announcements, promotions, or fun messages quickly and effectively."
     },
     "Features": {
-      "title": "Key Features of Letreiro Digital’s Simulator",
+      "title": "Key Features of Letreiro Digital's Simulator",
       "items": [
         {
           "title": "Custom Text Input",
@@ -71,7 +79,28 @@
         },
         {
           "title": "Full-Screen Mode",
-          "description": "Maximize your impact by switching to full-screen mode, transforming any screen into a full-scale LED signboard that’s ideal for events or busy settings."
+          "description": "Maximize your impact by switching to full-screen mode, transforming any screen into a full-scale LED signboard that's ideal for events or busy settings."
+        }
+      ]
+    },
+    "LEDFeatures": {
+      "title": "How Letreiro Online LED Works",
+      "items": [
+        {
+          "title": "Dot Matrix Simulation",
+          "description": "Letreiro Online LED replicates the functionality of a traditional LED scrolling display by leveraging the principles of dot matrix and diode simulation. In a physical LED display, a dot matrix consists of rows and columns of light-emitting diodes (LEDs) that can be individually turned on or off to create patterns, characters, and animations."
+        },
+        {
+          "title": "Web Technology Implementation",
+          "description": "This online version emulates that behavior using modern web technologies like HTML, CSS, and JavaScript."
+        },
+        {
+          "title": "Digital Array System",
+          "description": "The foundation of Letreiro Online LED is a two-dimensional array, where each element represents a diode in the dot matrix. For example, a \"1\" in the array signifies a lit diode (on), while a \"0\" signifies an unlit diode (off)."
+        },
+        {
+          "title": "Dynamic Pattern Generation",
+          "description": "Characters or messages are encoded into this matrix format, creating a predefined pattern for each letter or symbol. These patterns are then dynamically displayed on a simulated LED grid."
         }
       ]
     },
@@ -160,6 +189,35 @@
         {
           "question": "Is it possible to integrate Letreiro Digital with external screens or displays?",
           "answer": "Yes, Letreiro Digital can be displayed on any screen that connects to a browser, making it easy to integrate with external monitors, projectors, or smart TVs."
+        }
+      ]
+    },
+    "LEDFAQ": {
+      "title": "Frequently Asked Questions about Letreiro Online LED",
+      "questions": [
+        {
+          "question": "What is Letreiro Online LED?",
+          "answer": "Letreiro Online LED is an innovative tool that allows users to create dynamic scrolling text effects that mimic traditional LED displays. It is designed to help individuals and businesses generate captivating digital signage and announcements that capture attention through vibrant colors and customizable settings."
+        },
+        {
+          "question": "How can I customize my LED scrolling text?",
+          "answer": "With Letreiro Online, users can easily customize their LED scrolling text by selecting from a variety of fonts, colors, and scrolling speeds. Simply enter your desired text, choose your preferred settings, and the tool will generate a preview that allows you to see how your custom text will appear in an LED format."
+        },
+        {
+          "question": "What are the benefits of using Letreiro Online for digital displays?",
+          "answer": "Using Letreiro Online for your digital displays offers numerous benefits, including the ability to create eye-catching announcements, promote events, and share important information in an engaging format. The user-friendly interface ensures that anyone can design unique LED displays, making it perfect for businesses, schools, and events."
+        },
+        {
+          "question": "Is there a limit to the text length I can use?",
+          "answer": "There is no strict character limit for the text you wish to display with Letreiro Online. However, keep in mind that longer texts may take more time to scroll across the screen, which could affect readability. It's recommended to keep text concise for the best visual impact."
+        },
+        {
+          "question": "Can I simulate different LED effects?",
+          "answer": "Yes, Letreiro Online provides various LED effects such as flashing, blinking, and different scrolling styles. Users can preview these effects in real-time and select the ones that best fit their design and purpose, helping to make their digital signage more dynamic and visually appealing."
+        },
+        {
+          "question": "Is Letreiro Online free to use?",
+          "answer": "Letreiro Online offers a free version that allows users to experience basic features for creating LED scrolling text. For more advanced customization options and additional features, there may be premium plans available. Check our website for details on pricing and available plans."
         }
       ]
     }

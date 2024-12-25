@@ -1,24 +1,32 @@
 {
   "Common": {
-    "loading": "載入中..."
+    "loading": "加載中..."
   },
   "Metadata": {
     "home": {
-      "title": "Letreiro Digital – 線上LED滾動顯示模擬器",
-      "description": "使用Letreiro Digital的瀏覽器模擬器創建動態LED風格的顯示。自定義文字、顏色、滾動速度和效果。",
+      "title": "Letreiro Digital - 在線LED顯示屏模擬器",
+      "description": "使用Letreiro Digital創建動態在線LED顯示！自定義文本、顏色、速度等，打造引人注目的信息展示。",
+      "keywords": ""
+    },
+    "letreiroonlineled": {
+      "title": "LED 模式 - Letreiro Online LED | 數位滾動顯示器",
+      "description": "使用 Letreiro Online 創建動態 LED 滾動文字。模擬 LED 效果，支持自定義文字、顏色和速度設定。非常適合數位 LED 顯示！",
       "keywords": ""
     }
   },
   "Navigation": {
-    "title": "Letreiro Digital – 線上LED滾動顯示模擬器",
+    "title": "Letreiro Digital - 在線LED顯示屏模擬器",
     "logoAlt": "Letreiro Digital標誌",
     "logoTitle": "Letreiro Digital",
-    "features": "功能",
+    "features": "功能特點",
     "introduction": "介紹",
-    "howToUse": "使用方法",
+    "howToUse": "使用說明",
     "faq": "常見問題",
-    "toggleMenu": "切換選單",
-    "marqueeLED": "顯示"
+    "toggleMenu": "切換菜單",
+    "marqueeLED": "顯示",
+    "normalMarquee": "普通模式",
+    "letreiroOnlineLed": "LED模式",
+    "ledModeDescription": "體驗真實的LED顯示效果。使用我們的高級LED模式，創建令人驚艷的LED風格顯示，支持自定義顏色和動畫。"
   },
   "NotFound": {
     "title": "404 找不到頁面",
@@ -48,7 +56,7 @@
     },
     "WhatIs": {
       "title": "什麼是Letreiro Digital？",
-      "description": "Letreiro Digital（LED數位顯示模擬器）在您的瀏覽器中模擬LED顯示效果。它允許用戶輸入文字並配置各種設置來創建引人注目的數位標牌。使用Letreiro Digital，無需實體LED看板；���們的平台提供相同的動態外觀和感覺，直接顯示在螢幕上，非常適合快速有效地分享公告、促銷或趣味訊息。"
+      "description": "Letreiro Digital（LED數位顯示模擬器）在您的瀏覽器中模擬LED顯示效果。它允許用戶輸入文字並配置各種設置來創建引人注目的數位標牌。使用Letreiro Digital，無需實體LED看板；們的平台提供相同的動態外觀和感覺，直接顯示在螢幕上，非常適合快速有效地分享公告、促銷或趣味訊息。"
     },
     "Features": {
       "title": "Letreiro Digital模擬器的主要功能",
@@ -71,7 +79,28 @@
         },
         {
           "title": "全螢幕模式",
-          "description": "切換到全螢幕模式以最大化影響，將任何螢幕轉變為全尺寸的LED看板，非常適合活動或繁忙場所。"
+          "description": "切換到全螢幕模式以最大���影響，將任何螢幕轉變為全尺寸的LED看板，非常適合活動或繁忙場所。"
+        }
+      ]
+    },
+    "LEDFeatures": {
+      "title": "Letreiro Online LED 的運作方式",
+      "items": [
+        {
+          "title": "點陣模擬",
+          "description": "Letreiro Online LED 使用點陣和二極管模擬原理，重現傳統 LED 滾動顯示器的功能。在實體 LED 顯示屏中，點陣由一排排的發光二極管組成，可單獨控制開啟或關閉，以創建圖案、字元或動畫效果。"
+        },
+        {
+          "title": "網頁技術實現",
+          "description": "此線上版本使用現代網頁技術（如 HTML、CSS 和 JavaScript）模擬了這種行為。"
+        },
+        {
+          "title": "數位陣列系統",
+          "description": "Letreiro Online LED 的基礎是二維陣列，每個元素代表點陣中的一個二極管。例如，陣列中的「1」代表點亮的二極管，而「0」則表示熄滅的二極管。"
+        },
+        {
+          "title": "動態圖案生成",
+          "description": "字元或訊息被編碼為這種點陣格式，為每個字母或符號創建預定義的圖案，並在模擬的 LED 網格中動態顯示。"
         }
       ]
     },
@@ -134,7 +163,7 @@
         },
         {
           "tip": "嘗試不同的效果",
-          "description": "試用翻轉和反向選項，使您的訊息更加引人注目。"
+          "description": "試用翻轉和反��選項，使您的訊息更加引人注目。"
         }
       ]
     },
@@ -159,7 +188,36 @@
         },
         {
           "question": "是否可以將Letreiro Digital整合到外部螢幕或顯示器中？",
-          "answer": "可以，Letreiro Digital可以顯示在任何連接到瀏覽器的螢幕上，方便整合到外部監視器、投影機或智慧電視中。"
+          "answer": "可以，Letreiro Digital可以顯示在任何能接到瀏覽器的螢幕上，方便整合到外部監視器、投影機或智慧電視中。"
+        }
+      ]
+    },
+    "LEDFAQ": {
+      "title": "Letreiro Online LED 常見問題",
+      "questions": [
+        {
+          "question": "什麼是 Letreiro Online LED？",
+          "answer": "Letreiro Online LED 是一個創新的工具，允許用戶創建模仿傳統 LED 顯示效果的動態滾動文字。該工具設計用於幫助個人和企業生成引人注目的數位告示和公告，通過鮮豔的顏色和可自定義的設置來吸引注意力。"
+        },
+        {
+          "question": "如何自定義我的 LED 滾動文字？",
+          "answer": "使用 Letreiro Online，用戶可以輕鬆自定義 LED 滾動文字，選擇多種字體、顏色和滾動速度。只需輸入所需文字，選擇偏好的設置，該工具將生成預覽，讓您查看文字在 LED 格式中的顯示效果。"
+        },
+        {
+          "question": "使用 Letreiro Online 創建數位顯示有哪些好處？",
+          "answer": "使用 Letreiro Online 創建數位顯示具有多種好處，包括創建引人注目的公告、宣傳活動以及以吸引人的格式分享重要資訊。其友好的介面保證任何人都能設計出獨特的 LED 顯示，非常適合企業、學校和活動使用。"
+        },
+        {
+          "question": "文字長度有限制嗎？",
+          "answer": "使用 Letreiro Online 顯示的文字沒有嚴格的字數限制。不過，較長的文字可能需要更長的時間滾動，這可能會影響可讀性。建議保持文字簡潔，以獲得最佳視覺效果。"
+        },
+        {
+          "question": "可以模擬不同的 LED 效果嗎？",
+          "answer": "是的，Letreiro Online 提供多種 LED 效果，如閃爍、跳動和不同的滾動樣式。用戶可以實時預覽這些效果，並選擇最符合設計和目的的效果。"
+        },
+        {
+          "question": "Letreiro Online 是免費的嗎？",
+          "answer": "Letreiro Online 提供免費版本，允許用戶體驗基本功能，創建 LED 滾動文字。對於更多進階的自定義選項和附加功能，可能提供高級計劃。請訪問我們的網站了解價格和可用計劃的詳細資訊。"
         }
       ]
     }
@@ -198,7 +256,7 @@
       "5-h2": "4. 條款變更",
       "5-p": "Letreiro Digital保留隨時修改本條款的權利。更改將在網站發布後立即生效。您持續使用服務即表示接受任何更改。",
       "6-h2": "5. 聯絡資訊",
-      "6-p": "如果您對本條款有任何疑問，請聯絡我們：support@letreiro.org。",
+      "6-p": "如果您對本條款有任何疑問，請聯��我們：support@letreiro.org。",
       "last-p": "使用Letreiro Digital即表示您已閱讀並同意這些服務條款。"
     }
   }

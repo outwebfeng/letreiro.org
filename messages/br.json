@@ -7,6 +7,11 @@
       "title": "Letreiro Digital – Simulador de Letreiro LED Online para Mensagens Rolantes Personalizadas",
       "description": "Crie letreiros dinâmicos no estilo LED com o simulador baseado em navegador do Letreiro Digital. Personalize texto, cores, velocidade de rolagem e efeitos.",
       "keywords": ""
+    },
+    "letreiroonlineled": {
+      "title": "Modo LED - Letreiro Online LED | Letreiro Digital com Rolagem",
+      "description": "Crie textos dinâmicos com rolagem em LED usando o Letreiro Online. Simule efeitos de LED com texto, cores e velocidade personalizáveis. Perfeito para letreiros digitais!",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -18,7 +23,10 @@
     "howToUse": "Como Usar",
     "faq": "Perguntas Frequentes",
     "toggleMenu": "Alternar Menu",
-    "marqueeLED": "Mostrar"
+    "marqueeLED": "Mostrar",
+    "normalMarquee": "Modo Normal",
+    "letreiroOnlineLed": "Modo LED",
+    "ledModeDescription": "Crie textos dinâmicos com rolagem em LED usando o Letreiro Online. Simule efeitos de LED com texto, cores e velocidade personalizáveis. Perfeito para letreiros digitais!"
   },
   "NotFound": {
     "title": "404 Não Encontrado",
@@ -72,6 +80,27 @@
         {
           "title": "Modo de Tela Cheia",
           "description": "Maximize o impacto alternando para o modo de tela cheia, transformando qualquer tela em um painel de letreiro LED em grande escala, ideal para eventos ou ambientes movimentados."
+        }
+      ]
+    },
+    "LEDFeatures": {
+      "title": "Como Funciona o Letreiro Online LED",
+      "items": [
+        {
+          "title": "Simulação de Matriz de Pontos",
+          "description": "O Letreiro Online LED reproduz a funcionalidade de um letreiro LED tradicional usando os princípios de simulação de matriz de pontos e diodos. Em um display LED físico, uma matriz de pontos consiste em linhas e colunas de LEDs que podem ser individualmente ligados ou desligados para criar padrões, caracteres e animações."
+        },
+        {
+          "title": "Implementação com Tecnologias Web",
+          "description": "Esta versão online simula esse comportamento utilizando tecnologias modernas da web, como HTML, CSS e JavaScript."
+        },
+        {
+          "title": "Sistema de Array Digital",
+          "description": "A base do Letreiro Online LED é uma matriz bidimensional, onde cada elemento representa um diodo na matriz de pontos. Por exemplo, \"1\" na matriz significa um diodo ligado (aceso), enquanto \"0\" significa um diodo desligado (apagado)."
+        },
+        {
+          "title": "Geração Dinâmica de Padrões",
+          "description": "Caracteres ou mensagens são codificados neste formato de matriz, criando um padrão predefinido para cada letra ou símbolo. Esses padrões são exibidos dinamicamente em uma grade LED simulada."
         }
       ]
     },
@@ -160,6 +189,35 @@
         {
           "question": "É possível integrar o Letreiro Digital com telas externas?",
           "answer": "Sim, o Letreiro Digital pode ser exibido em qualquer tela que se conecte a um navegador, facilitando a integração com monitores externos, projetores ou TVs inteligentes."
+        }
+      ]
+    },
+    "LEDFAQ": {
+      "title": "Perguntas Frequentes sobre o Letreiro Online LED",
+      "questions": [
+        {
+          "question": "O que é o Letreiro Online LED?",
+          "answer": "O Letreiro Online LED é uma ferramenta inovadora que permite criar efeitos de texto dinâmicos com rolagem que imitam displays LED tradicionais. Ele foi projetado para ajudar pessoas e empresas a gerar letreiros digitais atraentes e anúncios que captam a atenção com cores vibrantes e configurações personalizáveis."
+        },
+        {
+          "question": "Como posso personalizar meu texto de rolagem LED?",
+          "answer": "Com o Letreiro Online, os usuários podem personalizar facilmente o texto de rolagem LED selecionando entre uma variedade de fontes, cores e velocidades de rolagem. Basta inserir o texto desejado, escolher as configurações preferidas, e a ferramenta gerará uma pré-visualização que mostra como o texto aparecerá no formato LED."
+        },
+        {
+          "question": "Quais são os benefícios de usar o Letreiro Online para displays digitais?",
+          "answer": "Usar o Letreiro Online para displays digitais oferece diversos benefícios, incluindo a capacidade de criar anúncios chamativos, promover eventos e compartilhar informações importantes de forma envolvente. A interface intuitiva garante que qualquer pessoa possa criar displays LED exclusivos, tornando-o perfeito para empresas, escolas e eventos."
+        },
+        {
+          "question": "Há limite para o comprimento do texto que posso usar?",
+          "answer": "Não há limite rigoroso para o número de caracteres que você pode exibir no Letreiro Online. No entanto, textos mais longos podem levar mais tempo para rolar na tela, o que pode afetar a legibilidade. É recomendável manter o texto conciso para melhor impacto visual."
+        },
+        {
+          "question": "Posso simular diferentes efeitos de LED?",
+          "answer": "Sim, o Letreiro Online oferece vários efeitos LED, como piscamento, intermitência e diferentes estilos de rolagem. Os usuários podem visualizar esses efeitos em tempo real e escolher os que melhor se adequam ao design e ao propósito desejados."
+        },
+        {
+          "question": "O Letreiro Online é gratuito?",
+          "answer": "O Letreiro Online oferece uma versão gratuita que permite aos usuários experimentar as funções básicas de criação de textos LED com rolagem. Para opções avançadas de personalização e recursos adicionais, podem estar disponíveis planos premium. Consulte nosso site para obter detalhes sobre preços e planos disponíveis."
         }
       ]
     }

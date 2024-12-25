@@ -7,6 +7,11 @@
       "title": "Letreiro Digital – Simulateur d'affichage LED en ligne pour panneaux défilants personnalisés",
       "description": "Créez des affichages dynamiques de style LED avec le simulateur basé sur navigateur de Letreiro Digital. Personnalisez le texte, les couleurs, la vitesse de défilement et les effets.",
       "keywords": ""
+    },
+    "letreiroonlineled": {
+      "title": "Mode LED - Letreiro Online LED | Affichage Défilant Numérique",
+      "description": "Créez un texte défilant LED dynamique avec Letreiro Online. Simulez des effets LED avec un texte, des couleurs et une vitesse personnalisables. Parfait pour les affichages numériques LED !",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -18,7 +23,10 @@
     "howToUse": "Mode d'emploi",
     "faq": "FAQ",
     "toggleMenu": "Basculer le menu",
-    "marqueeLED": "Afficher"
+    "marqueeLED": "Afficher",
+    "normalMarquee": "Mode Normal",
+    "letreiroOnlineLed": "Mode LED",
+    "ledModeDescription": "Créez un texte défilant LED dynamique avec Letreiro Online. Simulez des effets LED avec un texte, des couleurs et une vitesse personnalisables. Parfait pour les affichages numériques LED !"
   },
   "NotFound": {
     "title": "404 Page Non Trouvée",
@@ -72,6 +80,27 @@
         {
           "title": "Mode Plein Écran",
           "description": "Maximisez votre impact en passant en mode plein écran, transformant n'importe quel écran en panneau LED grandeur nature, idéal pour les événements ou les endroits très fréquentés."
+        }
+      ]
+    },
+    "LEDFeatures": {
+      "title": "Comment Fonctionne Letreiro Online LED",
+      "items": [
+        {
+          "title": "Simulation de Matrice de Points",
+          "description": "Letreiro Online LED reproduit la fonctionnalité d'un affichage LED traditionnel avec texte défilant en s'appuyant sur les principes de la matrice de points et de la simulation de diodes. Dans un affichage LED physique, une matrice de points est composée de rangées et de colonnes de diodes électroluminescentes (LED) qui peuvent être activées ou désactivées individuellement pour créer des motifs, des caractères et des animations."
+        },
+        {
+          "title": "Mise en Œuvre avec des Technologies Web",
+          "description": "Cette version en ligne simule ce comportement en utilisant des technologies web modernes telles que HTML, CSS et JavaScript."
+        },
+        {
+          "title": "Système de Matrice Numérique",
+          "description": "La base de Letreiro Online LED est une matrice bidimensionnelle, où chaque élément représente une diode dans la matrice de points. Par exemple, un \"1\" dans la matrice signifie une diode allumée (active), tandis qu'un \"0\" signifie une diode éteinte (inactive)."
+        },
+        {
+          "title": "Génération Dynamique de Modèles",
+          "description": "Les caractères ou messages sont encodés dans ce format matriciel, créant un modèle prédéfini pour chaque lettre ou symbole. Ces modèles sont affichés dynamiquement sur une grille LED simulée."
         }
       ]
     },
@@ -160,6 +189,35 @@
         {
           "question": "Est-il possible d'intégrer Letreiro Digital avec des écrans externes ?",
           "answer": "Oui, Letreiro Digital peut être affiché sur n'importe quel écran qui se connecte à un navigateur, facilitant l'intégration avec des moniteurs externes, des projecteurs ou des smart TV."
+        }
+      ]
+    },
+    "LEDFAQ": {
+      "title": "Questions Fréquemment Posées sur Letreiro Online LED",
+      "questions": [
+        {
+          "question": "Qu'est-ce que Letreiro Online LED ?",
+          "answer": "Letreiro Online LED est un outil innovant qui permet aux utilisateurs de créer des effets de texte défilant dynamiques imitant les affichages LED traditionnels. Il est conçu pour aider les particuliers et les entreprises à générer des enseignes numériques captivantes et des annonces attrayantes grâce à des couleurs vibrantes et des paramètres personnalisables."
+        },
+        {
+          "question": "Comment personnaliser mon texte LED défilant ?",
+          "answer": "Avec Letreiro Online, les utilisateurs peuvent facilement personnaliser leur texte LED défilant en choisissant parmi une variété de polices, de couleurs et de vitesses de défilement. Entrez simplement le texte souhaité, choisissez vos paramètres préférés, et l'outil générera un aperçu qui montre comment votre texte apparaîtra au format LED."
+        },
+        {
+          "question": "Quels sont les avantages d'utiliser Letreiro Online pour des affichages numériques ?",
+          "answer": "Utiliser Letreiro Online pour vos affichages numériques offre de nombreux avantages, notamment la possibilité de créer des annonces accrocheuses, de promouvoir des événements et de partager des informations importantes dans un format engageant. L'interface conviviale garantit que tout le monde peut concevoir des affichages LED uniques, ce qui le rend parfait pour les entreprises, les écoles et les événements."
+        },
+        {
+          "question": "Y a-t-il une limite à la longueur du texte que je peux utiliser ?",
+          "answer": "Il n'y a pas de limite stricte au nombre de caractères que vous pouvez afficher avec Letreiro Online. Cependant, les textes plus longs peuvent prendre plus de temps à défiler sur l'écran, ce qui pourrait affecter la lisibilité. Il est recommandé de garder le texte concis pour un meilleur impact visuel."
+        },
+        {
+          "question": "Puis-je simuler différents effets LED ?",
+          "answer": "Oui, Letreiro Online propose divers effets LED tels que le clignotement, l'intermittence et différents styles de défilement. Les utilisateurs peuvent prévisualiser ces effets en temps réel et choisir ceux qui correspondent le mieux à leur design et à leur objectif."
+        },
+        {
+          "question": "Letreiro Online est-il gratuit ?",
+          "answer": "Letreiro Online propose une version gratuite qui permet aux utilisateurs de découvrir les fonctionnalités de base pour créer des textes LED défilants. Pour des options de personnalisation avancées et des fonctionnalités supplémentaires, des plans premium peuvent être disponibles. Consultez notre site Web pour plus de détails sur les prix et les plans disponibles."
         }
       ]
     }

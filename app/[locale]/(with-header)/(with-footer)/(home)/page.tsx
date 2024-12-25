@@ -20,8 +20,13 @@ export default function Page() {
             {t('subTitle')}
           </div>
         </div>
-
-        <MarqueeLED t={t} />
+        
+        <MarqueeLED 
+          availableDisplayModes={['default', 'blur']}
+          showSpeedControl={true}
+          showFullscreenButton={true}
+          showGeneratorButton={true}
+        />
 
         <div className='mb-8 space-y-6 sm:mb-12 sm:space-y-8'>
           {/* Features Section */}
@@ -125,7 +130,7 @@ export default function Page() {
                   className='group rounded-md bg-gradient-to-r from-orange-50 to-yellow-50 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md'
                 >
                   <summary className='flex cursor-pointer list-none items-center justify-between font-medium'>
-                    <span className='text-xl font-semibold text-[#FF782C]'>{faqItem.question}</span>
+                    <h3 className='text-xl font-semibold text-[#FF782C]'>{faqItem.question}</h3>
                   </summary>
                   <div className='mt-3'>
                     <p className='group-open:animate-fadeIn leading-relaxed text-black/80'>{faqItem.answer}</p>

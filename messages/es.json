@@ -7,6 +7,11 @@
       "title": "Letreiro Digital – Simulador de Pantalla LED Online para Carteles Desplazables Personalizados",
       "description": "Crea carteles dinámicos estilo LED con el simulador basado en navegador de Letreiro Digital. Personaliza texto, colores, velocidad de desplazamiento y efectos.",
       "keywords": ""
+    },
+    "letreiroonlineled": {
+      "title": "Modo LED - Letreiro Online LED | Pantalla Digital Desplazable",
+      "description": "Crea texto dinámico con desplazamiento LED usando Letreiro Online. Simula efectos LED con texto, colores y velocidad personalizables. ¡Perfecto para pantallas digitales!",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -18,7 +23,10 @@
     "howToUse": "Cómo Usar",
     "faq": "Preguntas Frecuentes",
     "toggleMenu": "Alternar Menú",
-    "marqueeLED": "Mostrar"
+    "marqueeLED": "Mostrar",
+    "normalMarquee": "Modo Normal",
+    "letreiroOnlineLed": "Modo LED",
+    "ledModeDescription": "Crea texto dinámico con desplazamiento LED usando Letreiro Online. Simula efectos LED con texto, colores y velocidad personalizables. ¡Perfecto para pantallas digitales!"
   },
   "NotFound": {
     "title": "404 No Encontrado",
@@ -72,6 +80,27 @@
         {
           "title": "Modo de Pantalla Completa",
           "description": "Maximiza tu impacto con el modo de pantalla completa, convirtiendo cualquier pantalla en un cartel LED a gran escala, ideal para eventos o lugares públicos con mucho movimiento."
+        }
+      ]
+    },
+    "LEDFeatures": {
+      "title": "Cómo Funciona Letreiro Online LED",
+      "items": [
+        {
+          "title": "Simulación de Matriz de Puntos",
+          "description": "Letreiro Online LED reproduce la funcionalidad de una pantalla LED tradicional con texto desplazable, aprovechando los principios de simulación de matriz de puntos y diodos. En una pantalla LED física, una matriz de puntos se compone de filas y columnas de diodos emisores de luz (LED) que pueden encenderse o apagarse individualmente para crear patrones, caracteres y animaciones."
+        },
+        {
+          "title": "Implementación con Tecnologías Web",
+          "description": "Esta versión en línea emula ese comportamiento utilizando tecnologías web modernas como HTML, CSS y JavaScript."
+        },
+        {
+          "title": "Sistema de Matriz Digital",
+          "description": "La base de Letreiro Online LED es una matriz bidimensional, donde cada elemento representa un diodo en la matriz de puntos. Por ejemplo, un \"1\" en la matriz significa un diodo encendido, mientras que un \"0\" significa un diodo apagado."
+        },
+        {
+          "title": "Generación Dinámica de Patrones",
+          "description": "Los caracteres o mensajes se codifican en este formato de matriz, creando un patrón predefinido para cada letra o símbolo. Estos patrones se muestran dinámicamente en una cuadrícula LED simulada."
         }
       ]
     },
@@ -160,6 +189,35 @@
         {
           "question": "¿Es posible integrar Letreiro Digital con pantallas o monitores externos?",
           "answer": "Sí, Letreiro Digital puede mostrarse en cualquier pantalla que se conecte a un navegador, lo que facilita su integración con monitores externos, proyectores o televisores inteligentes."
+        }
+      ]
+    },
+    "LEDFAQ": {
+      "title": "Preguntas Frecuentes sobre Letreiro Online LED",
+      "questions": [
+        {
+          "question": "¿Qué es Letreiro Online LED?",
+          "answer": "Letreiro Online LED es una herramienta innovadora que permite a los usuarios crear efectos de texto dinámico con desplazamiento que imitan los tradicionales paneles LED. Está diseñado para ayudar a individuos y empresas a generar anuncios y letreros digitales atractivos, captando la atención mediante colores vibrantes y configuraciones personalizables."
+        },
+        {
+          "question": "¿Cómo puedo personalizar mi texto LED con desplazamiento?",
+          "answer": "Con Letreiro Online, los usuarios pueden personalizar fácilmente su texto LED seleccionando entre una variedad de fuentes, colores y velocidades de desplazamiento. Simplemente ingresa el texto deseado, elige tus configuraciones preferidas y la herramienta generará una vista previa que muestra cómo se verá tu texto en formato LED."
+        },
+        {
+          "question": "¿Cuáles son los beneficios de usar Letreiro Online para pantallas digitales?",
+          "answer": "Usar Letreiro Online para tus pantallas digitales ofrece numerosos beneficios, incluyendo la posibilidad de crear anuncios llamativos, promocionar eventos y compartir información importante en un formato atractivo. Su interfaz fácil de usar asegura que cualquier persona pueda diseñar pantallas LED únicas, siendo ideal para empresas, escuelas y eventos."
+        },
+        {
+          "question": "¿Hay un límite en la longitud del texto que puedo usar?",
+          "answer": "No hay un límite estricto en la cantidad de caracteres que puedes mostrar con Letreiro Online. Sin embargo, textos más largos pueden tardar más tiempo en desplazarse por la pantalla, lo que podría afectar la legibilidad. Se recomienda mantener el texto conciso para obtener el mejor impacto visual."
+        },
+        {
+          "question": "¿Puedo simular diferentes efectos LED?",
+          "answer": "Sí, Letreiro Online ofrece varios efectos LED como parpadeo, intermitencia y diferentes estilos de desplazamiento. Los usuarios pueden previsualizar estos efectos en tiempo real y elegir los que mejor se adapten a su diseño y propósito."
+        },
+        {
+          "question": "¿Es Letreiro Online gratuito?",
+          "answer": "Letreiro Online ofrece una versión gratuita que permite a los usuarios experimentar las funciones básicas de creación de textos LED con desplazamiento. Para opciones avanzadas de personalización y funciones adicionales, puede haber planes premium disponibles. Consulta nuestro sitio web para más detalles sobre precios y planes disponibles."
         }
       ]
     }
