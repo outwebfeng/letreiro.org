@@ -12,6 +12,11 @@
       "title": "Modo LED - Letreiro Online LED | Pantalla Digital Desplazable",
       "description": "Crea texto dinámico con desplazamiento LED usando Letreiro Online. Simula efectos LED con texto, colores y velocidad personalizables. ¡Perfecto para pantallas digitales!",
       "keywords": ""
+    },
+    "getstarted": {
+      "title": "Comienza con Letreiro Digital - Guía Rápida",
+      "description": "Aprende a usar Letreiro Digital tanto para usuarios empresariales como para desarrolladores. Crea impresionantes pantallas LED o integra nuestro generador en tu sitio web.",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -26,7 +31,8 @@
     "marqueeLED": "Mostrar",
     "normalMarquee": "Modo Normal",
     "letreiroOnlineLed": "Modo LED",
-    "ledModeDescription": "Crea texto dinámico con desplazamiento LED usando Letreiro Online. Simula efectos LED con texto, colores y velocidad personalizables. ¡Perfecto para pantallas digitales!"
+    "ledModeDescription": "Crea texto dinámico con desplazamiento LED usando Letreiro Online. Simula efectos LED con texto, colores y velocidad personalizables. ¡Perfecto para pantallas digitales!",
+    "getStarted": "Comienza"
   },
   "NotFound": {
     "title": "404 No Encontrado",
@@ -258,6 +264,85 @@
       "6-h2": "5. Información de Contacto",
       "6-p": "Si tienes alguna pregunta sobre estos Términos, contáctanos en support@letreiro.org.",
       "last-p": "Al usar Letreiro Digital, reconoces que has leído y aceptas estos Términos de Servicio."
+    }
+  },
+  "GetStarted": {
+    "title": "Comienza con Letreiro Digital",
+    "description": "Bienvenido a la guía rápida de inicio de Letreiro Digital. Aprende a usar nuestra plataforma, ya seas un usuario empresarial o un desarrollador.",
+    "forUsers": {
+      "title": "Para Usuarios Empresariales",
+      "description": "Comienza con la interfaz fácil de usar de Letreiro Digital para crear pantallas llamativas para tu negocio.",
+      "steps": [
+        {
+          "title": "Elige Tu Modo",
+          "description": "Empieza seleccionando el modo de pantalla que prefieras: Modo Normal para texto desplazable clásico o Modo LED para efectos auténticos de pantalla LED."
+        },
+        {
+          "title": "Personaliza Tu Pantalla",
+          "description": "Introduce tu texto, elige colores para el texto y el fondo y ajusta la velocidad de desplazamiento según tus necesidades."
+        },
+        {
+          "title": "Previsualiza y Ajusta",
+          "description": "Utiliza nuestra previsualización en tiempo real para ver exactamente cómo se verá tu pantalla. Realiza ajustes hasta estar satisfecho con el resultado."
+        },
+        {
+          "title": "Activa el Modo Pantalla Completa",
+          "description": "Una vez que estés satisfecho con tu pantalla, utiliza el modo pantalla completa para mostrar tu mensaje. Ideal para presentaciones y pantallas públicas."
+        },
+        {
+          "title": "Guarda Tu Configuración",
+          "description": "Usa el botón del generador para crear un enlace permanente a la configuración de tu pantalla, facilitando su reutilización o compartición."
+        }
+      ]
+    },
+    "forDevelopers": {
+      "title": "Para Desarrolladores",
+      "description": "Integra la funcionalidad de pantalla de Letreiro Digital en tu propio sitio web mediante nuestra página de generación.",
+      "steps": [
+        {
+          "title": "Crea Tu Pantalla",
+          "description": "Utiliza nuestra interfaz principal para diseñar la pantalla deseada, incluyendo texto, colores y configuraciones de animación."
+        },
+        {
+          "title": "Genera la URL para Integrar",
+          "description": "Haz clic en el botón de generación para crear una URL con la configuración de tu pantalla. Esta URL puede usarse en un iframe."
+        },
+        {
+          "title": "Incorpora en Tu Sitio Web",
+          "description": "Usa la URL generada en un iframe para incorporar la pantalla en tu sitio web. Aquí tienes un ejemplo:"
+        }
+      ],
+      "embedExample": {
+        "title": "Ejemplo de Incorporación",
+        "description": "Copia y modifica este código para integrar Letreiro Digital en tu sitio web:",
+        "code": "<iframe\n  src=\"https://letreiro.org/generator?text=Your%20Text&textColor=FFFFFF&bgColor=000000&speed=5&displayMode=default\"\n  width=\"100%\"\n  height=\"200\"\n  frameborder=\"0\"\n  allowfullscreen\n></iframe>"
+      },
+      "parameters": {
+        "title": "Parámetros de la URL",
+        "description": "Personaliza tu pantalla modificando estos parámetros de URL:",
+        "items": [
+          {
+            "param": "text",
+            "description": "Tu texto para la pantalla (codificado para URL)"
+          },
+          {
+            "param": "textColor",
+            "description": "Color del texto en formato hex (sin #)"
+          },
+          {
+            "param": "bgColor",
+            "description": "Color de fondo en formato hex (sin #)"
+          },
+          {
+            "param": "speed",
+            "description": "Velocidad del desplazamiento (1-10)"
+          },
+          {
+            "param": "displayMode",
+            "description": "Modo de pantalla (default, blur o led)"
+          }
+        ]
+      }
     }
   }
 }

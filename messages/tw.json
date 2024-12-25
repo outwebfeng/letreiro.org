@@ -12,6 +12,11 @@
       "title": "LED 模式 - Letreiro Online LED | 數位滾動顯示器",
       "description": "使用 Letreiro Online 創建動態 LED 滾動文字。模擬 LED 效果，支持自定義文字、顏色和速度設定。非常適合數位 LED 顯示！",
       "keywords": ""
+    },
+    "getstarted": {
+      "title": "開始使用 Letreiro Digital - 快速入門指南",
+      "description": "了解如何使用 Letreiro Digital，無論您是企業用戶還是開發人員。創建精美的 LED 顯示或將我們的生成器整合到您的網站中。",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -26,7 +31,8 @@
     "marqueeLED": "顯示",
     "normalMarquee": "普通模式",
     "letreiroOnlineLed": "LED模式",
-    "ledModeDescription": "體驗真實的LED顯示效果。使用我們的高級LED模式，創建令人驚艷的LED風格顯示，支持自定義顏色和動畫。"
+    "ledModeDescription": "體驗真實的LED顯示效果。使用我們的高級LED模式，創建令人驚艷的LED風格顯示，支持自定義顏色和動畫。",
+    "getStarted": "開始使用"
   },
   "NotFound": {
     "title": "404 找不到頁面",
@@ -52,7 +58,7 @@
     },
     "Welcome": {
       "title": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器",
-      "description": "Letreiro Digital是一款強大的瀏覽器LED顯示模擬器，可讓您立即創建LED風格的數位標牌。適合商業、活動和個人訊息，Letreiro Digital提供自定義文字、可調顏色、滾動速度、翻轉選項和全螢幕模式等功能。無需下載或複雜設置，Letreiro Digital可將任何裝置轉變為LED顯示板，適合吸引注意並傳播動態訊息。"
+      "description": "Letreiro Digital是一款強大的瀏覽器LED顯示模擬器，可讓您立即創建LED風格的數位標牌。適合商業、活動和個人訊息，Letreiro Digital提供自定義文字、可調顏色、滾動速度、翻轉選項和全螢幕模式等功能。無需下載或複雜設置，Letreiro Digital可將���何裝置轉變為LED顯示板，適合吸引注意並傳播動態訊息。"
     },
     "WhatIs": {
       "title": "什麼是Letreiro Digital？",
@@ -71,7 +77,7 @@
         },
         {
           "title": "滾動速度控制",
-          "description": "調整速度以創建適合訊息的滾動效果。放慢速度以便於閱讀或加快速度以創造興奮和緊迫感。"
+          "description": "調整速度以創建適合訊息的滾動效果。放慢速度以便於閱讀或加��速度以創造興奮和緊迫感。"
         },
         {
           "title": "翻轉和反向顯示選項",
@@ -79,7 +85,7 @@
         },
         {
           "title": "全螢幕模式",
-          "description": "切換到全螢幕模式以最大���影響，將任何螢幕轉變為全尺寸的LED看板，非常適合活動或繁忙場所。"
+          "description": "切換到全螢幕模式以最大程度影響，將任何螢幕轉變為全尺寸的LED看板，非常適合活動或繁忙場所。"
         }
       ]
     },
@@ -134,7 +140,7 @@
       "items": [
         {
           "title": "無需下載軟體",
-          "description": "直接從瀏覽器訪問Letreiro Digital，使其在任何裝置上快速且易於使用。"
+          "description": "直接從瀏覽器訪問Letreiro Digital，使���在任何裝置上快速且易於使用。"
         },
         {
           "title": "直觀的界面",
@@ -163,7 +169,7 @@
         },
         {
           "tip": "嘗試不同的效果",
-          "description": "試用翻轉和反��選項，使您的訊息更加引人注目。"
+          "description": "試用翻轉和反向選項，使您的訊息更加引人注目。"
         }
       ]
     },
@@ -188,7 +194,7 @@
         },
         {
           "question": "是否可以將Letreiro Digital整合到外部螢幕或顯示器中？",
-          "answer": "可以，Letreiro Digital可以顯示在任何能接到瀏覽器的螢幕上，方便整合到外部監視器、投影機或智慧電視中。"
+          "answer": "可以，Letreiro Digital可以顯示在任何能接到瀏覽器的螢幕上���方便整合到外部監視器、投影機或智慧電視中。"
         }
       ]
     },
@@ -256,8 +262,87 @@
       "5-h2": "4. 條款變更",
       "5-p": "Letreiro Digital保留隨時修改本條款的權利。更改將在網站發布後立即生效。您持續使用服務即表示接受任何更改。",
       "6-h2": "5. 聯絡資訊",
-      "6-p": "如果您對本條款有任何疑問，請聯��我們：support@letreiro.org。",
+      "6-p": "如果您對本條款有任何疑問，請聯絡我們：support@letreiro.org。",
       "last-p": "使用Letreiro Digital即表示您已閱讀並同意這些服務條款。"
+    }
+  },
+  "GetStarted": {
+    "title": "開始使用 Letreiro Digital",
+    "description": "歡迎使用 Letreiro Digital 快速入門指南。無論您是企業用戶還是開發人員，都能學習如何使用我們的平台。",
+    "forUsers": {
+      "title": "企業用戶指南",
+      "description": "使用 Letreiro Digital 的友好界面，為您的企業創建引人注目的顯示效果。",
+      "steps": [
+        {
+          "title": "選擇顯示模式",
+          "description": "首先選擇您喜歡的顯示模式：普通模式用於經典滾動文字，或 LED 模式用於真實的 LED 顯示效果。"
+        },
+        {
+          "title": "自定義顯示效果",
+          "description": "輸入您的文字，為文字和背景選擇顏色，並調整滾動速度以滿足您的需求。"
+        },
+        {
+          "title": "預覽和調整",
+          "description": "使用我們的即時預覽功能，準確查看顯示效果。根據需要進行調整，直到您滿意為止。"
+        },
+        {
+          "title": "全螢幕顯示",
+          "description": "對顯示效果滿意後，使用全螢幕模式展示您的訊息。非常適合公共顯示和演示。"
+        },
+        {
+          "title": "保存設置",
+          "description": "使用生成器按鈕創建顯示配置的永久連結，方便重複使用或分享。"
+        }
+      ]
+    },
+    "forDevelopers": {
+      "title": "開發人員指南",
+      "description": "使用我們的生成器頁面，將 Letreiro Digital 的顯示功能整合到您自己的網站中。",
+      "steps": [
+        {
+          "title": "創建顯示效果",
+          "description": "使用我們的主界面設計所需的顯示效果，包括文字、顏色和動畫設置。"
+        },
+        {
+          "title": "生成嵌入 URL",
+          "description": "點擊生成器按鈕，創建包含您的顯示配置的 URL。此 URL 可用於 iframe 中。"
+        },
+        {
+          "title": "嵌入到您的網站",
+          "description": "在 iframe 中使用生成的 URL，將顯示效果嵌入到您的網站中。以下是示例："
+        }
+      ],
+      "embedExample": {
+        "title": "嵌入示例",
+        "description": "複製並修改此代碼，將 Letreiro Digital 嵌入到您的網站：",
+        "code": "<iframe\n  src=\"https://letreiro.org/generator?text=Your%20Text&textColor=FFFFFF&bgColor=000000&speed=5&displayMode=default\"\n  width=\"100%\"\n  height=\"200\"\n  frameborder=\"0\"\n  allowfullscreen\n></iframe>"
+      },
+      "parameters": {
+        "title": "URL 參數",
+        "description": "通過修改這些 URL 參數自定義您的顯示效果：",
+        "items": [
+          {
+            "param": "text",
+            "description": "顯示文字（URL 編碼）"
+          },
+          {
+            "param": "textColor",
+            "description": "文字顏色，十六進制格式（不含 #）"
+          },
+          {
+            "param": "bgColor",
+            "description": "背景顏色，十六進制格式（不含 #）"
+          },
+          {
+            "param": "speed",
+            "description": "滾動速度（1-10）"
+          },
+          {
+            "param": "displayMode",
+            "description": "顯示模式（default、blur 或 led）"
+          }
+        ]
+      }
     }
   }
 }

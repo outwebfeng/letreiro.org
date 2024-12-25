@@ -12,6 +12,11 @@
       "title": "Modo LED - Letreiro Online LED | Letreiro Digital com Rolagem",
       "description": "Crie textos dinâmicos com rolagem em LED usando o Letreiro Online. Simule efeitos de LED com texto, cores e velocidade personalizáveis. Perfeito para letreiros digitais!",
       "keywords": ""
+    },
+    "getstarted": {
+      "title": "Comece com Letreiro Digital - Guia Rápido",
+      "description": "Aprenda a usar o Letreiro Digital tanto para usuários empresariais quanto para desenvolvedores. Crie exibições LED incríveis ou integre nosso gerador ao seu site.",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -26,7 +31,8 @@
     "marqueeLED": "Mostrar",
     "normalMarquee": "Modo Normal",
     "letreiroOnlineLed": "Modo LED",
-    "ledModeDescription": "Crie textos dinâmicos com rolagem em LED usando o Letreiro Online. Simule efeitos de LED com texto, cores e velocidade personalizáveis. Perfeito para letreiros digitais!"
+    "ledModeDescription": "Crie textos dinâmicos com rolagem em LED usando o Letreiro Online. Simule efeitos de LED com texto, cores e velocidade personalizáveis. Perfeito para letreiros digitais!",
+    "getStarted": "Comece"
   },
   "NotFound": {
     "title": "404 Não Encontrado",
@@ -258,6 +264,85 @@
       "6-h2": "5. Informações de Contato",
       "6-p": "Se você tiver dúvidas sobre estes Termos, entre em contato pelo e-mail support@letreiro.org.",
       "last-p": "Ao usar o Letreiro Digital, você reconhece que leu e concorda com estes Termos de Serviço."
+    }
+  },
+  "GetStarted": {
+    "title": "Comece com o Letreiro Digital",
+    "description": "Bem-vindo ao guia rápido de início do Letreiro Digital. Aprenda a usar nossa plataforma, seja você um usuário empresarial ou um desenvolvedor.",
+    "forUsers": {
+      "title": "Para Usuários Empresariais",
+      "description": "Comece com a interface amigável do Letreiro Digital para criar exibições chamativas para o seu negócio.",
+      "steps": [
+        {
+          "title": "Escolha Seu Modo",
+          "description": "Comece selecionando o modo de exibição desejado: Modo Normal para texto rolando clássico ou Modo LED para efeitos de exibição autênticos."
+        },
+        {
+          "title": "Personalize Sua Exibição",
+          "description": "Digite seu texto, escolha as cores para o texto e o fundo e ajuste a velocidade do rolamento para atender às suas necessidades."
+        },
+        {
+          "title": "Visualize e Ajuste",
+          "description": "Use nossa pré-visualização em tempo real para ver exatamente como sua exibição ficará. Faça ajustes até ficar satisfeito com o resultado."
+        },
+        {
+          "title": "Ative o Modo Tela Cheia",
+          "description": "Depois de concluir sua exibição, use o modo de tela cheia para exibir sua mensagem. Ideal para apresentações públicas e displays."
+        },
+        {
+          "title": "Salve Suas Configurações",
+          "description": "Use o botão de geração para criar um link permanente para a configuração de sua exibição, facilitando seu compartilhamento ou reutilização."
+        }
+      ]
+    },
+    "forDevelopers": {
+      "title": "Para Desenvolvedores",
+      "description": "Integre a funcionalidade de exibição do Letreiro Digital ao seu próprio site por meio da nossa página de geração.",
+      "steps": [
+        {
+          "title": "Crie Sua Exibição",
+          "description": "Use nossa interface principal para configurar sua exibição desejada, incluindo texto, cores e configurações de animação."
+        },
+        {
+          "title": "Gere a URL para Incorporar",
+          "description": "Clique no botão de geração para criar uma URL com sua configuração. Essa URL pode ser usada em um iframe."
+        },
+        {
+          "title": "Incorpore ao Seu Site",
+          "description": "Use a URL gerada em um iframe para incorporar a exibição ao seu site. Aqui está um exemplo:"
+        }
+      ],
+      "embedExample": {
+        "title": "Exemplo de Incorporação",
+        "description": "Copie e modifique este código para incorporar o Letreiro Digital ao seu site:",
+        "code": "<iframe\n  src=\"https://letreiro.org/generator?text=Your%20Text&textColor=FFFFFF&bgColor=000000&speed=5&displayMode=default\"\n  width=\"100%\"\n  height=\"200\"\n  frameborder=\"0\"\n  allowfullscreen\n></iframe>"
+      },
+      "parameters": {
+        "title": "Parâmetros da URL",
+        "description": "Personalize sua exibição modificando esses parâmetros de URL:",
+        "items": [
+          {
+            "param": "text",
+            "description": "Seu texto para exibição (codificado para URL)"
+          },
+          {
+            "param": "textColor",
+            "description": "Cor do texto no formato hex (sem #)"
+          },
+          {
+            "param": "bgColor",
+            "description": "Cor de fundo no formato hex (sem #)"
+          },
+          {
+            "param": "speed",
+            "description": "Velocidade do rolamento (1-10)"
+          },
+          {
+            "param": "displayMode",
+            "description": "Modo de exibição (default, blur ou led)"
+          }
+        ]
+      }
     }
   }
 }

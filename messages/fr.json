@@ -12,6 +12,11 @@
       "title": "Mode LED - Letreiro Online LED | Affichage Défilant Numérique",
       "description": "Créez un texte défilant LED dynamique avec Letreiro Online. Simulez des effets LED avec un texte, des couleurs et une vitesse personnalisables. Parfait pour les affichages numériques LED !",
       "keywords": ""
+    },
+    "getstarted": {
+      "title": "Commencez avec Letreiro Digital - Guide de Démarrage Rapide",
+      "description": "Découvrez comment utiliser Letreiro Digital pour les utilisateurs professionnels et les développeurs. Créez des affichages LED impressionnants ou intégrez notre générateur à votre site Web.",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -26,7 +31,8 @@
     "marqueeLED": "Afficher",
     "normalMarquee": "Mode Normal",
     "letreiroOnlineLed": "Mode LED",
-    "ledModeDescription": "Créez un texte défilant LED dynamique avec Letreiro Online. Simulez des effets LED avec un texte, des couleurs et une vitesse personnalisables. Parfait pour les affichages numériques LED !"
+    "ledModeDescription": "Créez un texte défilant LED dynamique avec Letreiro Online. Simulez des effets LED avec un texte, des couleurs et une vitesse personnalisables. Parfait pour les affichages numériques LED !",
+    "getStarted": "Commencez"
   },
   "NotFound": {
     "title": "404 Page Non Trouvée",
@@ -258,6 +264,85 @@
       "6-h2": "5. Informations de Contact",
       "6-p": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à support@letreiro.org.",
       "last-p": "En utilisant Letreiro Digital, vous reconnaissez avoir lu et accepté ces Conditions d'Utilisation."
+    }
+  },
+  "GetStarted": {
+    "title": "Commencez avec Letreiro Digital",
+    "description": "Bienvenue dans le guide de démarrage rapide de Letreiro Digital. Découvrez comment utiliser notre plateforme, que vous soyez un utilisateur professionnel ou un développeur.",
+    "forUsers": {
+      "title": "Pour les Utilisateurs Professionnels",
+      "description": "Commencez avec l'interface conviviale de Letreiro Digital pour créer des affichages accrocheurs pour votre entreprise.",
+      "steps": [
+        {
+          "title": "Choisissez votre Mode",
+          "description": "Commencez par sélectionner votre mode d'affichage préféré : Mode Normal pour un texte défilant classique ou Mode LED pour des effets d'affichage LED authentiques."
+        },
+        {
+          "title": "Personnalisez votre Affichage",
+          "description": "Entrez votre texte, choisissez des couleurs pour le texte et l'arrière-plan, et ajustez la vitesse de défilement selon vos besoins."
+        },
+        {
+          "title": "Aperçu et Ajustement",
+          "description": "Utilisez notre aperçu en temps réel pour voir exactement à quoi ressemblera votre affichage. Apportez des ajustements jusqu'à ce que vous soyez satisfait du résultat."
+        },
+        {
+          "title": "Passez en Plein Écran",
+          "description": "Une fois que votre affichage est prêt, utilisez le mode plein écran pour présenter votre message. Idéal pour les présentations et les affichages publics."
+        },
+        {
+          "title": "Enregistrez vos Paramètres",
+          "description": "Utilisez le bouton générateur pour créer un lien permanent vers la configuration de votre affichage, facilitant sa réutilisation ou son partage."
+        }
+      ]
+    },
+    "forDevelopers": {
+      "title": "Pour les Développeurs",
+      "description": "Intégrez la fonctionnalité d'affichage de Letreiro Digital à votre propre site web via notre page générateur.",
+      "steps": [
+        {
+          "title": "Créez votre Affichage",
+          "description": "Utilisez notre interface principale pour concevoir l'affichage souhaité, incluant le texte, les couleurs et les paramètres d'animation."
+        },
+        {
+          "title": "Générez l'URL d'Intégration",
+          "description": "Cliquez sur le bouton générateur pour créer une URL avec la configuration de votre affichage. Cette URL peut être utilisée dans un iframe."
+        },
+        {
+          "title": "Intégrez-le sur votre Site",
+          "description": "Utilisez l'URL générée dans un iframe pour intégrer l'affichage sur votre site web. Voici un exemple :"
+        }
+      ],
+      "embedExample": {
+        "title": "Exemple d'Intégration",
+        "description": "Copiez et modifiez ce code pour intégrer Letreiro Digital à votre site web :",
+        "code": "<iframe\n  src=\"https://letreiro.org/generator?text=Your%20Text&textColor=FFFFFF&bgColor=000000&speed=5&displayMode=default\"\n  width=\"100%\"\n  height=\"200\"\n  frameborder=\"0\"\n  allowfullscreen\n></iframe>"
+      },
+      "parameters": {
+        "title": "Paramètres de l'URL",
+        "description": "Personnalisez votre affichage en modifiant ces paramètres d'URL :",
+        "items": [
+          {
+            "param": "text",
+            "description": "Votre texte pour l'affichage (encodé en URL)"
+          },
+          {
+            "param": "textColor",
+            "description": "Couleur du texte au format hexadécimal (sans #)"
+          },
+          {
+            "param": "bgColor",
+            "description": "Couleur de fond au format hexadécimal (sans #)"
+          },
+          {
+            "param": "speed",
+            "description": "Vitesse de défilement (1-10)"
+          },
+          {
+            "param": "displayMode",
+            "description": "Mode d'affichage (default, blur ou led)"
+          }
+        ]
+      }
     }
   }
 } 

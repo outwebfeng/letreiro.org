@@ -12,6 +12,11 @@
       "title": "LED Mode - Letreiro Online LED | Digital Scrolling Display",
       "description": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!",
       "keywords": ""
+    },
+    "getstarted": {
+      "title": "Get Started with Letreiro Digital - Quick Start Guide",
+      "description": "Learn how to use Letreiro Digital for both business users and developers. Create stunning LED displays or integrate our generator into your website.",
+      "keywords": ""
     }
   },
   "Navigation": {
@@ -26,7 +31,8 @@
     "marqueeLED": "Show",
     "normalMarquee": "Normal Mode",
     "letreiroOnlineLed": "LED Mode",
-    "ledModeDescription": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!"
+    "ledModeDescription": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!",
+    "getStarted": "Get Started"
   },
   "NotFound": {
     "title": "404 Not Found",
@@ -258,6 +264,85 @@
       "6-h2": "5. Contact Information",
       "6-p": "If you have any questions about these Terms, please contact us at support@letreiro.org.",
       "last-p": "By using Letreiro Digital, you acknowledge that you have read and agree to these Terms of Service."
+    }
+  },
+  "GetStarted": {
+    "title": "Get Started with Letreiro Digital",
+    "description": "Welcome to Letreiro Digital's quick start guide. Learn how to use our platform whether you're a business user or a developer.",
+    "forUsers": {
+      "title": "For Business Users",
+      "description": "Get started with Letreiro Digital's user-friendly interface to create eye-catching displays for your business.",
+      "steps": [
+        {
+          "title": "Choose Your Mode",
+          "description": "Start by selecting your preferred display mode: Normal Mode for classic scrolling text, or LED Mode for authentic LED display effects."
+        },
+        {
+          "title": "Customize Your Display",
+          "description": "Enter your text, choose colors for both text and background, and adjust the scrolling speed to match your needs."
+        },
+        {
+          "title": "Preview and Adjust",
+          "description": "Use our real-time preview to see exactly how your display will look. Make adjustments until you're satisfied with the result."
+        },
+        {
+          "title": "Go Full Screen",
+          "description": "Once you're happy with your display, use the full-screen mode to showcase your message. Perfect for public displays and presentations."
+        },
+        {
+          "title": "Save Your Settings",
+          "description": "Use the generator button to create a permanent link to your display configuration, making it easy to reuse or share."
+        }
+      ]
+    },
+    "forDevelopers": {
+      "title": "For Developers",
+      "description": "Integrate Letreiro Digital's display functionality into your own website using our generator page.",
+      "steps": [
+        {
+          "title": "Create Your Display",
+          "description": "Use our main interface to design your desired display, including text, colors, and animation settings."
+        },
+        {
+          "title": "Generate Embed URL",
+          "description": "Click the generator button to create a URL with your display configuration. This URL can be used in an iframe."
+        },
+        {
+          "title": "Embed in Your Website",
+          "description": "Use the generated URL in an iframe to embed the display in your website. Here's an example:"
+        }
+      ],
+      "embedExample": {
+        "title": "Embedding Example",
+        "description": "Copy and modify this code to embed Letreiro Digital in your website:",
+        "code": "<iframe\n  src=\"https://letreiro.org/generator?text=Your%20Text&textColor=FFFFFF&bgColor=000000&speed=5&displayMode=default\"\n  width=\"100%\"\n  height=\"200\"\n  frameborder=\"0\"\n  allowfullscreen\n></iframe>"
+      },
+      "parameters": {
+        "title": "URL Parameters",
+        "description": "Customize your display by modifying these URL parameters:",
+        "items": [
+          {
+            "param": "text",
+            "description": "Your display text (URL encoded)"
+          },
+          {
+            "param": "textColor",
+            "description": "Text color in hex format (without #)"
+          },
+          {
+            "param": "bgColor",
+            "description": "Background color in hex format (without #)"
+          },
+          {
+            "param": "speed",
+            "description": "Scrolling speed (1-10)"
+          },
+          {
+            "param": "displayMode",
+            "description": "Display mode (default, blur, or led)"
+          }
+        ]
+      }
     }
   }
 }

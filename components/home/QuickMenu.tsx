@@ -13,7 +13,7 @@ export default function QuickMenu() {
     { id: 'normal-marquee', label: 'normalMarquee', path: '/' },
     { id: 'letreiro-online-led', label: 'letreiroOnlineLed', path: '/letreiroonlineled' },
     // { id: 'Press Start 2P', label: 'Press Start 2P', path: '/pressstart2p' },
-    // { id: 'get-started', label: 'getStarted', path: '/getstarted' },
+    { id: 'get-started', label: 'getStarted', path: '/getstarted' },
   ];
 
   const handleMenuClick = (path: string) => {
