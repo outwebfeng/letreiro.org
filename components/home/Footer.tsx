@@ -25,8 +25,8 @@ export default function Footer() {
 
   const SupportLinks = [
     {
-      title: 'holocure',
-      href: 'https://holocure.fun/',
+      title: 'holidaycalendar',
+      href: 'https://holidaycalendar.net/',
     },
   ];
 
