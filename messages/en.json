@@ -26,7 +26,7 @@
   },
   "Home": {
     "title": "Letreiro Digital",
-    "subTitle": "Welcome to Letreiro Digital – Your Online LED Display Simulator.create dynamic letreiro online led displays with letreiro digital! customize text, colors, speeds, and more for eye-catching messages.",
+    "subTitle": "Welcome to Letreiro Digital – Your Letreiro Online LED Display Simulator.create dynamic letreiro online led displays with letreiro digital! customize text, colors, speeds, and more for eye-catching messages.",
     "marquee": {
       "title": "LED Display Simulator",
       "inputPlaceholder": "Enter text to display",
@@ -43,7 +43,7 @@
       "default": "Default"
     },
     "Welcome": {
-      "title": "Welcome to Letreiro Digital – Your Online LED Display Simulator",
+      "title": "Welcome to Letreiro Digital – Your Letreiro Online LED Display Simulator",
       "description": "Letreiro Digital is a powerful, browser-based LED display simulator that lets you create LED-style digital signs instantly. Perfect for businesses, events, and personal messages, Letreiro Digital offers features like custom text, adjustable colors, scrolling speed, flipping options, and a full-screen mode. Without any downloads or complex setup, Letreiro Digital lets you transform any device into an LED display board, ideal for grabbing attention and broadcasting dynamic messages."
     },
     "WhatIs": {
