@@ -12,21 +12,23 @@ export default function Page() {
   return (
     <div className='relative w-full'>
       <div className='relative mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8'>
-        <div className='mb-8 flex flex-col items-center text-center sm:mb-12 lg:mx-auto'>
-          <h1 className='mb-3 text-2xl font-extrabold text-[#FF782C] sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl'>
+        <div className='mb-4 flex flex-col items-center text-center sm:mb-6 lg:mx-auto'>
+          <h1 className='mb-2 text-2xl font-extrabold text-[#FF782C] sm:mb-3 sm:text-3xl md:text-4xl lg:text-6xl'>
             {t('title')}
           </h1>
-          <div className='max-w-6xl text-sm font-semibold text-black/70 sm:text-base md:text-lg lg:text-xl'>
+          <div className='max-w-6xl text-xs font-medium text-black/70 sm:text-sm md:text-base'>
             {t('subTitle')}
           </div>
         </div>
         
-        <MarqueeLED 
-          availableDisplayModes={['default', 'blur']}
-          showSpeedControl={true}
-          showFullscreenButton={true}
-          showGeneratorButton={true}
-        />
+        <div className='-mt-2 sm:-mt-4'>
+          <MarqueeLED 
+            availableDisplayModes={['default', 'blur']}
+            showSpeedControl={true}
+            showFullscreenButton={true}
+            showGeneratorButton={true}
+          />
+        </div>
 
         <div className='mb-8 space-y-6 sm:mb-12 sm:space-y-8'>
           {/* Features Section */}

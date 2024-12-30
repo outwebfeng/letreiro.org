@@ -137,6 +137,27 @@ export default function MarqueeLED({
       </div>
 
       <div className='grid gap-4 auto-rows-min'>
+        {/* LED显示组件 */}
+        <div ref={fullscreenRef} className="w-full h-64 relative">
+          {displayMode === 'led' ? (
+            <TrueLEDDisplay
+              text={config.text}
+              textColor={config.textColor}
+              bgColor={config.bgColor}
+              speed={Math.max(2, 20 - config.speed * 1.8)}
+              isFullscreen={isFullscreen}
+              fullscreenRef={fullscreenRef}
+            />
+          ) : (
+            <LEDDisplay
+              {...config}
+              isFullscreen={isFullscreen}
+              fullscreenRef={fullscreenRef}
+              isLEDMode={displayMode === 'blur'}
+            />
+          )}
+        </div>
+
         {/* 文本输入 */}
         <div className='flex flex-col gap-2'>
           <label htmlFor='led-text' className='text-sm font-medium text-gray-700'>
@@ -152,8 +173,8 @@ export default function MarqueeLED({
           />
         </div>
 
-        {/* 颜色选择器 */}
-        <div className='grid grid-cols-2 gap-4'>
+        {/* 颜色选择器和速度控制 */}
+        <div className='grid grid-cols-3 gap-4'>
           <div className='flex flex-col gap-2'>
             <label htmlFor='text-color' className='text-sm font-medium text-gray-700'>
               {t('textColor')}
@@ -179,44 +200,24 @@ export default function MarqueeLED({
               className='h-10 w-full cursor-pointer rounded-md border border-gray-300'
             />
           </div>
-        </div>
 
-        {/* 速度控制 */}
-        {showSpeedControl && (
-          <div className='flex flex-col gap-2'>
-            <label htmlFor='scroll-speed' className='text-sm font-medium text-gray-700'>
-              {t('speed')} ({config.speed})
-            </label>
-            <input
-              id='scroll-speed'
-              type='range'
-              min='1'
-              max='10'
-              value={config.speed}
-              onChange={(e) => updateConfig('speed', Number(e.target.value))}
-              className='w-full cursor-pointer'
-            />
-          </div>
-        )}
-
-        {/* LED显示组件 */}
-        <div ref={fullscreenRef} className="w-full h-64 relative">
-          {displayMode === 'led' ? (
-            <TrueLEDDisplay
-              text={config.text}
-              textColor={config.textColor}
-              bgColor={config.bgColor}
-              speed={Math.max(2, 20 - config.speed * 1.8)}
-              isFullscreen={isFullscreen}
-              fullscreenRef={fullscreenRef}
-            />
-          ) : (
-            <LEDDisplay
-              {...config}
-              isFullscreen={isFullscreen}
-              fullscreenRef={fullscreenRef}
-              isLEDMode={displayMode === 'blur'}
-            />
+          {/* 速度控制 */}
+          {showSpeedControl && (
+            <div className='flex flex-col gap-2'>
+              <label htmlFor='scroll-speed' className='text-sm font-medium text-gray-700'>
+                {t('speed')} ({config.speed})
+              </label>
+              <input
+                id='scroll-speed'
+                type='range'
+                min='1'
+                max='10'
+                value={config.speed}
+                onChange={(e) => updateConfig('speed', Number(e.target.value))}
+                className='h-10 w-full cursor-pointer rounded-md border border-gray-300 px-3 bg-white'
+                style={{ padding: '12px 12px' }}
+              />
+            </div>
           )}
         </div>
       </div>
