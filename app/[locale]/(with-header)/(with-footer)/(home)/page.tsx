@@ -162,12 +162,18 @@ export default function Page() {
               </div>
             </div>
 
-            <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto' }}>
+            <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto', minHeight: '16rem' }}>
               {/* LED显示组件 */}
               <div 
                 ref={fullscreenRef} 
-                className="w-full h-64 relative aspect-[4/1] min-h-[16rem]"
-                style={{ contain: 'layout paint size', height: '16rem', contentVisibility: 'auto' }}
+                className="w-full h-64 relative aspect-[4/1] min-h-[16rem] flex items-center justify-center"
+                style={{ 
+                  contain: 'layout paint size', 
+                  height: '16rem', 
+                  minHeight: '16rem', 
+                  display: 'flex',
+                  position: 'relative'
+                }}
               >
                 {displayMode === 'led' ? (
                   <TrueLEDDisplay

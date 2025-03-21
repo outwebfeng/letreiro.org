@@ -14,7 +14,7 @@ export default function GeneratorPage() {
   const displayMode = searchParams.get('displayMode') || 'default';
 
   return (
-    <div className="w-full h-screen flex items-center justify-center bg-black">
+    <div className="w-full h-screen flex items-center justify-center bg-black" style={{ overflow: 'hidden' }}>
       <div className="w-0 h-0 overflow-hidden">
         <a 
           href="https://letreiro.org" 
@@ -23,7 +23,7 @@ export default function GeneratorPage() {
           Letreiro Digital - Online LED Display Simulator
         </a>
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full flex items-center justify-center" style={{ contain: 'layout paint size' }}>
         {displayMode === 'led' ? (
           <TrueLEDDisplay
             text={decodeURIComponent(text)}

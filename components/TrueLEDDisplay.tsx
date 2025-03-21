@@ -188,7 +188,11 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
     <div 
       ref={fullscreenRef} 
       className={`w-full ${isGenerator ? 'h-full' : isFullscreen ? 'h-screen' : 'h-64'} min-h-[16rem] flex items-center justify-center`}
-      style={{ contain: 'layout paint size', padding: '0.5rem 0' }}
+      style={{ 
+        contain: 'layout paint size', 
+        padding: '0',
+        height: isGenerator ? '100%' : isFullscreen ? '100vh' : '16rem'
+      }}
     >
       <canvas
         ref={canvasRef}
@@ -201,7 +205,9 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
           maxHeight: isFullscreen ? '90vh' : '100%',
           margin: 'auto',
           width: isFullscreen ? '90%' : '100%',
-          padding: '0.25rem'
+          padding: '0',
+          willChange: 'transform',
+          display: 'block'
         }}
       />
     </div>

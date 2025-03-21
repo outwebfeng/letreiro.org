@@ -51,8 +51,8 @@ const LEDDisplay = memo(function LEDDisplayComponent({
     justifyContent: 'flex-start',
     position: 'relative' as const,
     overflow: 'hidden',
-    paddingTop: '0.5rem',
-    paddingBottom: '0.5rem'
+    paddingTop: '0',
+    paddingBottom: '0'
   };
 
   // 计算动画持续时间 - 优化性能
@@ -65,9 +65,11 @@ const LEDDisplay = memo(function LEDDisplayComponent({
       ? `marquee ${animationDuration} linear infinite`
       : 'none',
     fontSize: isFullscreen ? 'clamp(5rem, 50vh, 60rem)' : 'clamp(1rem, 16rem, 12.8rem)',
-    lineHeight: '1.3',
+    lineHeight: '1.2',
     paddingLeft: '100%',
     willChange: 'transform',
+    display: 'flex',
+    alignItems: 'center',
     ...getLEDStyles()
   };
 
@@ -92,12 +94,12 @@ const LEDDisplay = memo(function LEDDisplayComponent({
       style={containerStyles}
     >
       <div
-        className="whitespace-nowrap font-bold"
+        className="whitespace-nowrap font-bold flex items-center h-full"
         style={textStyles}
       >
         <span 
-          className={`inline-block py-4 ${isLEDMode ? 'led-text' : ''}`}
-          style={{ contentVisibility: 'auto' }}
+          className={`inline-block ${isLEDMode ? 'led-text' : ''}`}
+          style={{ padding: '0.25em 0' }}
         >
           {`${displayText}\u2005\u2005\u2005\u2005\u2005${displayText}\u2005\u2005\u2005\u2005\u2005${displayText}`}
         </span>

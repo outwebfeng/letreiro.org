@@ -11,7 +11,15 @@ function DisplayLoader({ bgColor = '#000000' }) {
   return (
     <div 
       className="w-full h-64 relative min-h-[16rem] rounded-lg flex items-center justify-center"
-      style={{ backgroundColor: bgColor }}
+      style={{ 
+        backgroundColor: bgColor,
+        contain: 'layout paint size',
+        height: '16rem',
+        minHeight: '16rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
     >
       <div className="w-8 h-8 border-4 border-t-[#FF782C] rounded-full animate-spin"></div>
     </div>
@@ -155,12 +163,18 @@ function MarqueeLEDComponent({
         </div>
       </div>
 
-      <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto' }}>
+      <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto', minHeight: '16rem' }}>
         {/* LED显示组件 - 添加固定高度样式以防止布局偏移 */}
         <div 
           ref={fullscreenRef} 
-          className="w-full h-64 relative aspect-[4/1] min-h-[16rem]"
-          style={{ contain: 'layout paint size', height: '16rem', contentVisibility: 'auto' }}
+          className="w-full h-64 relative aspect-[4/1] min-h-[16rem] flex items-center justify-center"
+          style={{ 
+            contain: 'layout paint size', 
+            height: '16rem', 
+            minHeight: '16rem',
+            display: 'flex',
+            position: 'relative'
+          }}
         >
           {!displayLoaded ? (
             <DisplayLoader bgColor={config.bgColor} />
