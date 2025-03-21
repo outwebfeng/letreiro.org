@@ -1,10 +1,22 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, memo } from 'react';
 import { useTranslations } from 'next-intl';
+import { Button } from '@/components/ui/button';
 import LEDDisplay from './LEDDisplay';
 import { TrueLEDDisplay } from './TrueLEDDisplay';
-import { Button } from '@/components/ui/button';
+
+// 显示组件的简单加载状态
+function DisplayLoader({ bgColor = '#000000' }) {
+  return (
+    <div 
+      className="w-full h-64 relative min-h-[16rem] rounded-lg flex items-center justify-center"
+      style={{ backgroundColor: bgColor }}
+    >
+      <div className="w-8 h-8 border-4 border-t-[#FF782C] rounded-full animate-spin"></div>
+    </div>
+  );
+}
 
 interface MarqueeLEDProps {
   initialDisplayMode?: 'default' | 'blur' | 'led';
@@ -14,7 +26,8 @@ interface MarqueeLEDProps {
   showGeneratorButton?: boolean;
 }
 
-export default function MarqueeLED({
+// 使用memo包装组件，避免不必要的重渲染
+function MarqueeLEDComponent({
   initialDisplayMode = 'default',
   availableDisplayModes = ['default', 'blur', 'led'],
   showSpeedControl = true,
@@ -33,6 +46,12 @@ export default function MarqueeLED({
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [displayMode, setDisplayMode] = useState<'default' | 'blur' | 'led'>(initialDisplayMode);
   const fullscreenRef = useRef<HTMLDivElement>(null);
+  const [displayLoaded, setDisplayLoaded] = useState(false);
+
+  // 确保显示组件加载完成
+  useEffect(() => {
+    setDisplayLoaded(true);
+  }, []);
 
   // 全屏相关逻辑
   useEffect(() => {
@@ -137,9 +156,15 @@ export default function MarqueeLED({
       </div>
 
       <div className='grid gap-4 auto-rows-min'>
-        {/* LED显示组件 */}
-        <div ref={fullscreenRef} className="w-full h-64 relative">
-          {displayMode === 'led' ? (
+        {/* LED显示组件 - 添加固定高度样式以防止布局偏移 */}
+        <div 
+          ref={fullscreenRef} 
+          className="w-full h-64 relative aspect-[4/1] min-h-[16rem]"
+          style={{ contain: 'layout paint size' }}
+        >
+          {!displayLoaded ? (
+            <DisplayLoader bgColor={config.bgColor} />
+          ) : displayMode === 'led' ? (
             <TrueLEDDisplay
               text={config.text}
               textColor={config.textColor}
@@ -224,3 +249,6 @@ export default function MarqueeLED({
     </div>
   );
 }
+
+// 使用memo优化组件
+export default memo(MarqueeLEDComponent);

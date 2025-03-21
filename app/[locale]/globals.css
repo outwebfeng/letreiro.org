@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 添加防止布局偏移的CSS规则 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 为可能导致CLS的元素设置content-visibility规则 */
+img, video, iframe {
+  content-visibility: auto;
+}
+
+/* 对于延迟加载的组件，设置最小高度 */
+.min-h-component {
+  min-height: 16rem;
+  contain: layout paint size;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -106,22 +126,27 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%) translateZ(0);
   }
 }
 
 .marquee-content {
   display: inline-block;
   white-space: nowrap;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 /* 确保文字不会被压缩 */
 .marquee-content span {
   display: inline-block;
   white-space: nowrap;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .led-text {
@@ -136,17 +161,45 @@
   background-size: 0.1em 0.1em;
   -webkit-background-clip: text;
   background-clip: text;
+  will-change: opacity;
+  backface-visibility: hidden;
 }
 
 .led-effect {
   animation: flicker 0.1s infinite;
+  will-change: opacity;
 }
 
 @keyframes flicker {
   0% {
     opacity: 0.97;
+    transform: translateZ(0);
   }
   100% {
     opacity: 1;
+    transform: translateZ(0);
   }
+}
+
+/* 为动画元素添加硬件加速 */
+.animate-hardware {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity;
+}
+
+/* 添加LCP图像优化 */
+img.optimize-lcp {
+  content-visibility: auto;
+  contain: layout paint style;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* 优化加载速度：为异步加载的大型内容预留空间 */
+.content-placeholder {
+  min-height: 200px;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
 }

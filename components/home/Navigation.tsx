@@ -18,7 +18,7 @@ export default function Navigation() {
               alt={t('logoAlt')}
               title={t('logoTitle')}
               width={64}
-              height={64}
+              height={48}
               className='size-[40px] lg:size-16'
             />
             <span className='text-lg font-semibold text-[#FF782C]'>{t('logoTitle')}</span>

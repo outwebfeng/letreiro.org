@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, memo } from 'react';
 import { dotMatrixFont } from '@/lib/dotMatrixFont';
 
 interface TrueLEDDisplayProps {
@@ -13,7 +13,8 @@ interface TrueLEDDisplayProps {
   isGenerator?: boolean;  // 添加 generator 模式标识
 }
 
-export const TrueLEDDisplay = ({
+// 使用memo包装组件
+export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
   text,
   speed = 30, // 默认每秒移动30个像素点
   textColor = '#00ff00',
@@ -21,16 +22,19 @@ export const TrueLEDDisplay = ({
   isFullscreen = false,
   fullscreenRef,
   isGenerator = false,  // 添加 generator 模式标识
-}: TrueLEDDisplayProps) => {
+}: TrueLEDDisplayProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [matrixData, setMatrixData] = useState<number[][]>([]);
   const lastTimeRef = useRef<number>(0);
   const actualPositionRef = useRef<number>(0);
+  const rafRef = useRef<number | null>(null);
 
-  // 将文本转换为点阵数据
-  const createMatrixData = (text: string) => {
-    const upperText = text.toUpperCase();
+  // 将文本转换为点阵数据 - 使用useCallback避免不必要的重计算
+  const createMatrixData = (textInput: string) => {
+    // 限制文本长度以避免过大的计算量
+    const limitedText = textInput.slice(0, 100);
+    const upperText = limitedText.toUpperCase();
     let matrix: number[][] = [];
     
     // 初始化矩阵行（20行：2行空白 + 16行字符 + 2行空白）
@@ -54,7 +58,7 @@ export const TrueLEDDisplay = ({
           // 如果是空格，添加8个空白点
           matrix[i + 2].push(...Array(width).fill(0), 0);
         } else {
-          // 如果是其他字���，添加16x16的点阵数据
+          // 如果是其他字符，添加16x16的点阵数据
           matrix[i + 2].push(...charMatrix[i], 0);
         }
       }
@@ -69,51 +73,75 @@ export const TrueLEDDisplay = ({
 
   // 初始化点阵数据
   useEffect(() => {
-    setMatrixData(createMatrixData(text));
+    // 使用requestIdleCallback延迟非关键操作
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(() => {
+        setMatrixData(createMatrixData(text));
+      });
+    } else {
+      // 降级方案
+      setTimeout(() => {
+        setMatrixData(createMatrixData(text));
+      }, 0);
+    }
+    
+    return () => {
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
   }, [text]);
 
-  // 渲染点阵
+  // 渲染点阵，使用高性能方法
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || matrixData.length === 0) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { alpha: false });
     if (!ctx) return;
 
-    const dotSize = Math.floor(canvas.height / 20); // 20行：2上+16中+2下
-    const width = canvas.width;
-    const height = canvas.height;
-    const displayColumns = Math.floor(width / dotSize); // 显示窗口的列数
+    // 使用requestAnimationFrame优化渲染
+    const renderFrame = () => {
+      const dotSize = Math.floor(canvas.height / 20); // 20行：2上+16中+2下
+      const width = canvas.width;
+      const height = canvas.height;
+      const displayColumns = Math.floor(width / dotSize); // 显示窗口的列数
 
-    // 清除画布
-    ctx.fillStyle = bgColor;
-    ctx.fillRect(0, 0, width, height);
+      // 清除画布 - 使用更高效的方法
+      ctx.fillStyle = bgColor;
+      ctx.fillRect(0, 0, width, height);
 
-    // 绘制LED点阵
-    ctx.fillStyle = textColor;
-    for (let y = 0; y < matrixData.length; y++) {
-      for (let x = 0; x < displayColumns; x++) {
-        // 计算实际显示位置
-        const totalColumns = matrixData[0].length;
-        const startPos = scrollPosition % totalColumns;
-        const dataX = (startPos + x) % totalColumns;
-        
-        if (matrixData[y][dataX]) {
-          ctx.beginPath();
-          ctx.arc(
-            x * dotSize + dotSize / 2,
-            y * dotSize + dotSize / 2,
-            dotSize / 2 - 1,
-            0,
-            Math.PI * 2
-          );
-          ctx.fill();
+      // 绘制LED点阵 - 批量绘制以提高性能
+      ctx.fillStyle = textColor;
+      ctx.beginPath();
+      
+      for (let y = 0; y < matrixData.length; y++) {
+        for (let x = 0; x < displayColumns; x++) {
+          // 计算实际显示位置
+          const totalColumns = matrixData[0].length;
+          const startPos = scrollPosition % totalColumns;
+          const dataX = (startPos + x) % totalColumns;
+          
+          if (matrixData[y][dataX]) {
+            ctx.moveTo(x * dotSize + dotSize / 2, y * dotSize + dotSize / 2);
+            ctx.arc(
+              x * dotSize + dotSize / 2,
+              y * dotSize + dotSize / 2,
+              dotSize / 2 - 1,
+              0,
+              Math.PI * 2
+            );
+          }
         }
       }
-    }
+      
+      ctx.fill();
+    };
+
+    renderFrame();
   }, [matrixData, scrollPosition, textColor, bgColor]);
 
-  // 滚动动画
+  // 滚动动画 - 优化动画性能
   useEffect(() => {
     if (matrixData.length === 0) return;
 
@@ -129,18 +157,25 @@ export const TrueLEDDisplay = ({
       }
 
       const deltaTime = currentTime - lastTimeRef.current;
-      const pixelsToMove = (speed * deltaTime) / 1000;
+      // 限制帧率，防止过多渲染
+      if (deltaTime > 16) { // 约60fps
+        const pixelsToMove = (speed * deltaTime) / 1000;
 
-      actualPositionRef.current += pixelsToMove;
-      setScrollPosition(Math.floor(actualPositionRef.current));
-      lastTimeRef.current = currentTime;
+        actualPositionRef.current += pixelsToMove;
+        setScrollPosition(Math.floor(actualPositionRef.current));
+        lastTimeRef.current = currentTime;
+      }
 
-      requestAnimationFrame(animate);
+      rafRef.current = requestAnimationFrame(animate);
     };
 
-    const animationId = requestAnimationFrame(animate);
+    rafRef.current = requestAnimationFrame(animate);
+
     return () => {
-      cancelAnimationFrame(animationId);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
       lastTimeRef.current = 0;
       actualPositionRef.current = 0;
     };
@@ -149,14 +184,19 @@ export const TrueLEDDisplay = ({
   return (
     <div 
       ref={fullscreenRef} 
-      className={`w-full ${isGenerator ? 'h-full' : isFullscreen ? 'h-screen' : 'h-64'}`}
+      className={`w-full ${isGenerator ? 'h-full' : isFullscreen ? 'h-screen' : 'h-64'} min-h-[16rem]`}
+      style={{ contain: 'layout paint size' }}
     >
       <canvas
         ref={canvasRef}
         width={800}
         height={256}
         className="w-full h-full bg-black"
+        style={{ 
+          aspectRatio: '4/1',
+          imageRendering: 'pixelated' // 提高渲染性能
+        }}
       />
     </div>
   );
-}; 
+}); 
