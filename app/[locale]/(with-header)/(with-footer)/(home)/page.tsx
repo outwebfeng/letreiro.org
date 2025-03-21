@@ -162,19 +162,19 @@ export default function Page() {
               </div>
             </div>
 
-            <div className='grid gap-4 auto-rows-min'>
+            <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto' }}>
               {/* LED显示组件 */}
               <div 
                 ref={fullscreenRef} 
                 className="w-full h-64 relative aspect-[4/1] min-h-[16rem]"
-                style={{ contain: 'layout paint size' }}
+                style={{ contain: 'layout paint size', height: '16rem', contentVisibility: 'auto' }}
               >
                 {displayMode === 'led' ? (
                   <TrueLEDDisplay
                     text={config.text}
                     textColor={config.textColor}
                     bgColor={config.bgColor}
-                    speed={Math.max(2, 20 - config.speed * 1.8)}
+                    speed={Math.max(1, 15 - config.speed * 1.3)}
                     isFullscreen={isFullscreen}
                     fullscreenRef={fullscreenRef}
                   />
@@ -189,7 +189,7 @@ export default function Page() {
               </div>
 
               {/* 文本输入 */}
-              <div className='flex flex-col gap-2'>
+              <div className='flex flex-col gap-2' style={{ minHeight: '80px', contain: 'paint layout' }}>
                 <label htmlFor='led-text' className='text-sm font-medium text-gray-700'>
                   {tMarquee('inputPlaceholder')}
                 </label>
@@ -204,7 +204,7 @@ export default function Page() {
               </div>
 
               {/* 颜色选择器和速度控制 */}
-              <div className='grid grid-cols-3 gap-4'>
+              <div className='grid grid-cols-3 gap-4' style={{ minHeight: '100px', contain: 'paint layout' }}>
                 <div className='flex flex-col gap-2'>
                   <label htmlFor='text-color' className='text-sm font-medium text-gray-700'>
                     {tMarquee('textColor')}
@@ -254,7 +254,8 @@ export default function Page() {
         <div className='mb-8 space-y-6 sm:mb-12 sm:space-y-8'>
           {/* Features Section */}
           <section className='rounded-lg bg-white p-6 shadow-lg'>
-            <h2 id='features' className='mb-6 border-b-2 border-[#FF782C] pb-2 text-2xl font-bold text-[#FF782C]'>
+            <h2 id='features' className='mb-6 border-b-2 border-[#FF782C] pb-2 text-2xl font-bold text-[#FF782C]'
+               style={{ contain: 'layout paint', minHeight: '2.5rem' }}>
               {t('Features.title')}
             </h2>
             <div className='space-y-4'>

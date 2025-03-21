@@ -155,12 +155,12 @@ function MarqueeLEDComponent({
         </div>
       </div>
 
-      <div className='grid gap-4 auto-rows-min'>
+      <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto' }}>
         {/* LED显示组件 - 添加固定高度样式以防止布局偏移 */}
         <div 
           ref={fullscreenRef} 
           className="w-full h-64 relative aspect-[4/1] min-h-[16rem]"
-          style={{ contain: 'layout paint size' }}
+          style={{ contain: 'layout paint size', height: '16rem', contentVisibility: 'auto' }}
         >
           {!displayLoaded ? (
             <DisplayLoader bgColor={config.bgColor} />
@@ -169,9 +169,10 @@ function MarqueeLEDComponent({
               text={config.text}
               textColor={config.textColor}
               bgColor={config.bgColor}
-              speed={Math.max(2, 20 - config.speed * 1.8)}
               isFullscreen={isFullscreen}
               fullscreenRef={fullscreenRef}
+              isGenerator={false}
+              speed={Math.max(1, 15 - config.speed * 1.3)}
             />
           ) : (
             <LEDDisplay
@@ -184,7 +185,7 @@ function MarqueeLEDComponent({
         </div>
 
         {/* 文本输入 */}
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-2' style={{ minHeight: '80px', contain: 'paint layout' }}>
           <label htmlFor='led-text' className='text-sm font-medium text-gray-700'>
             {t('inputPlaceholder')}
           </label>
@@ -199,7 +200,7 @@ function MarqueeLEDComponent({
         </div>
 
         {/* 颜色选择器和速度控制 */}
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-3 gap-4' style={{ minHeight: '100px', contain: 'paint layout' }}>
           <div className='flex flex-col gap-2'>
             <label htmlFor='text-color' className='text-sm font-medium text-gray-700'>
               {t('textColor')}

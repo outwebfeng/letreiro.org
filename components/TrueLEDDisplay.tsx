@@ -159,7 +159,10 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
       const deltaTime = currentTime - lastTimeRef.current;
       // 限制帧率，防止过多渲染
       if (deltaTime > 16) { // 约60fps
-        const pixelsToMove = (speed * deltaTime) / 1000;
+        // 根据全屏状态调整速度
+        const speedMultiplier = isFullscreen ? 0.45 : 0.6;
+        const actualSpeed = speed * speedMultiplier;
+        const pixelsToMove = (actualSpeed * deltaTime) / 1000;
 
         actualPositionRef.current += pixelsToMove;
         setScrollPosition(Math.floor(actualPositionRef.current));
@@ -179,22 +182,26 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
       lastTimeRef.current = 0;
       actualPositionRef.current = 0;
     };
-  }, [matrixData, speed]); // 确保 speed 变化时重新启动动画
+  }, [matrixData, speed, isFullscreen]); // 添加isFullscreen作为依赖
 
   return (
     <div 
       ref={fullscreenRef} 
-      className={`w-full ${isGenerator ? 'h-full' : isFullscreen ? 'h-screen' : 'h-64'} min-h-[16rem]`}
-      style={{ contain: 'layout paint size' }}
+      className={`w-full ${isGenerator ? 'h-full' : isFullscreen ? 'h-screen' : 'h-64'} min-h-[16rem] flex items-center justify-center`}
+      style={{ contain: 'layout paint size', padding: '0.5rem 0' }}
     >
       <canvas
         ref={canvasRef}
         width={800}
         height={256}
-        className="w-full h-full bg-black"
+        className="w-full h-full bg-black flex-1"
         style={{ 
           aspectRatio: '4/1',
-          imageRendering: 'pixelated' // 提高渲染性能
+          imageRendering: 'pixelated', // 提高渲染性能
+          maxHeight: isFullscreen ? '90vh' : '100%',
+          margin: 'auto',
+          width: isFullscreen ? '90%' : '100%',
+          padding: '0.25rem'
         }}
       />
     </div>

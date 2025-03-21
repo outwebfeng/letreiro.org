@@ -43,11 +43,20 @@ const LEDDisplay = memo(function LEDDisplayComponent({
   const containerStyles = {
     backgroundColor: bgColor,
     willChange: 'contents',
-    contain: 'layout paint size'
+    contain: 'layout paint size',
+    minHeight: '16rem',
+    height: isFullscreen ? '100%' : '16rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    position: 'relative' as const,
+    overflow: 'hidden',
+    paddingTop: '0.5rem',
+    paddingBottom: '0.5rem'
   };
 
   // 计算动画持续时间 - 优化性能
-  const animationDuration = `${Math.max(2, 4 * displayText.length / speed * (isFullscreen ? 2 : 1))}s`;
+  const animationDuration = `${Math.max(2, 6 * displayText.length / speed * (isFullscreen ? 2.5 : 1))}s`;
 
   const textStyles = {
     color: textColor,
@@ -55,11 +64,11 @@ const LEDDisplay = memo(function LEDDisplayComponent({
     animation: animationStarted 
       ? `marquee ${animationDuration} linear infinite`
       : 'none',
-    fontSize: isFullscreen ? 'clamp(1rem, 80vh, 20rem)' : 'clamp(1rem, 16rem, 12.8rem)',
-    lineHeight: '1',
+    fontSize: isFullscreen ? 'clamp(5rem, 50vh, 60rem)' : 'clamp(1rem, 16rem, 12.8rem)',
+    lineHeight: '1.3',
     paddingLeft: '100%',
     willChange: 'transform',
-    ...getLEDStyles(),
+    ...getLEDStyles()
   };
 
   // 优化动画启动
@@ -75,19 +84,19 @@ const LEDDisplay = memo(function LEDDisplayComponent({
   return (
     <div
       ref={fullscreenRef}
-      className={`relative overflow-hidden ${
+      className={`relative overflow-hidden flex items-center justify-start ${
         isFullscreen
-          ? 'h-screen md:h-screen max-md:landscape:fixed max-md:landscape:left-0 max-md:landscape:top-0 max-md:landscape:h-[100vw] max-md:landscape:w-[100vh] max-md:landscape:-translate-y-[calc((100vh-100vw)/2)] max-md:landscape:translate-x-[calc((100vh-100vw)/2)] max-md:landscape:rotate-90 max-md:landscape:bg-black'
+          ? 'h-screen w-screen md:h-screen md:w-screen max-md:landscape:fixed max-md:landscape:left-0 max-md:landscape:top-0 max-md:landscape:h-[100vw] max-md:landscape:w-[100vh] max-md:landscape:-translate-y-[calc((100vh-100vw)/2)] max-md:landscape:translate-x-[calc((100vh-100vw)/2)] max-md:landscape:rotate-90 max-md:landscape:bg-black'
           : 'h-64'
       } rounded-lg w-full min-h-[16rem] block`}
       style={containerStyles}
     >
       <div
-        className={`absolute whitespace-nowrap font-bold flex items-center h-full`}
+        className="whitespace-nowrap font-bold"
         style={textStyles}
       >
         <span 
-          className={`inline-block ${isLEDMode ? 'led-text' : ''}`}
+          className={`inline-block py-4 ${isLEDMode ? 'led-text' : ''}`}
           style={{ contentVisibility: 'auto' }}
         >
           {`${displayText}\u2005\u2005\u2005\u2005\u2005${displayText}\u2005\u2005\u2005\u2005\u2005${displayText}`}

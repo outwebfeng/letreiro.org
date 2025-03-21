@@ -29,7 +29,7 @@ export default function GeneratorPage() {
             text={decodeURIComponent(text)}
             textColor={textColor}
             bgColor={bgColor}
-            speed={Math.max(2, 20 - speed * 1.8)}
+            speed={Math.max(1, 15 - speed * 1.3)}
             isGenerator={true}
           />
         ) : (
