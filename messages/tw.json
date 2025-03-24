@@ -5,7 +5,7 @@
   "Metadata": {
     "home": {
       "title": "Letreiro Digital - 在線LED顯示屏模擬器",
-      "description": "使用Letreiro Digital創建動態在線LED顯示！自定義文本、顏色、速度等，打造引人注目的信息展示。",
+      "description": "使用Letreiro Digital創建動態在線LED顯示！自定義文本、顏色、速度和多種特效，打造引人注目的滾動信息展示。我們的瀏覽器模擬器讓您能夠輕鬆設計專業級LED看板，適用於商業廣告、活動宣傳或個人創意展示，無需安裝任何軟件。",
       "keywords": ""
     },
     "letreiroonlineled": {
@@ -15,7 +15,7 @@
     },
     "getstarted": {
       "title": "開始使用 Letreiro Digital - 快速入門指南",
-      "description": "了解如何使用 Letreiro Digital，無論您是企業用戶還是開發人員。創建精美的 LED 顯示或將我們的生成器整合到您的網站中。",
+      "description": "全面了解如何使用 Letreiro Digital，無論您是企業用戶還是開發人員。本指南提供詳細步驟，幫助您創建精美的 LED 顯示效果，包括自定義文字、顏色調整、速度控制，以及如何將我們的生成器整合到您的網站中，提升用戶體驗。",
       "keywords": ""
     }
   },
@@ -58,7 +58,7 @@
     },
     "Welcome": {
       "title": "歡迎來到Letreiro Digital – 您的線上LED顯示模擬器",
-      "description": "Letreiro Digital是一款強大的瀏覽器LED顯示模擬器，可讓您立即創建LED風格的數位標牌。適合商業、活動和個人訊息，Letreiro Digital提供自定義文字、可調顏色、滾動速度、翻轉選項和全螢幕模式等功能。無需下載或複雜設置，Letreiro Digital可將���何裝置轉變為LED顯示板，適合吸引注意並傳播動態訊息。"
+      "description": "Letreiro Digital是一款強大的瀏覽器LED顯示模擬器，可讓您立即創建LED風格的數位標牌。適合商業、活動和個人訊息，Letreiro Digital提供自定義文字、可調顏色、滾動速度、翻轉選項和全螢幕模式等功能。無需下載或複雜設置，Letreiro Digital可將何裝置轉變為LED顯示板，適合吸引注意並傳播動態訊息。"
     },
     "WhatIs": {
       "title": "什麼是Letreiro Digital？",
@@ -77,7 +77,7 @@
         },
         {
           "title": "滾動速度控制",
-          "description": "調整速度以創建適合訊息的滾動效果。放慢速度以便於閱讀或加��速度以創造興奮和緊迫感。"
+          "description": "調整速度以創建適合訊息的滾動效果。放慢速度以便於閱讀或加速速度以創造興奮和緊迫感。"
         },
         {
           "title": "翻轉和反向顯示選項",
@@ -140,7 +140,7 @@
       "items": [
         {
           "title": "無需下載軟體",
-          "description": "直接從瀏覽器訪問Letreiro Digital，使���在任何裝置上快速且易於使用。"
+          "description": "直接從瀏覽器訪問Letreiro Digital，使在任何裝置上快速且易於使用。"
         },
         {
           "title": "直觀的界面",
@@ -194,7 +194,7 @@
         },
         {
           "question": "是否可以將Letreiro Digital整合到外部螢幕或顯示器中？",
-          "answer": "可以，Letreiro Digital可以顯示在任何能接到瀏覽器的螢幕上���方便整合到外部監視器、投影機或智慧電視中。"
+          "answer": "可以，Letreiro Digital可以顯示在任何能接到瀏覽器的螢幕上方便整合到外部監視器、投影機或智慧電視中。"
         }
       ]
     },
