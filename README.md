@@ -38,14 +38,12 @@ Letreiro Digital is a modern web application that simulates LED display boards d
 │ ├── en.json
 │ ├── es.json
 │ ├── br.json
-│ └── tw.json
 └── public/ # Static assets
 
 
 ## 🌍 Internationalization
 The application supports multiple languages through next-intl:
 - English (en)
-- Chinese Traditional (tw)
 - Spanish (es)
 - Portuguese (br)
 
