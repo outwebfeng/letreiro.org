@@ -23,13 +23,6 @@ function InfoLink({
 export default function Footer() {
   const t = useTranslations('Footer');
 
-  const SupportLinks = [
-    {
-      title: 'holidaycalendar',
-      href: 'https://holidaycalendar.net/',
-    },
-  ];
-
   const INFO_LIST = [
     {
       title: t('privacy'),
@@ -49,27 +42,10 @@ export default function Footer() {
             <p className='mb-2 text-2xl font-bold text-[#FF782C] sm:text-3xl'>{t('title')}</p>
             <p className='text-center text-sm text-black/40 sm:text-left'>{t('subTitle')}</p>
           </div>
-          <div className='flex flex-col items-center sm:items-end'>
-            <div className='mb-4 flex flex-col items-center sm:mb-2 sm:items-end'>
-              <p className='mb-2 font-bold'>{t('support')}</p>
-              {SupportLinks.map((item) => (
-                <a
-                  href={item.href}
-                  key={item.href}
-                  target='_blank'
-                  rel='noreferrer'
-                  className='text-sm hover:opacity-70'
-                  title={item.title}
-                >
-                  {item.title}
-                </a>
-              ))}
-            </div>
-            <div className='flex flex-col items-center space-y-2 sm:items-end'>
-              {INFO_LIST.map((item) => (
-                <InfoLink key={item.href} href={item.href} title={item.title} />
-              ))}
-            </div>
+          <div className='flex flex-col items-center space-y-2 sm:items-end'>
+            {INFO_LIST.map((item) => (
+              <InfoLink key={item.href} href={item.href} title={item.title} />
+            ))}
           </div>
         </div>
       </div>
