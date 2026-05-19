@@ -1,4 +1,35 @@
+import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import { Metadata } from 'next';
+
+import { BASE_URL } from '@/lib/env';
+
+const DEFAULT_LOCALE = 'pt';
+const ROUTE_PATH = '/terms-of-service';
+
+function localePath(locale: string) {
+  return locale === DEFAULT_LOCALE ? '' : `/${locale}`;
+}
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'FooterNavigation.termsConditions' });
+
+  const canonicalUrl = `${BASE_URL}${localePath(locale)}${ROUTE_PATH}`;
+
+  return {
+    title: t('1-h1'),
+    description: t('1-p'),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        'pt-BR': `${BASE_URL}${ROUTE_PATH}`,
+        'en': `${BASE_URL}/en${ROUTE_PATH}`,
+        'es': `${BASE_URL}/es${ROUTE_PATH}`,
+        'x-default': `${BASE_URL}${ROUTE_PATH}`,
+      },
+    },
+  };
+}
 
 export default function Page() {
   const t = useTranslations('FooterNavigation.termsConditions');

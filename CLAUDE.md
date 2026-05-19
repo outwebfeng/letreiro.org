@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Package manager is `pnpm` (see `packageManager: pnpm@7.14.0` in `package.json`; `pnpm-lock.yaml` is the source of truth — `package-lock.json` is a stale leftover).
 
 ```bash
-pnpm install          # install dependencies (Node 20.x required, see .nvmrc)
+pnpm install          # install dependencies (Node 22.x required, see .nvmrc)
 pnpm dev              # start dev server on :3000
 pnpm build            # production build (Next.js)
 pnpm start            # serve production build

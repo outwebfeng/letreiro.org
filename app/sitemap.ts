@@ -3,6 +3,8 @@ import { locales } from '@/i18n';
 
 import { BASE_URL } from '@/lib/env';
 
+const DEFAULT_LOCALE = 'pt';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapRoutes: MetadataRoute.Sitemap = [
     {
@@ -12,13 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: '/letreiroonlineled', // letreiroonlineled
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: '/getstarted', // getstarted
+      url: '/letreiro-de-led',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
@@ -27,11 +23,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sitemapData = sitemapRoutes.flatMap((route) =>
     locales.map((locale) => {
-      const lang = locale === 'en' ? '' : `/${locale}`;
-      const routeUrl = route.url === '' ? '' : `/${route.url}`;
+      const lang = locale === DEFAULT_LOCALE ? '' : `/${locale}`;
       return {
         ...route,
-        url: `${BASE_URL}${lang}${routeUrl}`,
+        url: `${BASE_URL}${lang}${route.url}`,
       };
     }),
   );

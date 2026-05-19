@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
+
+import { useRouter } from '@/app/navigation';
 
 export default function QuickMenu() {
   const t = useTranslations('Navigation');
@@ -11,9 +12,7 @@ export default function QuickMenu() {
 
   const menuItems = [
     { id: 'normal-marquee', label: 'normalMarquee', path: '/' },
-    { id: 'letreiro-online-led', label: 'letreiroOnlineLed', path: '/letreiroonlineled' },
-    // { id: 'Press Start 2P', label: 'Press Start 2P', path: '/pressstart2p' },
-    { id: 'get-started', label: 'getStarted', path: '/getstarted' },
+    { id: 'letreiro-de-led', label: 'letreiroDeLed', path: '/letreiro-de-led' },
   ];
 
   const handleMenuClick = (path: string) => {

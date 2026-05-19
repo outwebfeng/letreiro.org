@@ -1686,7 +1686,7 @@ packages:
 
   'letreiro-digital@file:':
     resolution: {directory: '', type: directory}
-    engines: {node: 20.x}
+    engines: {node: 22.x}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}

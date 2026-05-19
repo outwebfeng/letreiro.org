@@ -9,8 +9,9 @@ export const config = {
 
 const middleware = createMiddleware({
   locales,
-  defaultLocale: 'en',
+  defaultLocale: 'pt',
   localePrefix: 'as-needed',
+  alternateLinks: false,
 });
 
 export default middleware;
