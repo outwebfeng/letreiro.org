@@ -4,14 +4,14 @@
   },
   "Metadata": {
     "home": {
-      "title": "Letreiro Digital · Simulador de Letreiro de LED Online",
-      "description": "Crie um letreiro digital no navegador: simulador de letreiro de LED online com texto, cores e velocidade personalizáveis. Grátis.",
-      "keywords": "letreiro digital, letreiro online, letreiro de LED, painel de LED online, simulador de letreiro, letreiro virtual grátis"
+      "title": "Letreiro de LED Online · Gerador de Letreiro Digital Grátis",
+      "description": "Gerador de letreiro de LED online grátis. Crie um letreiro digital no navegador: texto, cores e velocidade personalizáveis. Sem hardware, sem cadastro.",
+      "keywords": "letreiro de LED, letreiro online, letreiro digital, gerador de letreiro, painel de LED online, placa de LED, letreiro luminoso, letreiro animado, letreiro para loja, simulador de letreiro de LED"
     },
     "letreiroDeLed": {
-      "title": "Letreiro de LED Online · Letreiro Digital",
-      "description": "Gere um letreiro de LED online com texto rolando, cores e velocidade personalizáveis. Letreiro de LED para loja, eventos e anúncios — grátis.",
-      "keywords": "letreiro de LED, letreiro de LED para loja, texto rolando online, simulador de letreiro, letreiro virtual grátis, letreiro de LED personalizado"
+      "title": "Letreiro de LED Online Grátis · Gerador no Navegador",
+      "description": "Crie um letreiro de LED online com texto em rolagem — ideal para loja, eventos e anúncios. Personalize cores, velocidade e efeitos do letreiro digital.",
+      "keywords": "letreiro de LED, letreiro de LED online, letreiro de LED para loja, painel de LED virtual, letreiro digital de LED, placa de LED online, simulador de letreiro de LED, texto em rolagem online"
     }
   },
   "Navigation": {
@@ -25,19 +25,18 @@
     "toggleMenu": "Alternar Menu",
     "marqueeLED": "Mostrar",
     "normalMarquee": "Modo Normal",
-    "letreiroDeLed": "Modo LED",
-    "ledModeDescription": "Gere um letreiro de LED online com texto rolando, cores e velocidade personalizáveis. Ideal para letreiros digitais."
+    "letreiroDeLed": "Modo LED"
   },
   "NotFound": {
     "title": "404 Não Encontrado",
     "goHome": "voltar ao início"
   },
   "Home": {
-    "title": "Letreiro Digital",
-    "subTitle": "Bem-vindo ao Letreiro Digital — seu simulador de letreiro de LED online. Crie letreiros digitais no navegador: personalize texto, cores, velocidade de rolagem e efeitos.",
+    "title": "Letreiro de LED Online — Gerador de Letreiro Digital Grátis",
+    "subTitle": "Crie seu letreiro de LED em segundos, direto no navegador. Uma alternativa virtual aos painéis de LED, placas de LED e letreiros luminosos tradicionais — sem hardware, sem cadastro, 100% grátis. Personalize texto, cores, velocidade de rolagem e efeitos.",
     "marquee": {
       "title": "Simulador de Letreiro de LED",
-      "inputPlaceholder": "Digite o texto a ser exibido",
+      "inputPlaceholder": "Digite o texto que será exibido",
       "textColor": "Cor do Texto",
       "bgColor": "Cor de Fundo",
       "speed": "Velocidade de Rolagem",
@@ -47,41 +46,45 @@
       "normalMode": "Normal",
       "ledMode": "LED",
       "generator": "Gerador",
-      "blur": "Borrão",
+      "blur": "Desfoque",
       "default": "Padrão"
     },
     "Welcome": {
-      "title": "Bem-vindo ao Letreiro Digital — seu simulador de letreiro de LED online",
-      "description": "O Letreiro Digital é um simulador de letreiro de LED online e baseado no navegador: crie letreiros digitais em segundos. Perfeito para lojas, eventos e mensagens pessoais, o Letreiro Digital oferece texto personalizado, cores ajustáveis, controle de velocidade de rolagem, efeitos e modo tela cheia. Sem downloads nem configuração complicada: transforme qualquer dispositivo em um painel de LED online."
+      "title": "Bem-vindo ao Letreiro.org — seu gerador de letreiro de LED online",
+      "description": "O Letreiro.org é um gerador de letreiro de LED online que roda direto no navegador: crie letreiros digitais em segundos. Uma alternativa virtual aos painéis de LED, placas de LED, letreiros luminosos e letreiros neon tradicionais, sem custo de hardware. Perfeito para lojas, eventos e mensagens pessoais — personalize texto, cores, velocidade de rolagem e efeitos. Sem instalação, sem cadastro: transforme qualquer dispositivo em um letreiro de LED online."
     },
     "WhatIs": {
-      "title": "O que é o Letreiro Digital?",
-      "description": "O Letreiro Digital (simulador de letreiro de LED online) reproduz o efeito de painéis de LED dentro do navegador. Você digita o texto, ajusta as configurações e gera um letreiro virtual grátis pronto para compartilhar anúncios, promoções ou recados divertidos — sem precisar de um painel de LED físico."
+      "title": "O que é Letreiro de LED Online?",
+      "description": "Um letreiro de LED online é a versão digital de um painel de LED físico, que roda inteiramente no navegador. Você digita o texto, ajusta cores e velocidade, e gera um letreiro digital virtual pronto para compartilhar anúncios, promoções ou recados — uma alternativa moderna e gratuita aos letreiros luminosos, letreiros eletrônicos e placas de LED tradicionais. Ideal para lojas, eventos, redes sociais e qualquer ocasião em que você queira chamar atenção com texto em movimento."
     },
     "Features": {
       "title": "Principais recursos do simulador de letreiro de LED",
       "items": [
         {
-          "title": "Entrada de texto personalizada",
-          "description": "Digite sua mensagem no campo de entrada e veja-a ganhar vida como um letreiro digital. Ideal para qualquer ocasião."
+          "title": "Texto personalizado",
+          "description": "Digite sua mensagem na caixa de texto e veja-a ganhar vida como um letreiro digital. Ideal para qualquer ocasião."
         },
         {
-          "title": "Cores de texto e fundo ajustáveis",
-          "description": "Escolha entre todas as cores para texto e fundo e deixe seu letreiro de LED com alto contraste e alinhado à identidade da sua marca."
+          "title": "Cores ajustáveis de texto e fundo",
+          "description": "Escolha entre todas as cores para texto e fundo, deixando seu letreiro de LED com alto contraste e alinhado à identidade da sua marca."
         },
         {
           "title": "Controle de velocidade de rolagem",
-          "description": "Ajuste a velocidade do texto rolando online para criar o ritmo certo: mais lento para leitura confortável ou mais rápido para dar urgência."
+          "description": "Ajuste a velocidade do texto em rolagem para criar o ritmo certo: mais lento para leitura confortável ou mais rápido para dar urgência."
         },
         {
           "title": "Efeitos de inversão e espelhamento",
-          "description": "Use as opções de inversão e espelhamento para destacar a mensagem e mudar o visual do letreiro virtual em um clique."
+          "description": "Use as opções de inversão e espelhamento para destacar a mensagem e mudar a aparência do letreiro virtual em um clique."
         },
         {
           "title": "Modo tela cheia",
-          "description": "Ative o modo tela cheia e transforme qualquer dispositivo em um painel de LED online em tamanho grande — perfeito para lojas e eventos."
+          "description": "Ative o modo tela cheia e transforme qualquer dispositivo em um painel de LED online — perfeito para lojas e eventos."
         }
       ]
+    },
+    "LedPage": {
+      "h1": "Letreiro de LED Online — Simulador Grátis no Navegador",
+      "subTitle": "Crie um letreiro de LED com texto em rolagem para loja, eventos ou redes sociais. Alternativa virtual aos painéis de LED, placas de LED e letreiros luminosos tradicionais — direto no navegador, sem hardware nem cadastro. Personalize cores, velocidade e efeitos do seu letreiro digital."
     },
     "LEDFeatures": {
       "title": "Como funciona o letreiro de LED online",
@@ -92,7 +95,7 @@
         },
         {
           "title": "Tecnologias web modernas",
-          "description": "Tudo é renderizado com HTML, CSS e JavaScript direto no navegador, sem necessidade de plugins ou instalações."
+          "description": "Tudo é renderizado com HTML, CSS e JavaScript direto no navegador, sem precisar de plugins ou instalação."
         },
         {
           "title": "Matriz digital",
@@ -100,7 +103,7 @@
         },
         {
           "title": "Geração dinâmica de padrões",
-          "description": "Cada caractere é codificado nesse formato de matriz e renderizado em tempo real no grid de LED simulado."
+          "description": "Cada caractere é codificado nesse formato de matriz e renderizado em tempo real na grade de LED simulada."
         }
       ]
     },
@@ -109,15 +112,15 @@
       "steps": [
         {
           "step": "Digite sua mensagem",
-          "description": "Comece digitando o texto na área de entrada. O Letreiro Digital aceita diferentes caracteres: de anúncios curtos a mensagens mais longas."
+          "description": "Comece digitando o texto na caixa de texto. O Letreiro Digital aceita desde anúncios curtos até mensagens mais longas."
         },
         {
           "step": "Escolha as cores",
-          "description": "Selecione as cores do texto e do fundo do letreiro de LED, combinando com a marca ou o tema que você quer transmitir."
+          "description": "Selecione as cores do texto e do fundo do letreiro de LED combinando com a marca ou o tema que você quer transmitir."
         },
         {
           "step": "Ajuste a velocidade de rolagem",
-          "description": "Defina a velocidade ideal do texto rolando online: mais lento para legibilidade ou mais rápido para dar dinamismo."
+          "description": "Defina a velocidade ideal do texto em rolagem: mais lenta para facilitar a leitura ou mais rápida para dar dinamismo."
         },
         {
           "step": "Aplique efeitos",
@@ -155,11 +158,11 @@
         },
         {
           "tip": "Aposte em cores de alto contraste",
-          "description": "Combine cores de texto e fundo com contraste para manter a legibilidade do letreiro digital."
+          "description": "Combine cores contrastantes de texto e fundo para manter a legibilidade do letreiro digital."
         },
         {
           "tip": "Escolha a velocidade certa",
-          "description": "Ajuste a velocidade ao seu público: mais lenta para informações, mais rápida para chamar atenção."
+          "description": "Ajuste a velocidade ao seu público: mais lenta para passar informações, mais rápida para chamar atenção."
         },
         {
           "tip": "Explore efeitos diferentes",
@@ -172,11 +175,11 @@
       "questions": [
         {
           "question": "O Letreiro Digital é gratuito?",
-          "answer": "Sim. Os recursos básicos do letreiro virtual grátis estão disponíveis sem custo."
+          "answer": "Sim. Todos os recursos básicos estão disponíveis sem custo nenhum."
         },
         {
           "question": "Funciona em dispositivos móveis?",
-          "answer": "Sim. O Letreiro Digital é otimizado para celular e tablet e pode ser usado em qualquer dispositivo com navegador."
+          "answer": "Sim. O Letreiro Digital é otimizado para celular e tablet, e pode ser usado em qualquer dispositivo com navegador."
         },
         {
           "question": "Posso usar para exibição pública?",
@@ -184,11 +187,11 @@
         },
         {
           "question": "Funciona offline?",
-          "answer": "Não. O Letreiro Digital precisa de conexão com a internet por ser uma plataforma baseada no navegador."
+          "answer": "Não. O Letreiro Digital precisa de conexão com a internet por ser uma plataforma online."
         },
         {
           "question": "Posso exibir em telas externas?",
-          "answer": "Sim. O letreiro digital pode ser exibido em qualquer tela conectada ao navegador — monitores, projetores e TVs inteligentes."
+          "answer": "Sim. O letreiro digital pode ser exibido em qualquer tela conectada ao seu dispositivo — monitores, projetores e TVs inteligentes."
         }
       ]
     },
@@ -197,11 +200,11 @@
       "questions": [
         {
           "question": "O que é o letreiro de LED online?",
-          "answer": "É uma ferramenta para criar letreiros digitais com texto rolando que imitam painéis de LED. Ajuda lojas e criadores a gerar anúncios chamativos direto no navegador, com cores vibrantes e configurações personalizáveis."
+          "answer": "É uma ferramenta para criar letreiros digitais com texto em rolagem que imitam painéis de LED. Ajuda lojas e criadores a gerar anúncios chamativos direto no navegador, com cores vibrantes e configurações personalizáveis."
         },
         {
-          "question": "Como personalizar o texto rolando?",
-          "answer": "Digite o texto, escolha cores e ajuste a velocidade de rolagem no simulador de letreiro. A pré-visualização mostra em tempo real como o letreiro de LED online ficará."
+          "question": "Como personalizar o texto em rolagem?",
+          "answer": "Digite o texto, escolha as cores e ajuste a velocidade de rolagem no simulador de letreiro. A pré-visualização mostra em tempo real como o letreiro de LED online vai ficar."
         },
         {
           "question": "Quais são os benefícios de um letreiro de LED online?",
@@ -209,7 +212,7 @@
         },
         {
           "question": "Existe limite de caracteres?",
-          "answer": "Não há limite rígido, mas textos muito longos levam mais tempo para rolar. Recomendamos manter a mensagem concisa para um melhor impacto visual."
+          "answer": "Não há limite rígido, mas textos muito longos demoram mais para rolar. Recomendamos manter a mensagem concisa para um melhor impacto visual."
         },
         {
           "question": "Posso simular efeitos diferentes?",
@@ -217,7 +220,7 @@
         },
         {
           "question": "O letreiro de LED online é gratuito?",
-          "answer": "Sim. A versão gratuita cobre as principais funções de criação de letreiros digitais com texto rolando."
+          "answer": "Sim. As principais funções de criação de letreiros digitais com texto em rolagem são totalmente gratuitas."
         }
       ]
     }

@@ -7,7 +7,6 @@ const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr
 const MarqueeLED = dynamic(() => import('@/components/MarqueeLED'), { ssr: false });
 
 export default function LEDModeContent() {
-  const t = useTranslations('Navigation');
   const homeT = useTranslations('Home');
 
   return (
@@ -15,10 +14,10 @@ export default function LEDModeContent() {
       <div className='relative mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8'>
         <div className='mb-8 flex flex-col items-center text-center sm:mb-12 lg:mx-auto'>
           <h1 className='mb-3 text-2xl font-extrabold text-[#FF782C] sm:mb-4 sm:text-3xl md:text-4xl lg:text-6xl'>
-            {t('letreiroDeLed')}
+            {homeT('LedPage.h1')}
           </h1>
           <div className='max-w-6xl text-sm font-semibold text-black/70 sm:text-base md:text-lg lg:text-xl'>
-            {t('ledModeDescription')}
+            {homeT('LedPage.subTitle')}
           </div>
         </div>
         

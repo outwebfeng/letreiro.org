@@ -1,21 +1,21 @@
 {
   "Common": {
-    "loading": "loading..."
+    "loading": "Loading..."
   },
   "Metadata": {
     "home": {
-      "title": "Letreiro Digital - letreiro online led display simulator",
-      "description": "create dynamic letreiro online led displays with letreiro digital! customize text, colors, speeds, and more for eye-catching messages.",
-      "keywords": ""
+      "title": "LED Marquee Online · Free Digital LED Sign Generator",
+      "description": "Free online LED marquee generator. Create scrolling LED signs in your browser — customize text, colors and speed. No hardware, no signup.",
+      "keywords": "LED marquee online, LED sign online, digital LED display, scrolling text generator, virtual LED panel, online LED board, free LED sign maker"
     },
     "letreiroDeLed": {
-      "title": "LED Mode - Letreiro Online LED | Digital Scrolling Display",
-      "description": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!",
-      "keywords": ""
+      "title": "Online LED Sign · Free Marquee Generator in the Browser",
+      "description": "Create an online LED sign with scrolling text — perfect for shops, events and social media. Customize colors, speed and effects. Free in the browser.",
+      "keywords": "online LED sign, LED display online, LED marquee for shop, virtual LED panel, scrolling text online, digital LED board"
     }
   },
   "Navigation": {
-    "title": "Letreiro Digital - letreiro online led display simulator",
+    "title": "Letreiro Digital — Online LED Marquee Simulator",
     "logoAlt": "Letreiro Digital Logo",
     "logoTitle": "Letreiro Digital",
     "features": "Features",
@@ -23,21 +23,20 @@
     "howToUse": "How to Use",
     "faq": "FAQ",
     "toggleMenu": "Toggle menu",
-    "marqueeLED": "Show",
+    "marqueeLED": "Preview",
     "normalMarquee": "Normal Mode",
-    "letreiroDeLed": "LED Mode",
-    "ledModeDescription": "Create dynamic LED scrolling text with Letreiro Online. Simulate LED effects with customizable text, colors, and speed. Perfect for letreiro digital displays!"
+    "letreiroDeLed": "LED Mode"
   },
   "NotFound": {
     "title": "404 Not Found",
-    "goHome": "go home"
+    "goHome": "Back to home"
   },
   "Home": {
-    "title": "Letreiro Digital",
-    "subTitle": "Welcome to Letreiro Digital – Your Letreiro Online LED Display Simulator.create dynamic letreiro online led displays with letreiro digital! customize text, colors, speeds, and more for eye-catching messages.",
+    "title": "LED Marquee Online — Free Digital LED Sign Generator",
+    "subTitle": "Create your own LED sign in seconds, right in the browser. A virtual alternative to physical LED panels, LED boards and luminous signs — no hardware, no signup, 100% free. Customize text, colors, scrolling speed and effects.",
     "marquee": {
       "title": "LED Display Simulator",
-      "inputPlaceholder": "Enter text to display",
+      "inputPlaceholder": "Enter the text you want to display",
       "textColor": "Text Color",
       "bgColor": "Background Color",
       "speed": "Scroll Speed",
@@ -51,56 +50,60 @@
       "default": "Default"
     },
     "Welcome": {
-      "title": "Welcome to Letreiro Digital – Your Letreiro Online LED Display Simulator",
-      "description": "Letreiro Digital is a powerful, browser-based LED display simulator that lets you create LED-style digital signs instantly. Perfect for businesses, events, and personal messages, Letreiro Digital offers features like custom text, adjustable colors, scrolling speed, flipping options, and a full-screen mode. Without any downloads or complex setup, Letreiro Digital lets you transform any device into an LED display board, ideal for grabbing attention and broadcasting dynamic messages."
+      "title": "Welcome to Letreiro.org — Your Online LED Marquee Generator",
+      "description": "Letreiro.org is a browser-based LED marquee generator that lets you create LED-style digital signs instantly. A virtual alternative to physical LED panels, LED boards and luminous signs — no hardware cost, no installation. Perfect for shops, events and personal messages, with custom text, adjustable colors, scrolling speed control, effects and full-screen mode. No downloads, no signup — turn any device into an online LED display."
     },
     "WhatIs": {
-      "title": "What is Letreiro Digital?",
-      "description": "Letreiro Digital (LED digital display simulator) replicates the effect of LED displays in your browser. It allows users to input text and configure various settings to create eye-catching digital signs. With Letreiro Digital, there's no need for physical LED boards; our platform gives you the same dynamic look and feel directly on your screen. This makes it ideal for sharing announcements, promotions, or fun messages quickly and effectively."
+      "title": "What is an Online LED Marquee?",
+      "description": "An online LED marquee is the digital version of a physical LED display, running entirely in your browser. You type the text, adjust colors and speed, and generate a virtual LED sign ready to share announcements, promotions or fun messages — a modern, free alternative to traditional luminous signs, electronic boards and LED panels. Ideal for shops, events, social media and any occasion where you want to grab attention with scrolling text."
     },
     "Features": {
-      "title": "Key Features of Letreiro Digital's Simulator",
+      "title": "Key Features of the Letreiro Digital Simulator",
       "items": [
         {
           "title": "Custom Text Input",
-          "description": "Enter your message directly into the input field, and watch it come to life on the display. With Letreiro Digital, you can create personalized digital signs for any occasion."
+          "description": "Type your message into the text box and watch it come to life on the display. Create personalized digital signs for any occasion."
         },
         {
           "title": "Adjustable Text and Background Colors",
-          "description": "Choose from a full color spectrum for both text and background, creating a high-contrast, vibrant look. Letreiro Digital enables you to match the colors of your display to your brand or style."
+          "description": "Choose from a full color spectrum for both text and background, creating a high-contrast, vibrant look that matches your brand or style."
         },
         {
           "title": "Scrolling Speed Control",
-          "description": "Adjust the speed to create the perfect scrolling effect for your message. Slow down for readable information or speed up to create excitement and urgency."
+          "description": "Adjust the speed to create the perfect scrolling effect for your message. Slow it down for easier reading, or speed it up to create excitement and urgency."
         },
         {
           "title": "Flip and Reverse Display Options",
-          "description": "Add extra style with flip and reverse options, making your message more engaging and interactive. These settings let you change up the look of your display instantly."
+          "description": "Add extra style with flip and reverse options to make your message more engaging. These settings let you change the look of your display instantly."
         },
         {
           "title": "Full-Screen Mode",
-          "description": "Maximize your impact by switching to full-screen mode, transforming any screen into a full-scale LED signboard that's ideal for events or busy settings."
+          "description": "Maximize your impact by switching to full-screen mode — turn any screen into a full-scale LED signboard, ideal for events or high-traffic areas."
         }
       ]
     },
+    "LedPage": {
+      "h1": "Online LED Sign — Free Marquee Generator in the Browser",
+      "subTitle": "Create an LED sign with scrolling text for shops, events or social media. A virtual alternative to physical LED panels, LED boards and luminous signs — right in the browser, with no hardware and no signup. Customize colors, speed and effects of your digital LED display."
+    },
     "LEDFeatures": {
-      "title": "How Letreiro Online LED Works",
+      "title": "How the Online LED Marquee Works",
       "items": [
         {
           "title": "Dot Matrix Simulation",
-          "description": "Letreiro Online LED replicates the functionality of a traditional LED scrolling display by leveraging the principles of dot matrix and diode simulation. In a physical LED display, a dot matrix consists of rows and columns of light-emitting diodes (LEDs) that can be individually turned on or off to create patterns, characters, and animations."
+          "description": "Our online LED marquee replicates a traditional LED scrolling display using the principles of dot matrix and diode simulation. A physical LED display uses rows and columns of light-emitting diodes (LEDs) that turn on and off individually to form patterns, characters, and animations."
         },
         {
           "title": "Web Technology Implementation",
-          "description": "This online version emulates that behavior using modern web technologies like HTML, CSS, and JavaScript."
+          "description": "This online version recreates that behavior using modern web technologies — HTML, CSS, and JavaScript — right in your browser."
         },
         {
           "title": "Digital Array System",
-          "description": "The foundation of Letreiro Online LED is a two-dimensional array, where each element represents a diode in the dot matrix. For example, a \"1\" in the array signifies a lit diode (on), while a \"0\" signifies an unlit diode (off)."
+          "description": "Under the hood, the simulator is a two-dimensional array where each element represents a diode in the dot matrix. A \"1\" means the diode is on, a \"0\" means it's off."
         },
         {
           "title": "Dynamic Pattern Generation",
-          "description": "Characters or messages are encoded into this matrix format, creating a predefined pattern for each letter or symbol. These patterns are then dynamically displayed on a simulated LED grid."
+          "description": "Each character is encoded into the matrix format, creating a pattern for every letter or symbol. These patterns are then rendered in real time on the simulated LED grid."
         }
       ]
     },
@@ -109,40 +112,40 @@
       "steps": [
         {
           "step": "Enter Your Message",
-          "description": "Begin by typing your text into the input area. Letreiro Digital supports a range of characters, so you can craft anything from short announcements to fun messages."
+          "description": "Start by typing your text into the text box. Letreiro Digital handles anything from short announcements to longer messages."
         },
         {
           "step": "Select Your Colors",
-          "description": "Choose colors for both the text and background, selecting shades that match your brand or desired theme."
+          "description": "Pick colors for the text and background — choose shades that match your brand or the theme you want to convey."
         },
         {
           "step": "Adjust Scroll Speed",
-          "description": "Set the ideal speed for your message. Whether you want slow, readable text or a faster, dynamic scroll, Letreiro Digital gives you full control."
+          "description": "Set the ideal speed for your message. Whether you want slow, readable text or a faster, dynamic scroll, you get full control."
         },
         {
           "step": "Apply Effects",
-          "description": "Experiment with flip and reverse settings to add interest and depth to your display."
+          "description": "Experiment with flip and reverse settings to add depth and visual interest to your display."
         },
         {
           "step": "Go Full Screen",
-          "description": "Use full-screen mode to take over your display, ideal for public areas or events where you want maximum visibility."
+          "description": "Use full-screen mode to take over your display — ideal for public areas, shops, and events where you want maximum visibility."
         }
       ]
     },
     "WhyChoose": {
-      "title": "Why Choose Letreiro Digital for Your LED Display Needs?",
+      "title": "Why Choose Letreiro Digital for Your LED Display?",
       "items": [
         {
-          "title": "No Software Downloads Required",
-          "description": "Access Letreiro Digital directly from your browser, making it quick and easy to use on any device."
+          "title": "No Downloads Required",
+          "description": "Letreiro Digital runs right in your browser — use it on any device, no installation needed."
         },
         {
           "title": "Intuitive Interface",
-          "description": "Our simple layout makes it easy for anyone to create LED displays, no technical expertise needed."
+          "description": "A simple layout that lets anyone create an online LED display, no technical knowledge required."
         },
         {
           "title": "Multiple Applications",
-          "description": "From promotions to personal messages, Letreiro Digital is versatile enough to suit any need."
+          "description": "From shop promotions to personal messages, Letreiro Digital adapts to any need."
         }
       ]
     },
@@ -151,15 +154,15 @@
       "tips": [
         {
           "tip": "Keep Text Short and Simple",
-          "description": "Use concise phrases to make sure your message is quickly understood."
+          "description": "Use concise phrases to make sure your message gets read quickly."
         },
         {
           "tip": "Use High-Contrast Colors",
-          "description": "Ensure readability by using contrasting text and background colors."
+          "description": "Pair contrasting text and background colors to keep your message readable from a distance."
         },
         {
-          "tip": "Choose Appropriate Scroll Speeds",
-          "description": "Adjust speed based on your audience. Slow speeds work well for informational messages, while fast scrolling adds excitement."
+          "tip": "Choose the Right Scroll Speed",
+          "description": "Match speed to your audience — slower for information, faster to grab attention."
         },
         {
           "tip": "Try Different Effects",
@@ -172,59 +175,59 @@
       "questions": [
         {
           "question": "Is Letreiro Digital free?",
-          "answer": "Yes, our basic features are available at no cost, allowing you to create digital displays without any fees."
+          "answer": "Yes — all basic features are completely free, with no fees or subscription."
         },
         {
           "question": "Does it work on mobile devices?",
-          "answer": "Absolutely! Letreiro Digital is optimized for mobile, making it accessible on any device with a browser."
+          "answer": "Absolutely. Letreiro Digital is optimized for phones and tablets, and works on any device with a browser."
         },
         {
           "question": "Can I use Letreiro Digital for public displays?",
-          "answer": "Yes, with full-screen mode, Letreiro Digital can be used for digital signage in stores, events, or other public settings."
+          "answer": "Yes. With full-screen mode, Letreiro Digital can be used for digital signage in shops, events, or other public spaces."
         },
         {
-          "question": "Can I use Letreiro Digital without an internet connection?",
-          "answer": "No, Letreiro Digital requires an internet connection as it is a browser-based platform. However, any device with an active internet connection can access and utilize all features of Letreiro Digital."
+          "question": "Does it work offline?",
+          "answer": "No. Letreiro Digital needs an internet connection since it's an online platform."
         },
         {
-          "question": "Is it possible to integrate Letreiro Digital with external screens or displays?",
-          "answer": "Yes, Letreiro Digital can be displayed on any screen that connects to a browser, making it easy to integrate with external monitors, projectors, or smart TVs."
+          "question": "Can I show it on external screens?",
+          "answer": "Yes. Letreiro Digital can be shown on any screen connected to your device — external monitors, projectors, or smart TVs."
         }
       ]
     },
     "LEDFAQ": {
-      "title": "Frequently Asked Questions about Letreiro Online LED",
+      "title": "Frequently Asked Questions about the Online LED Marquee",
       "questions": [
         {
-          "question": "What is Letreiro Online LED?",
-          "answer": "Letreiro Online LED is an innovative tool that allows users to create dynamic scrolling text effects that mimic traditional LED displays. It is designed to help individuals and businesses generate captivating digital signage and announcements that capture attention through vibrant colors and customizable settings."
+          "question": "What is an online LED marquee?",
+          "answer": "It's a tool to create scrolling text effects that mimic traditional LED displays. It helps shops and creators generate eye-catching digital signage right in the browser, with vibrant colors and customizable settings."
         },
         {
-          "question": "How can I customize my LED scrolling text?",
-          "answer": "With Letreiro Online, users can easily customize their LED scrolling text by selecting from a variety of fonts, colors, and scrolling speeds. Simply enter your desired text, choose your preferred settings, and the tool will generate a preview that allows you to see how your custom text will appear in an LED format."
+          "question": "How do I customize the scrolling text?",
+          "answer": "Type your text, pick the colors, and adjust the scroll speed in the simulator. The live preview shows you in real time how the LED marquee will look."
         },
         {
-          "question": "What are the benefits of using Letreiro Online for digital displays?",
-          "answer": "Using Letreiro Online for your digital displays offers numerous benefits, including the ability to create eye-catching announcements, promote events, and share important information in an engaging format. The user-friendly interface ensures that anyone can design unique LED displays, making it perfect for businesses, schools, and events."
+          "question": "What are the benefits of an online LED marquee?",
+          "answer": "Create eye-catching announcements, promote events, and share information in an engaging format. The intuitive interface makes it ideal for shops, schools, and events."
         },
         {
-          "question": "Is there a limit to the text length I can use?",
-          "answer": "There is no strict character limit for the text you wish to display with Letreiro Online. However, keep in mind that longer texts may take more time to scroll across the screen, which could affect readability. It's recommended to keep text concise for the best visual impact."
+          "question": "Is there a character limit?",
+          "answer": "There's no hard limit, but longer texts take more time to scroll across the screen. We recommend keeping the message concise for the best visual impact."
         },
         {
           "question": "Can I simulate different LED effects?",
-          "answer": "Yes, Letreiro Online provides various LED effects such as flashing, blinking, and different scrolling styles. Users can preview these effects in real-time and select the ones that best fit their design and purpose, helping to make their digital signage more dynamic and visually appealing."
+          "answer": "Yes. The simulator offers effects like flashing, blinking, and different scrolling styles. You can preview them in real time before using them."
         },
         {
-          "question": "Is Letreiro Online free to use?",
-          "answer": "Letreiro Online offers a free version that allows users to experience basic features for creating LED scrolling text. For more advanced customization options and additional features, there may be premium plans available. Check our website for details on pricing and available plans."
+          "question": "Is the online LED marquee free?",
+          "answer": "Yes. All the main features for creating digital signs with scrolling text are completely free."
         }
       ]
     }
   },
   "Footer": {
     "title": "Letreiro Digital",
-    "subTitle": "Welcome to Letreiro Digital – Your Online LED Display Simulator.",
+    "subTitle": "Welcome to Letreiro Digital — your online LED marquee simulator.",
     "support": "Support",
     "privacy": "Privacy Policy",
     "termsConditions": "Terms & Conditions"
