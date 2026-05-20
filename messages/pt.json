@@ -31,6 +31,19 @@
     "title": "404 Não Encontrado",
     "goHome": "voltar ao início"
   },
+  "CookieBanner": {
+    "aria": "Aviso de cookies",
+    "message": "Usamos cookies para melhorar sua experiência e exibir anúncios relevantes. Você pode aceitar ou recusar a qualquer momento.",
+    "accept": "Aceitar todos",
+    "reject": "Recusar",
+    "learnMore": "Política de Privacidade",
+    "manageTitle": "Gerenciar consentimento de cookies",
+    "currentStatus": "Status atual",
+    "statusAccepted": "Você aceitou os cookies",
+    "statusRejected": "Você recusou os cookies",
+    "statusNone": "Você ainda não fez uma escolha",
+    "revoke": "Revogar consentimento"
+  },
   "Home": {
     "title": "Letreiro de LED Online — Gerador de Letreiro Digital Grátis",
     "subTitle": "Crie seu letreiro de LED em segundos, direto no navegador. Uma alternativa virtual aos painéis de LED, placas de LED e letreiros luminosos tradicionais — sem hardware, sem cadastro, 100% grátis. Personalize texto, cores, velocidade de rolagem e efeitos.",

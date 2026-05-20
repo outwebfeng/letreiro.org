@@ -9,6 +9,8 @@ import { Suspense } from 'react';
 import { GOOGLE_ADSENSE_ACCOUNT } from '@/lib/env';
 import GoogleAdScript from '@/components/ad/GoogleAdScript';
 import SeoScript from '@/components/seo/SeoScript';
+import { CookieConsentProvider } from '@/components/cookie/CookieConsentProvider';
+import CookieBanner from '@/components/cookie/CookieBanner';
 
 import Loading from './loading';
 
@@ -25,24 +27,27 @@ export default function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <meta name='google-adsense-account' content={GOOGLE_ADSENSE_ACCOUNT} />
-        <GoogleAdScript />
       </head>
       <body className='relative mx-auto flex min-h-screen flex-col bg-[#f8f9fb] text-black'>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Toaster
-            position='top-center'
-            toastOptions={{
-              classNames: {
-                error: 'bg-red-400',
-                success: 'text-green-400',
-                warning: 'text-yellow-400',
-                info: 'bg-blue-400',
-              },
-            }}
-          />
-          <Suspense fallback={<Loading />}>{children}</Suspense>
+          <CookieConsentProvider>
+            <Toaster
+              position='top-center'
+              toastOptions={{
+                classNames: {
+                  error: 'bg-red-400',
+                  success: 'text-green-400',
+                  warning: 'text-yellow-400',
+                  info: 'bg-blue-400',
+                },
+              }}
+            />
+            <Suspense fallback={<Loading />}>{children}</Suspense>
+            <CookieBanner />
+            <GoogleAdScript />
+            <SeoScript />
+          </CookieConsentProvider>
         </NextIntlClientProvider>
-        <SeoScript />
       </body>
     </html>
   );

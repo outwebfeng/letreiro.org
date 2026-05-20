@@ -31,6 +31,19 @@
     "title": "404 No Encontrado",
     "goHome": "volver al inicio"
   },
+  "CookieBanner": {
+    "aria": "Aviso de cookies",
+    "message": "Usamos cookies para mejorar tu experiencia y mostrar anuncios relevantes. Puedes aceptar o rechazar en cualquier momento.",
+    "accept": "Aceptar todo",
+    "reject": "Rechazar",
+    "learnMore": "Política de Privacidad",
+    "manageTitle": "Gestionar consentimiento de cookies",
+    "currentStatus": "Estado actual",
+    "statusAccepted": "Aceptaste las cookies",
+    "statusRejected": "Rechazaste las cookies",
+    "statusNone": "Aún no has hecho una elección",
+    "revoke": "Revocar consentimiento"
+  },
   "Home": {
     "title": "Letrero LED Online — Generador de Cartel LED Gratis",
     "subTitle": "Crea tu letrero LED en segundos, directo en el navegador. Una alternativa virtual a los paneles LED, carteles LED y letreros luminosos tradicionales — sin hardware, sin registro, 100% gratis. Personaliza texto, colores, velocidad de desplazamiento y efectos.",

@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Metadata } from 'next';
 
 import { BASE_URL } from '@/lib/env';
+import CookieConsentManager from '@/components/cookie/CookieConsentManager';
 
 const DEFAULT_LOCALE = 'pt';
 const ROUTE_PATH = '/privacy-policy';
@@ -52,6 +53,8 @@ export default function Page() {
 
       <h2 className='mb-3 text-xl font-semibold sm:text-2xl'>{t('6-h2')}</h2>
       <p className='mb-4 text-sm sm:text-base'>{t('6-p')}</p>
+
+      <CookieConsentManager />
     </div>
   );
 }
