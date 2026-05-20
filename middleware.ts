@@ -10,6 +10,7 @@ const middleware = createMiddleware({
   locales,
   defaultLocale: 'pt',
   localePrefix: 'as-needed',
+  localeDetection: false,
   alternateLinks: false,
 });
 
