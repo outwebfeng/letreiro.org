@@ -31,6 +31,14 @@
     "title": "404 No Encontrado",
     "goHome": "volver al inicio"
   },
+  "ShareButtons": {
+    "share": "Compartir",
+    "whatsapp": "Compartir en WhatsApp",
+    "copyLink": "Copiar enlace",
+    "copied": "¡Enlace copiado! 🎉",
+    "copyFailed": "No se pudo copiar el enlace",
+    "whatsappMessage": "Mira este letrero LED que hice:"
+  },
   "CookieBanner": {
     "aria": "Aviso de cookies",
     "message": "Usamos cookies para mejorar tu experiencia y mostrar anuncios relevantes. Puedes aceptar o rechazar en cualquier momento.",

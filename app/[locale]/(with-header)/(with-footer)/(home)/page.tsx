@@ -6,12 +6,22 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import LEDDisplay from '@/components/LEDDisplay';
 import { TrueLEDDisplay } from '@/components/TrueLEDDisplay';
+import ShareButtons from '@/components/share/ShareButtons';
 
 // 静态导入ScrollToTop组件
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
 
 // 简化导入方式 - 直接导入
 import MarqueeLED from '@/components/MarqueeLED';
+
+const DEFAULT_CONFIG = {
+  text: 'Welcome to Letreiro Digital',
+  textColor: '#FFFFFF',
+  bgColor: '#000000',
+  speed: 5,
+};
+type DisplayMode = 'default' | 'blur' | 'led';
+const DEFAULT_DISPLAY_MODE: DisplayMode = 'default';
 
 // 为MarqueeLED组件创建骨架屏
 function MarqueeLEDSkeleton() {
@@ -55,14 +65,10 @@ export default function Page() {
   const tMarquee = useTranslations('Home.marquee');
 
   // MarqueeLED组件的状态
-  const [config, setConfig] = useState({
-    text: 'Welcome to Letreiro Digital',
-    textColor: '#FFFFFF',
-    bgColor: '#000000', 
-    speed: 5,
-  });
+  const [config, setConfig] = useState(DEFAULT_CONFIG);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [displayMode, setDisplayMode] = useState<'default' | 'blur' | 'led'>('default');
+  const [displayMode, setDisplayMode] = useState<DisplayMode>(DEFAULT_DISPLAY_MODE);
+  const [hydrated, setHydrated] = useState(false);
   const fullscreenRef = useRef<HTMLDivElement>(null);
 
   // 全屏相关逻辑
@@ -73,6 +79,46 @@ export default function Page() {
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
+
+  // Hydrate 时从 URL 读初始 config(分享链接可恢复)
+  // URLSearchParams.get 已自动解码,不需要手动 decodeURIComponent
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const text = params.get('text');
+    const textColor = params.get('textColor');
+    const bgColor = params.get('bgColor');
+    const speed = params.get('speed');
+    const mode = params.get('displayMode');
+
+    if (text || textColor || bgColor || speed) {
+      setConfig({
+        text: text || DEFAULT_CONFIG.text,
+        textColor: textColor ? `#${textColor}` : DEFAULT_CONFIG.textColor,
+        bgColor: bgColor ? `#${bgColor}` : DEFAULT_CONFIG.bgColor,
+        speed: speed ? Number(speed) || DEFAULT_CONFIG.speed : DEFAULT_CONFIG.speed,
+      });
+    }
+    if (mode === 'blur' || mode === 'led' || mode === 'default') {
+      setDisplayMode(mode);
+    }
+    setHydrated(true);
+  }, []);
+
+  // 同步 config / displayMode 到 URL search params(默认值不写入,保持 URL 整洁)
+  // URLSearchParams.set 已自动编码,不需要手动 encodeURIComponent
+  useEffect(() => {
+    if (!hydrated) return;
+    const params = new URLSearchParams();
+    if (config.text !== DEFAULT_CONFIG.text) params.set('text', config.text);
+    if (config.textColor !== DEFAULT_CONFIG.textColor) params.set('textColor', config.textColor.replace('#', ''));
+    if (config.bgColor !== DEFAULT_CONFIG.bgColor) params.set('bgColor', config.bgColor.replace('#', ''));
+    if (config.speed !== DEFAULT_CONFIG.speed) params.set('speed', String(config.speed));
+    if (displayMode !== DEFAULT_DISPLAY_MODE) params.set('displayMode', displayMode);
+
+    const search = params.toString();
+    const newUrl = search ? `${window.location.pathname}?${search}` : window.location.pathname;
+    window.history.replaceState(null, '', newUrl);
+  }, [config, displayMode, hydrated]);
 
   const handleFullscreen = async () => {
     try {
@@ -160,6 +206,10 @@ export default function Page() {
                   {tMarquee('generator')}
                 </Button>
               </div>
+            </div>
+
+            <div className='mb-4 flex justify-end'>
+              <ShareButtons />
             </div>
 
             <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto', minHeight: '16rem' }}>
