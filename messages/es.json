@@ -31,13 +31,41 @@
     "title": "404 No Encontrado",
     "goHome": "volver al inicio"
   },
+  "Templates": {
+    "quickTemplates": "Plantillas rápidas",
+    "loja": { "label": "🏪 Tienda" },
+    "aniversario": { "label": "🎉 Cumpleaños" },
+    "natal": { "label": "🎄 Navidad" },
+    "oferta": { "label": "🔥 Oferta" }
+  },
+  "EmbedDialog": {
+    "title": "Incrustar en tu sitio",
+    "description": "Pega el código de abajo en el HTML de tu sitio para mostrar este letrero LED como un widget.",
+    "copyCode": "Copiar código",
+    "copied": "¡Código copiado! 🎉",
+    "copyFailed": "No se pudo copiar el código",
+    "poweredBy": "Powered by letreiro.org",
+    "close": "Cerrar"
+  },
+  "ExportButtons": {
+    "export": "Exportar",
+    "video": "Vídeo",
+    "exportGif": "Exportar como GIF",
+    "exportVideo": "Exportar como vídeo",
+    "done": "¡Exportado con éxito! 🎉",
+    "failed": "Error al exportar. Inténtalo de nuevo.",
+    "onlyLedMode": "Cambia al modo LED para exportar",
+    "switchToLed": "Disponible en modo LED",
+    "canvasUnavailable": "El letrero aún no está listo, espera"
+  },
   "ShareButtons": {
     "share": "Compartir",
     "whatsapp": "Compartir en WhatsApp",
     "copyLink": "Copiar enlace",
     "copied": "¡Enlace copiado! 🎉",
     "copyFailed": "No se pudo copiar el enlace",
-    "whatsappMessage": "Mira este letrero LED que hice:"
+    "whatsappMessage": "Mira este letrero LED que hice:",
+    "embed": "Incrustar"
   },
   "CookieBanner": {
     "aria": "Aviso de cookies",

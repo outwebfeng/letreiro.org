@@ -11,6 +11,7 @@ interface TrueLEDDisplayProps {
   isFullscreen?: boolean;
   fullscreenRef?: React.RefObject<HTMLDivElement>;
   isGenerator?: boolean;  // 添加 generator 模式标识
+  canvasOuterRef?: React.MutableRefObject<HTMLCanvasElement | null>; // 让外部能拿到 canvas DOM 用于导出
 }
 
 // 使用memo包装组件
@@ -22,8 +23,16 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
   isFullscreen = false,
   fullscreenRef,
   isGenerator = false,  // 添加 generator 模式标识
+  canvasOuterRef,
 }: TrueLEDDisplayProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  // 把 canvas DOM 同步到外部 ref(用于 GIF/Video 导出)
+  useEffect(() => {
+    if (canvasOuterRef) {
+      canvasOuterRef.current = canvasRef.current;
+    }
+  }, [canvasOuterRef]);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [matrixData, setMatrixData] = useState<number[][]>([]);
   const lastTimeRef = useRef<number>(0);

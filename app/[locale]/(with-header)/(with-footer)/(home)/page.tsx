@@ -7,6 +7,9 @@ import { Button } from '@/components/ui/button';
 import LEDDisplay from '@/components/LEDDisplay';
 import { TrueLEDDisplay } from '@/components/TrueLEDDisplay';
 import ShareButtons from '@/components/share/ShareButtons';
+import ExportButtons from '@/components/share/ExportButtons';
+import TemplateQuickPicker from '@/components/templates/TemplateQuickPicker';
+import type { Template } from '@/lib/templates';
 
 // 静态导入ScrollToTop组件
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
@@ -70,6 +73,7 @@ export default function Page() {
   const [displayMode, setDisplayMode] = useState<DisplayMode>(DEFAULT_DISPLAY_MODE);
   const [hydrated, setHydrated] = useState(false);
   const fullscreenRef = useRef<HTMLDivElement>(null);
+  const ledCanvasRef = useRef<HTMLCanvasElement | null>(null);
 
   // 全屏相关逻辑
   useEffect(() => {
@@ -137,6 +141,17 @@ export default function Page() {
     setConfig(prev => ({ ...prev, [key]: value }));
   };
 
+  // 一键套用模板配置
+  const applyTemplate = (tpl: Template) => {
+    setConfig({
+      text: tpl.text,
+      textColor: tpl.textColor,
+      bgColor: tpl.bgColor,
+      speed: tpl.speed,
+    });
+    setDisplayMode(tpl.displayMode);
+  };
+
   return (
     <div className='relative w-full'>
       <div className='relative mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8'>
@@ -152,6 +167,8 @@ export default function Page() {
         <div className='-mt-2 sm:-mt-4'>
           {/* 直接在页面中实现MarqueeLED功能 */}
           <div id='marqueeLED' className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
+            <TemplateQuickPicker onApply={applyTemplate} />
+
             <div className='mb-4 flex items-center justify-between'>
               <h2 className='text-xl font-semibold text-[#FF782C]'>{tMarquee('title')}</h2>
               <div className='flex gap-2'>
@@ -178,7 +195,19 @@ export default function Page() {
                 >
                   {tMarquee('blur')}
                 </Button>
-            
+
+                <Button
+                  variant={displayMode === 'led' ? 'default' : 'outline'}
+                  onClick={() => setDisplayMode('led')}
+                  className={`${
+                    displayMode === 'led'
+                      ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
+                      : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
+                  } transition-all duration-200`}
+                >
+                  {tMarquee('ledMode')}
+                </Button>
+
                 <Button
                   onClick={handleFullscreen}
                   variant="outline"
@@ -208,7 +237,8 @@ export default function Page() {
               </div>
             </div>
 
-            <div className='mb-4 flex justify-end'>
+            <div className='mb-4 flex flex-col items-end gap-2 sm:flex-row sm:justify-between sm:items-center'>
+              <ExportButtons canvasRef={ledCanvasRef} enabled={displayMode === 'led'} />
               <ShareButtons />
             </div>
 
@@ -233,6 +263,7 @@ export default function Page() {
                     speed={Math.max(1, 15 - config.speed * 1.3)}
                     isFullscreen={isFullscreen}
                     fullscreenRef={fullscreenRef}
+                    canvasOuterRef={ledCanvasRef}
                   />
                 ) : (
                   <LEDDisplay

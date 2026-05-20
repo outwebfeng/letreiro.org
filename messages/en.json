@@ -31,13 +31,41 @@
     "title": "404 Not Found",
     "goHome": "Back to home"
   },
+  "Templates": {
+    "quickTemplates": "Quick templates",
+    "loja": { "label": "🏪 Shop" },
+    "aniversario": { "label": "🎉 Birthday" },
+    "natal": { "label": "🎄 Christmas" },
+    "oferta": { "label": "🔥 Sale" }
+  },
+  "EmbedDialog": {
+    "title": "Embed on your site",
+    "description": "Paste the code below into your website HTML to embed this LED marquee as a widget.",
+    "copyCode": "Copy code",
+    "copied": "Code copied! 🎉",
+    "copyFailed": "Could not copy the code",
+    "poweredBy": "Powered by letreiro.org",
+    "close": "Close"
+  },
+  "ExportButtons": {
+    "export": "Export",
+    "video": "Video",
+    "exportGif": "Export as GIF",
+    "exportVideo": "Export as video",
+    "done": "Exported successfully! 🎉",
+    "failed": "Export failed. Please try again.",
+    "onlyLedMode": "Switch to LED mode to export",
+    "switchToLed": "Available in LED mode",
+    "canvasUnavailable": "Marquee not ready yet, please wait"
+  },
   "ShareButtons": {
     "share": "Share",
     "whatsapp": "Share on WhatsApp",
     "copyLink": "Copy link",
     "copied": "Link copied! 🎉",
     "copyFailed": "Could not copy the link",
-    "whatsappMessage": "Check out this LED marquee I made:"
+    "whatsappMessage": "Check out this LED marquee I made:",
+    "embed": "Embed"
   },
   "CookieBanner": {
     "aria": "Cookie notice",

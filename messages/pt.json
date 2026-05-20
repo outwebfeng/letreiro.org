@@ -31,13 +31,41 @@
     "title": "404 Não Encontrado",
     "goHome": "voltar ao início"
   },
+  "Templates": {
+    "quickTemplates": "Modelos rápidos",
+    "loja": { "label": "🏪 Loja" },
+    "aniversario": { "label": "🎉 Aniversário" },
+    "natal": { "label": "🎄 Natal" },
+    "oferta": { "label": "🔥 Oferta" }
+  },
+  "EmbedDialog": {
+    "title": "Incorporar no seu site",
+    "description": "Cole o código abaixo no HTML do seu site para mostrar este letreiro de LED como um widget.",
+    "copyCode": "Copiar código",
+    "copied": "Código copiado! 🎉",
+    "copyFailed": "Não foi possível copiar o código",
+    "poweredBy": "Powered by letreiro.org",
+    "close": "Fechar"
+  },
+  "ExportButtons": {
+    "export": "Exportar",
+    "video": "Vídeo",
+    "exportGif": "Exportar como GIF",
+    "exportVideo": "Exportar como Vídeo",
+    "done": "Exportado com sucesso! 🎉",
+    "failed": "Falha ao exportar. Tente novamente.",
+    "onlyLedMode": "Mude para o modo LED para exportar",
+    "switchToLed": "Disponível no modo LED",
+    "canvasUnavailable": "Letreiro não está pronto, aguarde"
+  },
   "ShareButtons": {
     "share": "Compartilhar",
     "whatsapp": "Compartilhar no WhatsApp",
     "copyLink": "Copiar link",
     "copied": "Link copiado! 🎉",
     "copyFailed": "Não foi possível copiar o link",
-    "whatsappMessage": "Olha esse letreiro que eu criei:"
+    "whatsappMessage": "Olha esse letreiro que eu criei:",
+    "embed": "Incorporar"
   },
   "CookieBanner": {
     "aria": "Aviso de cookies",

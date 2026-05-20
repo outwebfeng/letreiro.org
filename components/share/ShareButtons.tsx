@@ -4,10 +4,13 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
+import EmbedDialog from './EmbedDialog';
+
 export default function ShareButtons() {
   const t = useTranslations('ShareButtons');
   const [mounted, setMounted] = useState(false);
   const [currentUrl, setCurrentUrl] = useState('');
+  const [embedOpen, setEmbedOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -70,6 +73,21 @@ export default function ShareButtons() {
         </svg>
         {t('copyLink')}
       </button>
+
+      <button
+        type='button'
+        onClick={() => setEmbedOpen(true)}
+        className='inline-flex items-center gap-1.5 rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50'
+        aria-label={t('embed')}
+      >
+        <svg className='h-4 w-4' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+          <polyline points='16 18 22 12 16 6' />
+          <polyline points='8 6 2 12 8 18' />
+        </svg>
+        {t('embed')}
+      </button>
+
+      <EmbedDialog open={embedOpen} onClose={() => setEmbedOpen(false)} />
     </div>
   );
 }
