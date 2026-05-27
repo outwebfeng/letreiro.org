@@ -53,25 +53,26 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
 
     // 为每个字符添加点阵数据
     for (let char of upperText) {
-      const charMatrix = dotMatrixFont[char] || dotMatrixFont[' '];
-      const isSpace = char === ' ';
-      const width = isSpace ? 8 : 16; // 如果是空格，使用8个点的宽度
-      
+      // 未知字符(如葡语重音 É/Ç/Ã 等)按空格处理,保证各行 push 的宽度一致
+      const charData = dotMatrixFont[char];
+      const isSpace = char === ' ' || !charData;
+      const width = isSpace ? 8 : 16;
+
       // 添加顶部空白（2行）
       matrix[0].push(...Array(width).fill(0), 0);
       matrix[1].push(...Array(width).fill(0), 0);
-      
+
       // 添加字符数据（16行，从第3行开始）
       for (let i = 0; i < 16; i++) {
         if (isSpace) {
-          // 如果是空格，添加8个空白点
           matrix[i + 2].push(...Array(width).fill(0), 0);
         } else {
-          // 如果是其他字符，添加16x16的点阵数据
-          matrix[i + 2].push(...charMatrix[i], 0);
+          // charData 在这里一定存在;若某行缺失,降级为空白行避免 spread undefined
+          const row = charData![i] ?? Array(width).fill(0);
+          matrix[i + 2].push(...row, 0);
         }
       }
-      
+
       // 添加底部空白（2行）
       matrix[18].push(...Array(width).fill(0), 0);
       matrix[19].push(...Array(width).fill(0), 0);

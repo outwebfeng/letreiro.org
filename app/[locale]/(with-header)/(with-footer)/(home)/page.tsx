@@ -220,8 +220,9 @@ export default function Page() {
                 
                 <Button
                   onClick={() => {
+                    // URLSearchParams 会自动编码,不要手动 encodeURIComponent(否则双重编码)
                     const params = new URLSearchParams({
-                      text: encodeURIComponent(config.text),
+                      text: config.text,
                       textColor: config.textColor.replace('#', ''),
                       bgColor: config.bgColor.replace('#', ''),
                       speed: String(config.speed),

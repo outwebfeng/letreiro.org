@@ -26,7 +26,7 @@ export default function GeneratorPage() {
       <div className="w-full h-full flex items-center justify-center" style={{ contain: 'layout paint size' }}>
         {displayMode === 'led' ? (
           <TrueLEDDisplay
-            text={decodeURIComponent(text)}
+            text={text}
             textColor={textColor}
             bgColor={bgColor}
             speed={Math.max(1, 15 - speed * 1.3)}
@@ -34,7 +34,7 @@ export default function GeneratorPage() {
           />
         ) : (
           <LEDDisplay
-            text={decodeURIComponent(text)}
+            text={text}
             textColor={textColor}
             bgColor={bgColor}
             speed={speed}
