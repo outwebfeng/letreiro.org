@@ -1,31 +1,34 @@
 'use client';
 
-import { useEffect, useRef, useState, memo } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
+
 import { dotMatrixFont } from '@/lib/dotMatrixFont';
 
 interface TrueLEDDisplayProps {
   text: string;
-  speed?: number; // 每秒移动的像素点数，默认为30
+  /** 每秒移动的像素点数,默认 30 */
+  speed?: number;
   textColor?: string;
   bgColor?: string;
   isFullscreen?: boolean;
   fullscreenRef?: React.RefObject<HTMLDivElement>;
-  isGenerator?: boolean;  // 添加 generator 模式标识
-  canvasOuterRef?: React.MutableRefObject<HTMLCanvasElement | null>; // 让外部能拿到 canvas DOM 用于导出
+  isGenerator?: boolean;
+  /** 外部 ref,用于 GIF/Video 导出拿到 canvas DOM */
+  canvasOuterRef?: React.MutableRefObject<HTMLCanvasElement | null>;
 }
 
-// 使用memo包装组件
 export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
   text,
-  speed = 30, // 默认每秒移动30个像素点
+  speed = 30,
   textColor = '#00ff00',
   bgColor = '#000000',
   isFullscreen = false,
   fullscreenRef,
-  isGenerator = false,  // 添加 generator 模式标识
+  isGenerator = false,
   canvasOuterRef,
 }: TrueLEDDisplayProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [matrixData, setMatrixData] = useState<number[][]>([]);
 
   // 把 canvas DOM 同步到外部 ref(用于 GIF/Video 导出)
   useEffect(() => {
@@ -59,166 +62,135 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
     return () => ro.disconnect();
   }, [isFullscreen]);
 
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [matrixData, setMatrixData] = useState<number[][]>([]);
-  const lastTimeRef = useRef<number>(0);
-  const actualPositionRef = useRef<number>(0);
-  const rafRef = useRef<number | null>(null);
-
-  // 将文本转换为点阵数据 - 使用useCallback避免不必要的重计算
-  const createMatrixData = (textInput: string) => {
-    // 限制文本长度以避免过大的计算量
-    const limitedText = textInput.slice(0, 100);
-    const upperText = limitedText.toUpperCase();
-    let matrix: number[][] = [];
-    
-    // 初始化矩阵行（20行：2行空白 + 16行字符 + 2行空白）
-    for (let i = 0; i < 20; i++) {
-      matrix[i] = [];
-    }
-
-    // 为每个字符添加点阵数据
-    for (let char of upperText) {
-      // 未知字符(如葡语重音 É/Ç/Ã 等)按空格处理,保证各行 push 的宽度一致
-      const charData = dotMatrixFont[char];
-      const isSpace = char === ' ' || !charData;
-      const width = isSpace ? 8 : 16;
-
-      // 添加顶部空白（2行）
-      matrix[0].push(...Array(width).fill(0), 0);
-      matrix[1].push(...Array(width).fill(0), 0);
-
-      // 添加字符数据（16行，从第3行开始）
-      for (let i = 0; i < 16; i++) {
-        if (isSpace) {
-          matrix[i + 2].push(...Array(width).fill(0), 0);
-        } else {
-          // charData 在这里一定存在;若某行缺失,降级为空白行避免 spread undefined
-          const row = charData![i] ?? Array(width).fill(0);
-          matrix[i + 2].push(...row, 0);
-        }
-      }
-
-      // 添加底部空白（2行）
-      matrix[18].push(...Array(width).fill(0), 0);
-      matrix[19].push(...Array(width).fill(0), 0);
-    }
-
-    return matrix;
-  };
-
-  // 初始化点阵数据
+  // 文本 → 点阵矩阵
   useEffect(() => {
-    // 使用requestIdleCallback延迟非关键操作
-    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-      (window as any).requestIdleCallback(() => {
-        setMatrixData(createMatrixData(text));
-      });
-    } else {
-      // 降级方案
-      setTimeout(() => {
-        setMatrixData(createMatrixData(text));
-      }, 0);
-    }
-    
-    return () => {
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
+    const buildMatrix = () => {
+      const limitedText = text.slice(0, 100);
+      const upperText = limitedText.toUpperCase();
+      const matrix: number[][] = [];
+
+      // 20 行:2 上空白 + 16 字符 + 2 下空白
+      for (let i = 0; i < 20; i++) {
+        matrix[i] = [];
       }
+
+      for (const char of upperText) {
+        // 未知字符(如葡语重音 É/Ç/Ã 等)按空格处理,保证各行 push 的宽度一致
+        const charData = dotMatrixFont[char];
+        const isSpace = char === ' ' || !charData;
+        const width = isSpace ? 8 : 16;
+
+        matrix[0].push(...Array(width).fill(0), 0);
+        matrix[1].push(...Array(width).fill(0), 0);
+
+        for (let i = 0; i < 16; i++) {
+          if (isSpace) {
+            matrix[i + 2].push(...Array(width).fill(0), 0);
+          } else {
+            // charData 在这里一定存在;若某行缺失,降级为空白行避免 spread undefined
+            const row = charData![i] ?? Array(width).fill(0);
+            matrix[i + 2].push(...row, 0);
+          }
+        }
+
+        matrix[18].push(...Array(width).fill(0), 0);
+        matrix[19].push(...Array(width).fill(0), 0);
+      }
+
+      setMatrixData(matrix);
     };
+
+    // 延迟非关键操作,降低输入抖动期间的 CPU 占用
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      const id = (window as any).requestIdleCallback(buildMatrix);
+      return () => (window as any).cancelIdleCallback?.(id);
+    }
+    const timer = setTimeout(buildMatrix, 0);
+    return () => clearTimeout(timer);
   }, [text]);
 
-  // 渲染点阵，使用高性能方法
+  // 动画 + 渲染合并为单一 rAF 循环:scrollPos 用闭包 ref 管理,不走 React state,
+  // 每帧直接 drawFrame,避免 setState → re-render → useEffect 的调度抖动。
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas || matrixData.length === 0) return;
+    if (!canvas || matrixData.length === 0) return undefined;
 
     const ctx = canvas.getContext('2d', { alpha: false });
-    if (!ctx) return;
+    if (!ctx) return undefined;
 
-    // 使用requestAnimationFrame优化渲染
-    const renderFrame = () => {
-      const dotSize = Math.floor(canvas.height / 20); // 20行：2上+16中+2下
-      const width = canvas.width;
-      const height = canvas.height;
-      const displayColumns = Math.floor(width / dotSize); // 显示窗口的列数
+    let scrollPos = 0;
+    let lastTime = 0;
+    let rafId = 0;
 
-      // 清除画布 - 使用更高效的方法
+    const drawFrame = () => {
+      const dotSize = Math.floor(canvas.height / 20);
+      const w = canvas.width;
+      const h = canvas.height;
+      const displayColumns = Math.floor(w / dotSize);
+      const totalColumns = matrixData[0]?.length ?? 0;
+      if (totalColumns === 0) return;
+
+      const startPos = Math.floor(scrollPos) % totalColumns;
+      const litRadius = Math.max(1, dotSize / 2 - 1);
+      const dimRadius = Math.max(1, Math.floor(dotSize / 5));
+
+      // 1. 底色
+      ctx.shadowBlur = 0;
       ctx.fillStyle = bgColor;
-      ctx.fillRect(0, 0, width, height);
+      ctx.fillRect(0, 0, w, h);
 
-      // 绘制LED点阵 - 批量绘制以提高性能
+      // 2. 暗点:模拟真实 LED 面板上每颗灯泡的"未点亮但物理存在"质感
       ctx.fillStyle = textColor;
+      ctx.globalAlpha = 0.1;
       ctx.beginPath();
-      
       for (let y = 0; y < matrixData.length; y++) {
         for (let x = 0; x < displayColumns; x++) {
-          // 计算实际显示位置
-          const totalColumns = matrixData[0].length;
-          const startPos = scrollPosition % totalColumns;
+          const cx = x * dotSize + dotSize / 2;
+          const cy = y * dotSize + dotSize / 2;
+          ctx.moveTo(cx + dimRadius, cy);
+          ctx.arc(cx, cy, dimRadius, 0, Math.PI * 2);
+        }
+      }
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      // 3. 亮点 + 辉光:整个亮点 path 一次 fill,shadowBlur 只计算一次,开销可控
+      ctx.shadowColor = textColor;
+      ctx.shadowBlur = dotSize * 1.2;
+      ctx.fillStyle = textColor;
+      ctx.beginPath();
+      for (let y = 0; y < matrixData.length; y++) {
+        const row = matrixData[y];
+        for (let x = 0; x < displayColumns; x++) {
           const dataX = (startPos + x) % totalColumns;
-          
-          if (matrixData[y][dataX]) {
-            ctx.moveTo(x * dotSize + dotSize / 2, y * dotSize + dotSize / 2);
-            ctx.arc(
-              x * dotSize + dotSize / 2,
-              y * dotSize + dotSize / 2,
-              dotSize / 2 - 1,
-              0,
-              Math.PI * 2
-            );
+          if (row[dataX]) {
+            const cx = x * dotSize + dotSize / 2;
+            const cy = y * dotSize + dotSize / 2;
+            ctx.moveTo(cx + litRadius, cy);
+            ctx.arc(cx, cy, litRadius, 0, Math.PI * 2);
           }
         }
       }
-      
       ctx.fill();
+      ctx.shadowBlur = 0;
     };
-
-    renderFrame();
-  }, [matrixData, scrollPosition, textColor, bgColor]);
-
-  // 滚动动画 - 优化动画性能
-  useEffect(() => {
-    if (matrixData.length === 0) return;
-
-    // 重置位置和时间，确保速度变化时动画能够立即响应
-    lastTimeRef.current = 0;
-    actualPositionRef.current = 0;
-    setScrollPosition(0);
 
     const animate = (currentTime: number) => {
-      if (!lastTimeRef.current) {
-        lastTimeRef.current = currentTime;
-        actualPositionRef.current = 0;
-      }
+      if (!lastTime) lastTime = currentTime;
+      const dt = currentTime - lastTime;
+      lastTime = currentTime;
 
-      const deltaTime = currentTime - lastTimeRef.current;
-      // 限制帧率，防止过多渲染
-      if (deltaTime > 16) { // 约60fps
-        // 根据全屏状态调整速度
-        const speedMultiplier = isFullscreen ? 0.45 : 0.6;
-        const actualSpeed = speed * speedMultiplier;
-        const pixelsToMove = (actualSpeed * deltaTime) / 1000;
+      // 全屏时整体放慢,让大屏阅读节奏舒服
+      const speedMultiplier = isFullscreen ? 0.45 : 0.6;
+      scrollPos += (speed * speedMultiplier * dt) / 1000;
 
-        actualPositionRef.current += pixelsToMove;
-        setScrollPosition(Math.floor(actualPositionRef.current));
-        lastTimeRef.current = currentTime;
-      }
-
-      rafRef.current = requestAnimationFrame(animate);
+      drawFrame();
+      rafId = requestAnimationFrame(animate);
     };
 
-    rafRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
-        rafRef.current = null;
-      }
-      lastTimeRef.current = 0;
-      actualPositionRef.current = 0;
-    };
-  }, [matrixData, speed, isFullscreen]); // 添加isFullscreen作为依赖
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
+  }, [matrixData, speed, isFullscreen, textColor, bgColor]);
 
   return (
     <div
@@ -228,7 +200,7 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
         contain: 'layout paint size',
         padding: '0',
         height: isGenerator ? '100%' : isFullscreen ? '100vh' : '16rem',
-        backgroundColor: bgColor, // SSR/hydration 时立即显示正确底色,避免一帧白闪
+        backgroundColor: bgColor,
       }}
     >
       <canvas
@@ -238,7 +210,6 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
         className='w-full h-full flex-1'
         style={{
           aspectRatio: '4/1',
-          imageRendering: 'pixelated',
           maxHeight: isFullscreen ? '90vh' : '100%',
           margin: 'auto',
           width: isFullscreen ? '90%' : '100%',
@@ -250,4 +221,4 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
       />
     </div>
   );
-}); 
+});
