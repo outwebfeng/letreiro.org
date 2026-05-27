@@ -2,66 +2,62 @@
 
 import { useEffect, useRef, useState, memo } from 'react';
 import { useTranslations } from 'next-intl';
+
 import { Button } from '@/components/ui/button';
+import ExportButtons from '@/components/share/ExportButtons';
+import ShareButtons from '@/components/share/ShareButtons';
+import TemplateQuickPicker from '@/components/templates/TemplateQuickPicker';
+import { FONT_OPTIONS, VALID_FONT_IDS, fontIdToCssVar } from '@/lib/fonts';
+import type { Template } from '@/lib/templates';
+
 import LEDDisplay from './LEDDisplay';
 import { TrueLEDDisplay } from './TrueLEDDisplay';
 
-// 显示组件的简单加载状态
-function DisplayLoader({ bgColor = '#000000' }) {
-  return (
-    <div 
-      className="w-full h-64 relative min-h-[16rem] rounded-lg flex items-center justify-center"
-      style={{ 
-        backgroundColor: bgColor,
-        contain: 'layout paint size',
-        height: '16rem',
-        minHeight: '16rem',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}
-    >
-      <div className="w-8 h-8 border-4 border-t-[#FF782C] rounded-full animate-spin"></div>
-    </div>
-  );
-}
+type DisplayMode = 'default' | 'blur' | 'led';
+
+const DEFAULT_CONFIG = {
+  text: 'Welcome to Letreiro Digital',
+  textColor: '#FFFFFF',
+  bgColor: '#000000',
+  speed: 5,
+};
+
+const DEFAULT_DISPLAY_MODE: DisplayMode = 'default';
 
 interface MarqueeLEDProps {
-  initialDisplayMode?: 'default' | 'blur' | 'led';
-  availableDisplayModes?: ('default' | 'blur' | 'led')[];
+  initialDisplayMode?: DisplayMode;
+  availableDisplayModes?: DisplayMode[];
   showSpeedControl?: boolean;
   showFullscreenButton?: boolean;
   showGeneratorButton?: boolean;
+  showTemplates?: boolean;
+  showShareButtons?: boolean;
+  showExportButtons?: boolean;
+  /** 是否与 URL query params 双向同步(分享链接 / 刷新保留) */
+  syncToUrl?: boolean;
 }
 
-// 使用memo包装组件，避免不必要的重渲染
 function MarqueeLEDComponent({
-  initialDisplayMode = 'default',
+  initialDisplayMode = DEFAULT_DISPLAY_MODE,
   availableDisplayModes = ['default', 'blur', 'led'],
   showSpeedControl = true,
   showFullscreenButton = true,
   showGeneratorButton = true,
+  showTemplates = true,
+  showShareButtons = true,
+  showExportButtons = true,
+  syncToUrl = true,
 }: MarqueeLEDProps) {
   const t = useTranslations('Home.marquee');
-  
-  // 配置状态
-  const [config, setConfig] = useState({
-    text: 'Welcome to Letreiro Digital',
-    textColor: '#FFFFFF',
-    bgColor: '#000000',
-    speed: 5,
-  });
+
+  const [config, setConfig] = useState(DEFAULT_CONFIG);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [displayMode, setDisplayMode] = useState<'default' | 'blur' | 'led'>(initialDisplayMode);
+  const [displayMode, setDisplayMode] = useState<DisplayMode>(initialDisplayMode);
+  const [fontId, setFontId] = useState<string>('');
+  const [hydrated, setHydrated] = useState(false);
   const fullscreenRef = useRef<HTMLDivElement>(null);
-  const [displayLoaded, setDisplayLoaded] = useState(false);
+  const ledCanvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  // 确保显示组件加载完成
-  useEffect(() => {
-    setDisplayLoaded(true);
-  }, []);
-
-  // 全屏相关逻辑
   useEffect(() => {
     const handleFullscreenChange = () => {
       setIsFullscreen(!!document.fullscreenElement);
@@ -69,6 +65,66 @@ function MarqueeLEDComponent({
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
+
+  // Hydrate 时从 URL 读初始 config(分享链接可恢复)
+  // URLSearchParams.get 已自动解码,不需要手动 decodeURIComponent
+  useEffect(() => {
+    if (!syncToUrl) {
+      setHydrated(true);
+      return;
+    }
+    const params = new URLSearchParams(window.location.search);
+    const text = params.get('text');
+    const textColor = params.get('textColor');
+    const bgColor = params.get('bgColor');
+    const speed = params.get('speed');
+    const mode = params.get('displayMode');
+    const font = params.get('font');
+
+    if (text || textColor || bgColor || speed) {
+      setConfig({
+        text: text || DEFAULT_CONFIG.text,
+        textColor: textColor ? `#${textColor}` : DEFAULT_CONFIG.textColor,
+        bgColor: bgColor ? `#${bgColor}` : DEFAULT_CONFIG.bgColor,
+        speed: speed ? Number(speed) || DEFAULT_CONFIG.speed : DEFAULT_CONFIG.speed,
+      });
+    }
+    // 校验 URL 里的 displayMode 必须在 availableDisplayModes 内,否则像 /letreiro-de-led?displayMode=default
+    // 会切到非 LED 模式但页面又没有模式按钮可切回(LEDModeContent 传 availableDisplayModes=[])
+    const allowedModes = availableDisplayModes.length
+      ? availableDisplayModes
+      : [initialDisplayMode];
+    if ((mode === 'blur' || mode === 'led' || mode === 'default') && allowedModes.includes(mode)) {
+      setDisplayMode(mode);
+    }
+    if (font && VALID_FONT_IDS.includes(font)) {
+      setFontId(font);
+    }
+    setHydrated(true);
+    // hydrate 只跑一次,availableDisplayModes / initialDisplayMode 是组件生命周期内固定的页面级配置,不需要响应变化
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [syncToUrl]);
+
+  // 同步 config / displayMode 到 URL search params(默认值不写入,保持 URL 整洁)
+  // URLSearchParams.set 已自动编码,不需要手动 encodeURIComponent
+  useEffect(() => {
+    if (!syncToUrl || !hydrated) return;
+    const params = new URLSearchParams();
+    if (config.text !== DEFAULT_CONFIG.text) params.set('text', config.text);
+    if (config.textColor !== DEFAULT_CONFIG.textColor) {
+      params.set('textColor', config.textColor.replace('#', ''));
+    }
+    if (config.bgColor !== DEFAULT_CONFIG.bgColor) {
+      params.set('bgColor', config.bgColor.replace('#', ''));
+    }
+    if (config.speed !== DEFAULT_CONFIG.speed) params.set('speed', String(config.speed));
+    if (displayMode !== initialDisplayMode) params.set('displayMode', displayMode);
+    if (fontId) params.set('font', fontId);
+
+    const search = params.toString();
+    const newUrl = search ? `${window.location.pathname}?${search}` : window.location.pathname;
+    window.history.replaceState(null, '', newUrl);
+  }, [config, displayMode, fontId, hydrated, syncToUrl, initialDisplayMode]);
 
   const handleFullscreen = async () => {
     try {
@@ -82,13 +138,53 @@ function MarqueeLEDComponent({
     }
   };
 
-  // 更新配置的处理函数
   const updateConfig = (key: keyof typeof config, value: any) => {
-    setConfig(prev => ({ ...prev, [key]: value }));
+    setConfig((prev) => ({ ...prev, [key]: value }));
   };
+
+  const applyTemplate = (tpl: Template) => {
+    setConfig({
+      text: tpl.text,
+      textColor: tpl.textColor,
+      bgColor: tpl.bgColor,
+      speed: tpl.speed,
+    });
+    if (availableDisplayModes.includes(tpl.displayMode)) {
+      setDisplayMode(tpl.displayMode);
+    }
+  };
+
+  const resetToDefault = () => {
+    setConfig(DEFAULT_CONFIG);
+    setDisplayMode(initialDisplayMode);
+    setFontId('');
+  };
+
+  const handleOpenGenerator = () => {
+    const params = new URLSearchParams({
+      text: config.text,
+      textColor: config.textColor.replace('#', ''),
+      bgColor: config.bgColor.replace('#', ''),
+      speed: String(config.speed),
+      displayMode,
+    });
+    if (fontId) params.set('font', fontId);
+    window.open(`/generator?${params.toString()}`, '_blank');
+  };
+
+  const modeButtonClass = (active: boolean) =>
+    `${
+      active
+        ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
+        : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
+    } transition-all duration-200`;
 
   return (
     <div id='marqueeLED' className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
+      {showTemplates && (
+        <TemplateQuickPicker onApply={applyTemplate} onReset={resetToDefault} />
+      )}
+
       <div className='mb-4 flex items-center justify-between'>
         <h2 className='text-xl font-semibold text-[#FF782C]'>{t('title')}</h2>
         <div className='flex gap-2'>
@@ -96,11 +192,7 @@ function MarqueeLEDComponent({
             <Button
               variant={displayMode === 'default' ? 'default' : 'outline'}
               onClick={() => setDisplayMode('default')}
-              className={`${
-                displayMode === 'default'
-                  ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
-                  : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
-              } transition-all duration-200`}
+              className={modeButtonClass(displayMode === 'default')}
             >
               {t('default')}
             </Button>
@@ -109,11 +201,7 @@ function MarqueeLEDComponent({
             <Button
               variant={displayMode === 'blur' ? 'default' : 'outline'}
               onClick={() => setDisplayMode('blur')}
-              className={`${
-                displayMode === 'blur'
-                  ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
-                  : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
-              } transition-all duration-200`}
+              className={modeButtonClass(displayMode === 'blur')}
             >
               {t('blur')}
             </Button>
@@ -122,11 +210,7 @@ function MarqueeLEDComponent({
             <Button
               variant={displayMode === 'led' ? 'default' : 'outline'}
               onClick={() => setDisplayMode('led')}
-              className={`${
-                displayMode === 'led'
-                  ? 'bg-[#FF782C] text-white shadow-lg scale-105 font-bold'
-                  : 'bg-white text-[#FF782C] hover:bg-[#FF782C] hover:text-white border-[#FF782C]'
-              } transition-all duration-200`}
+              className={modeButtonClass(displayMode === 'led')}
             >
               {t('ledMode')}
             </Button>
@@ -134,7 +218,7 @@ function MarqueeLEDComponent({
           {showFullscreenButton && (
             <Button
               onClick={handleFullscreen}
-              variant="outline"
+              variant='outline'
               className={`bg-blue-500 text-white hover:bg-blue-600 border-blue-500 transition-all duration-200 ${
                 isFullscreen ? 'shadow-lg scale-105 font-bold' : ''
               }`}
@@ -144,19 +228,9 @@ function MarqueeLEDComponent({
           )}
           {showGeneratorButton && (
             <Button
-              onClick={() => {
-                // URLSearchParams 会自动编码,不要手动 encodeURIComponent(否则双重编码)
-                const params = new URLSearchParams({
-                  text: config.text,
-                  textColor: config.textColor.replace('#', ''),
-                  bgColor: config.bgColor.replace('#', ''),
-                  speed: String(config.speed),
-                  displayMode: displayMode,
-                });
-                window.open(`/generator?${params.toString()}`, '_blank');
-              }}
-              variant="outline"
-              className="bg-blue-500 text-white hover:bg-blue-600 border-blue-500 transition-all duration-200"
+              onClick={handleOpenGenerator}
+              variant='outline'
+              className='bg-blue-500 text-white hover:bg-blue-600 border-blue-500 transition-all duration-200'
             >
               {t('generator')}
             </Button>
@@ -164,30 +238,41 @@ function MarqueeLEDComponent({
         </div>
       </div>
 
-      <div className='grid gap-4 auto-rows-min' style={{ contain: 'layout paint', contentVisibility: 'auto', minHeight: '16rem' }}>
-        {/* LED显示组件 - 添加固定高度样式以防止布局偏移 */}
-        <div 
-          ref={fullscreenRef} 
-          className="w-full h-64 relative aspect-[4/1] min-h-[16rem] flex items-center justify-center"
-          style={{ 
-            contain: 'layout paint size', 
-            height: '16rem', 
+      {(showExportButtons || showShareButtons) && (
+        <div className='mb-4 flex flex-col items-end gap-2 sm:flex-row sm:justify-between sm:items-center'>
+          {showExportButtons ? (
+            <ExportButtons canvasRef={ledCanvasRef} enabled={displayMode === 'led'} />
+          ) : (
+            <span />
+          )}
+          {showShareButtons && <ShareButtons />}
+        </div>
+      )}
+
+      <div
+        className='grid gap-4 auto-rows-min'
+        style={{ contain: 'layout paint', contentVisibility: 'auto', minHeight: '16rem' }}
+      >
+        <div
+          ref={fullscreenRef}
+          className='w-full h-64 relative aspect-[4/1] min-h-[16rem] flex items-center justify-center'
+          style={{
+            contain: 'layout paint size',
+            height: '16rem',
             minHeight: '16rem',
             display: 'flex',
-            position: 'relative'
+            position: 'relative',
           }}
         >
-          {!displayLoaded ? (
-            <DisplayLoader bgColor={config.bgColor} />
-          ) : displayMode === 'led' ? (
+          {displayMode === 'led' ? (
             <TrueLEDDisplay
               text={config.text}
               textColor={config.textColor}
               bgColor={config.bgColor}
+              speed={Math.max(1, 15 - config.speed * 1.3)}
               isFullscreen={isFullscreen}
               fullscreenRef={fullscreenRef}
-              isGenerator={false}
-              speed={Math.max(1, 15 - config.speed * 1.3)}
+              canvasOuterRef={ledCanvasRef}
             />
           ) : (
             <LEDDisplay
@@ -195,11 +280,11 @@ function MarqueeLEDComponent({
               isFullscreen={isFullscreen}
               fullscreenRef={fullscreenRef}
               isLEDMode={displayMode === 'blur'}
+              fontFamily={fontIdToCssVar(fontId)}
             />
           )}
         </div>
 
-        {/* 文本输入 */}
         <div className='flex flex-col gap-2' style={{ minHeight: '80px', contain: 'paint layout' }}>
           <label htmlFor='led-text' className='text-sm font-medium text-gray-700'>
             {t('inputPlaceholder')}
@@ -214,8 +299,30 @@ function MarqueeLEDComponent({
           />
         </div>
 
-        {/* 颜色选择器和速度控制 */}
-        <div className='grid grid-cols-3 gap-4' style={{ minHeight: '100px', contain: 'paint layout' }}>
+        {displayMode !== 'led' && (
+          <div className='flex flex-col gap-2' style={{ minHeight: '60px', contain: 'paint layout' }}>
+            <label htmlFor='led-font' className='text-sm font-medium text-gray-700'>
+              {t('font')}
+            </label>
+            <select
+              id='led-font'
+              value={fontId}
+              onChange={(e) => setFontId(e.target.value)}
+              className='h-10 rounded-md border border-gray-300 bg-white px-3 py-2 text-sm'
+            >
+              {FONT_OPTIONS.map((f) => (
+                <option key={f.id || 'default'} value={f.id}>
+                  {f.id === '' ? t('fontDefault') : f.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        <div
+          className='grid grid-cols-3 gap-4'
+          style={{ minHeight: '100px', contain: 'paint layout' }}
+        >
           <div className='flex flex-col gap-2'>
             <label htmlFor='text-color' className='text-sm font-medium text-gray-700'>
               {t('textColor')}
@@ -242,7 +349,6 @@ function MarqueeLEDComponent({
             />
           </div>
 
-          {/* 速度控制 */}
           {showSpeedControl && (
             <div className='flex flex-col gap-2'>
               <label htmlFor='scroll-speed' className='text-sm font-medium text-gray-700'>
@@ -266,5 +372,4 @@ function MarqueeLEDComponent({
   );
 }
 
-// 使用memo优化组件
 export default memo(MarqueeLEDComponent);

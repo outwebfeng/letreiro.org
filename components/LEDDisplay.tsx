@@ -10,6 +10,8 @@ interface LEDDisplayProps {
   isFullscreen: boolean;
   isLEDMode: boolean;
   fullscreenRef: React.RefObject<HTMLDivElement>;
+  /** CSS font-family 值,通常为 next/font 注入的 CSS 变量,如 'var(--font-vt323)' */
+  fontFamily?: string;
 }
 
 // 使用memo优化组件
@@ -21,6 +23,7 @@ const LEDDisplay = memo(function LEDDisplayComponent({
   isFullscreen,
   isLEDMode,
   fullscreenRef,
+  fontFamily,
 }: LEDDisplayProps) {
   const [displayText, setDisplayText] = useState(text);
   const animationRef = useRef<number | null>(null);
@@ -61,7 +64,7 @@ const LEDDisplay = memo(function LEDDisplayComponent({
   const textStyles = {
     color: textColor,
     // 延迟启动动画，让文本先渲染
-    animation: animationStarted 
+    animation: animationStarted
       ? `marquee ${animationDuration} linear infinite`
       : 'none',
     fontSize: isFullscreen ? 'clamp(5rem, 50vh, 60rem)' : 'clamp(1rem, 16rem, 12.8rem)',
@@ -70,6 +73,7 @@ const LEDDisplay = memo(function LEDDisplayComponent({
     willChange: 'transform',
     display: 'flex',
     alignItems: 'center',
+    ...(fontFamily ? { fontFamily } : {}),
     ...getLEDStyles()
   };
 

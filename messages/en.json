@@ -97,7 +97,9 @@
       "ledMode": "LED",
       "generator": "Generator",
       "blur": "Blur",
-      "default": "Default"
+      "default": "Default",
+      "font": "Font",
+      "fontDefault": "System default"
     },
     "Welcome": {
       "title": "Welcome to Letreiro.org — Your Online LED Marquee Generator",

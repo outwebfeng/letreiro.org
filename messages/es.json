@@ -97,7 +97,9 @@
       "ledMode": "LED",
       "generator": "Generador",
       "blur": "Desenfocar",
-      "default": "Predeterminado"
+      "default": "Predeterminado",
+      "font": "Tipografía",
+      "fontDefault": "Predeterminada"
     },
     "Welcome": {
       "title": "Bienvenido a Letreiro.org — tu generador de letrero LED online",

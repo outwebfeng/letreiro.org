@@ -3,6 +3,7 @@
 import { useSearchParams } from 'next/navigation';
 import LEDDisplay from '@/components/LEDDisplay';
 import { TrueLEDDisplay } from '@/components/TrueLEDDisplay';
+import { fontIdToCssVar } from '@/lib/fonts';
 
 export default function GeneratorPage() {
   const searchParams = useSearchParams();
@@ -12,6 +13,7 @@ export default function GeneratorPage() {
   const bgColor = '#' + (searchParams.get('bgColor') || '000000');
   const speed = Number(searchParams.get('speed')) || 5;
   const displayMode = searchParams.get('displayMode') || 'default';
+  const fontFamily = fontIdToCssVar(searchParams.get('font'));
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-black" style={{ overflow: 'hidden' }}>
@@ -41,6 +43,7 @@ export default function GeneratorPage() {
             isFullscreen={true}
             isLEDMode={displayMode === 'blur'}
             fullscreenRef={{ current: null }}
+            fontFamily={fontFamily}
           />
         )}
       </div>
