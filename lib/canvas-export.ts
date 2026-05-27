@@ -4,6 +4,23 @@
 
 const WATERMARK_TEXT = 'letreiro.org';
 
+// 导出尺寸边界框,避免跟随 source canvas 的 DPR backing store 放大导致内存爆掉。
+// 等比缩放到框内,保留 source 的真实长宽比(canvas 比例随容器/设备变化,并非恒定 4:1)。
+const EXPORT_MAX_WIDTH = 1200;
+const EXPORT_MAX_HEIGHT = 300;
+
+function pickExportSize(source: HTMLCanvasElement): { w: number; h: number } {
+  const scale = Math.min(
+    EXPORT_MAX_WIDTH / source.width,
+    EXPORT_MAX_HEIGHT / source.height,
+    1,
+  );
+  return {
+    w: Math.max(1, Math.floor(source.width * scale)),
+    h: Math.max(1, Math.floor(source.height * scale)),
+  };
+}
+
 /**
  * 在目标 canvas 上画 source canvas 内容 + 右下角水印
  */
@@ -36,10 +53,11 @@ export async function exportAsGif(
 
   const { GIFEncoder, quantize, applyPalette } = await import('gifenc');
 
-  // 临时 canvas 用于叠加水印
+  // 临时 canvas 用于叠加水印 + 下采样到固定尺寸
   const exportCanvas = document.createElement('canvas');
-  exportCanvas.width = source.width;
-  exportCanvas.height = source.height;
+  const { w, h } = pickExportSize(source);
+  exportCanvas.width = w;
+  exportCanvas.height = h;
   const exportCtx = exportCanvas.getContext('2d');
   if (!exportCtx) throw new Error('Canvas 2d context unavailable');
 
@@ -89,10 +107,11 @@ export async function exportAsVideo(
     throw new Error('MediaRecorder API not supported');
   }
 
-  // 用临时 canvas 叠加水印,然后录这个
+  // 用临时 canvas 叠加水印 + 下采样到固定尺寸,然后录这个
   const exportCanvas = document.createElement('canvas');
-  exportCanvas.width = source.width;
-  exportCanvas.height = source.height;
+  const { w, h } = pickExportSize(source);
+  exportCanvas.width = w;
+  exportCanvas.height = h;
 
   const stream = exportCanvas.captureStream(fps);
   const mimeCandidates = [

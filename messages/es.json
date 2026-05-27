@@ -33,6 +33,7 @@
   },
   "Templates": {
     "quickTemplates": "Plantillas rápidas",
+    "reset": "Restablecer",
     "loja": { "label": "🏪 Tienda" },
     "aniversario": { "label": "🎉 Cumpleaños" },
     "natal": { "label": "🎄 Navidad" },

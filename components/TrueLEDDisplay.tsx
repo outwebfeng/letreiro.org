@@ -33,6 +33,32 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
       canvasOuterRef.current = canvasRef.current;
     }
   }, [canvasOuterRef]);
+
+  // 按 devicePixelRatio 调整 canvas buffer,避免 Retina/高 DPR 屏被 CSS 拉伸糊掉。
+  // renderFrame 基于 canvas.width / .height 计算 dotSize,buffer 变大点也跟着变大,自动清晰。
+  // 导出 GIF/Video 会下采样到固定尺寸(canvas-export.ts),不会跟随 DPR 放大。
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return undefined;
+
+    const updateSize = () => {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
+      const newW = Math.floor(rect.width * dpr);
+      const newH = Math.floor(rect.height * dpr);
+      if (canvas.width !== newW || canvas.height !== newH) {
+        canvas.width = newW;
+        canvas.height = newH;
+      }
+    };
+
+    updateSize();
+    const ro = new ResizeObserver(updateSize);
+    ro.observe(canvas);
+    return () => ro.disconnect();
+  }, [isFullscreen]);
+
   const [scrollPosition, setScrollPosition] = useState(0);
   const [matrixData, setMatrixData] = useState<number[][]>([]);
   const lastTimeRef = useRef<number>(0);
@@ -195,29 +221,31 @@ export const TrueLEDDisplay = memo(function TrueLEDDisplayComponent({
   }, [matrixData, speed, isFullscreen]); // 添加isFullscreen作为依赖
 
   return (
-    <div 
-      ref={fullscreenRef} 
+    <div
+      ref={fullscreenRef}
       className={`w-full ${isGenerator ? 'h-full' : isFullscreen ? 'h-screen' : 'h-64'} min-h-[16rem] flex items-center justify-center`}
-      style={{ 
-        contain: 'layout paint size', 
+      style={{
+        contain: 'layout paint size',
         padding: '0',
-        height: isGenerator ? '100%' : isFullscreen ? '100vh' : '16rem'
+        height: isGenerator ? '100%' : isFullscreen ? '100vh' : '16rem',
+        backgroundColor: bgColor, // SSR/hydration 时立即显示正确底色,避免一帧白闪
       }}
     >
       <canvas
         ref={canvasRef}
         width={800}
         height={256}
-        className="w-full h-full bg-black flex-1"
-        style={{ 
+        className='w-full h-full flex-1'
+        style={{
           aspectRatio: '4/1',
-          imageRendering: 'pixelated', // 提高渲染性能
+          imageRendering: 'pixelated',
           maxHeight: isFullscreen ? '90vh' : '100%',
           margin: 'auto',
           width: isFullscreen ? '90%' : '100%',
           padding: '0',
           willChange: 'transform',
-          display: 'block'
+          display: 'block',
+          backgroundColor: bgColor,
         }}
       />
     </div>

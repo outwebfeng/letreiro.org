@@ -7,9 +7,11 @@ import { TEMPLATES, type Template } from '@/lib/templates';
 interface TemplateQuickPickerProps {
   /** 用户点击模板后的回调,父组件应用全部配置 */
   onApply: (template: Template) => void;
+  /** 可选的重置回调,传入后会渲染"恢复默认"按钮 */
+  onReset?: () => void;
 }
 
-export default function TemplateQuickPicker({ onApply }: TemplateQuickPickerProps) {
+export default function TemplateQuickPicker({ onApply, onReset }: TemplateQuickPickerProps) {
   const t = useTranslations('Templates');
 
   return (
@@ -27,6 +29,15 @@ export default function TemplateQuickPicker({ onApply }: TemplateQuickPickerProp
             {t(`${tpl.id}.label`)}
           </button>
         ))}
+        {onReset && (
+          <button
+            type='button'
+            onClick={onReset}
+            className='inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900'
+          >
+            ↺ {t('reset')}
+          </button>
+        )}
       </div>
     </div>
   );

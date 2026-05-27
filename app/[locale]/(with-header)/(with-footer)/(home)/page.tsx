@@ -14,9 +14,6 @@ import type { Template } from '@/lib/templates';
 // 静态导入ScrollToTop组件
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
 
-// 简化导入方式 - 直接导入
-import MarqueeLED from '@/components/MarqueeLED';
-
 const DEFAULT_CONFIG = {
   text: 'Welcome to Letreiro Digital',
   textColor: '#FFFFFF',
@@ -25,43 +22,6 @@ const DEFAULT_CONFIG = {
 };
 type DisplayMode = 'default' | 'blur' | 'led';
 const DEFAULT_DISPLAY_MODE: DisplayMode = 'default';
-
-// 为MarqueeLED组件创建骨架屏
-function MarqueeLEDSkeleton() {
-  return (
-    <div className='mb-8 rounded-lg bg-white p-6 shadow-lg animate-pulse'>
-      <div className='mb-4 flex items-center justify-between'>
-        <div className='h-6 w-40 bg-gray-200 rounded'></div>
-        <div className='flex gap-2'>
-          <div className='h-8 w-20 bg-gray-200 rounded'></div>
-          <div className='h-8 w-20 bg-gray-200 rounded'></div>
-          <div className='h-8 w-24 bg-gray-200 rounded'></div>
-        </div>
-      </div>
-      <div className='grid gap-4 auto-rows-min'>
-        <div className="w-full h-64 relative aspect-[4/1] min-h-[16rem] bg-gray-300 rounded"></div>
-        <div className='flex flex-col gap-2'>
-          <div className='h-4 w-40 bg-gray-200 rounded'></div>
-          <div className='h-10 w-full bg-gray-200 rounded'></div>
-        </div>
-        <div className='grid grid-cols-3 gap-4'>
-          <div className='flex flex-col gap-2'>
-            <div className='h-4 w-24 bg-gray-200 rounded'></div>
-            <div className='h-10 w-full bg-gray-200 rounded'></div>
-          </div>
-          <div className='flex flex-col gap-2'>
-            <div className='h-4 w-24 bg-gray-200 rounded'></div>
-            <div className='h-10 w-full bg-gray-200 rounded'></div>
-          </div>
-          <div className='flex flex-col gap-2'>
-            <div className='h-4 w-24 bg-gray-200 rounded'></div>
-            <div className='h-10 w-full bg-gray-200 rounded'></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function Page() {
   const t = useTranslations('Home');
@@ -152,6 +112,11 @@ export default function Page() {
     setDisplayMode(tpl.displayMode);
   };
 
+  const resetToDefault = () => {
+    setConfig(DEFAULT_CONFIG);
+    setDisplayMode(DEFAULT_DISPLAY_MODE);
+  };
+
   return (
     <div className='relative w-full'>
       <div className='relative mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8'>
@@ -167,7 +132,7 @@ export default function Page() {
         <div className='-mt-2 sm:-mt-4'>
           {/* 直接在页面中实现MarqueeLED功能 */}
           <div id='marqueeLED' className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
-            <TemplateQuickPicker onApply={applyTemplate} />
+            <TemplateQuickPicker onApply={applyTemplate} onReset={resetToDefault} />
 
             <div className='mb-4 flex items-center justify-between'>
               <h2 className='text-xl font-semibold text-[#FF782C]'>{tMarquee('title')}</h2>

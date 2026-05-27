@@ -33,6 +33,7 @@
   },
   "Templates": {
     "quickTemplates": "Quick templates",
+    "reset": "Reset to default",
     "loja": { "label": "🏪 Shop" },
     "aniversario": { "label": "🎉 Birthday" },
     "natal": { "label": "🎄 Christmas" },
