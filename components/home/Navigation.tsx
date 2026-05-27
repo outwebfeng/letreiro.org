@@ -13,12 +13,14 @@ export default function Navigation() {
       <nav className='mx-auto flex max-w-pc flex-1 items-center justify-between bg-[#ffffff] px-4'>
         <div className='flex items-center gap-x-2'>
           <Link className='flex items-center gap-x-2 hover:opacity-80' href='/' title={t('title')}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src='/favicon.ico'
+              src='/images/logo.webp'
               alt={t('logoAlt')}
               title={t('logoTitle')}
               width={64}
-              height={48}
+              height={64}
+              fetchPriority='high'
               className='size-[40px] lg:size-16'
             />
             <span className='text-lg font-semibold text-[#FF782C]'>{t('logoTitle')}</span>
