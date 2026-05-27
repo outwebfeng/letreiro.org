@@ -133,8 +133,8 @@ function MarqueeLEDComponent({
       } else {
         await document.exitFullscreen();
       }
-    } catch (err) {
-      console.error('Error with fullscreen:', err);
+    } catch {
+      // fullscreen API 可能因用户拒绝/不支持而 reject,静默忽略
     }
   };
 
@@ -276,7 +276,10 @@ function MarqueeLEDComponent({
             />
           ) : (
             <LEDDisplay
-              {...config}
+              text={config.text}
+              textColor={config.textColor}
+              bgColor={config.bgColor}
+              speed={config.speed}
               isFullscreen={isFullscreen}
               fullscreenRef={fullscreenRef}
               isLEDMode={displayMode === 'blur'}
