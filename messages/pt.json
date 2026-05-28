@@ -12,6 +12,26 @@
       "title": "Letreiro de LED Online Grátis · Gerador no Navegador",
       "description": "Crie um letreiro de LED online com texto em rolagem — ideal para loja, eventos e anúncios. Personalize cores, velocidade e efeitos do letreiro digital.",
       "keywords": "letreiro de LED, letreiro de LED online, letreiro de LED para loja, painel de LED virtual, letreiro digital de LED, placa de LED online, simulador de letreiro de LED, texto em rolagem online"
+    },
+    "letreiroParaLoja": {
+      "title": "Letreiro para Loja Grátis · Crie um Painel LED Digital Online",
+      "description": "Crie letreiros para loja gratuitamente. Painel de LED digital online com mensagens animadas: OFERTA, ABERTO, promoções. Sem cadastro, no navegador.",
+      "keywords": "letreiro para loja, letreiro de LED para loja, letreiro digital para loja, letreiro online loja, painel de LED para loja, letreiro luminoso loja, letreiro de oferta, letreiro de promoção, letreiro de aberto"
+    },
+    "letreiroAnimado": {
+      "title": "Letreiro Animado Online Grátis · Texto com Movimento e Efeitos",
+      "description": "Crie um letreiro animado online com texto em movimento, brilho LED e efeitos. Ideal para vitrines, redes sociais, festas e vídeos. Grátis no navegador.",
+      "keywords": "letreiro animado, letreiro com animação, texto animado online, letreiro de texto em movimento, letreiro animado grátis, letreiro com efeitos, letreiro luminoso animado"
+    },
+    "letreiroDeAniversario": {
+      "title": "Letreiro de Aniversário Online · PARABÉNS Animado Grátis",
+      "description": "Crie um letreiro de aniversário online com mensagem PARABÉNS animada. Perfeito para festas, vídeos e stories. Personalize cores e texto. Grátis.",
+      "keywords": "letreiro de aniversário, letreiro parabéns, letreiro feliz aniversário, letreiro de festa, letreiro para aniversário online, letreiro animado aniversário, letreiro de festa de 15 anos"
+    },
+    "letreiroDeNatal": {
+      "title": "Letreiro de Natal Online · Mensagem FELIZ NATAL Animada Grátis",
+      "description": "Crie um letreiro de Natal online com FELIZ NATAL animado em vermelho e verde. Ideal para loja, casa, redes sociais e decoração natalina digital.",
+      "keywords": "letreiro de natal, letreiro feliz natal, letreiro natalino, letreiro de natal online, decoração de natal digital, letreiro de loja natal, letreiro de festas de fim de ano"
     }
   },
   "Navigation": {
@@ -275,6 +295,494 @@
           "answer": "Sim. As principais funções de criação de letreiros digitais com texto em rolagem são totalmente gratuitas."
         }
       ]
+    },
+    "LojaPage": {
+      "h1": "Letreiro para Loja Grátis · Painel LED Digital Online",
+      "subTitle": "Crie um letreiro para sua loja em poucos minutos. Painel de LED digital online com mensagens animadas para chamar a atenção dos clientes: ABERTO, OFERTA, promoções, datas comemorativas. Sem hardware, sem instalação, sem cadastro — direto no navegador, em qualquer tela. Use no computador da loja, num celular antigo na vitrine ou numa TV velha pendurada na parede."
+    },
+    "LojaFeatures": {
+      "title": "Por que usar um letreiro digital na sua loja",
+      "items": [
+        {
+          "title": "Chama a atenção do cliente que passa na frente",
+          "description": "Um letreiro animado com texto em rolagem capta o olhar de quem passa pela vitrine ou pela porta da loja. Pesquisas de varejo mostram que cartazes com movimento têm taxa de visualização muito maior que cartazes estáticos impressos."
+        },
+        {
+          "title": "Muda a mensagem em segundos",
+          "description": "Em vez de imprimir um cartaz novo para cada promoção, basta editar o texto do letreiro digital. Troque \"ABERTO\" por \"OFERTA 50%\" ou \"FECHADO\" sem custo, quantas vezes quiser por dia."
+        },
+        {
+          "title": "Aproveita equipamentos que você já tem",
+          "description": "Use um celular antigo, um tablet, um notebook ou uma TV ligada por HDMI. Não precisa comprar painel de LED físico, que custa de R$ 500 a R$ 5.000 dependendo do tamanho. O letreiro de LED online é gratuito."
+        },
+        {
+          "title": "Personalize cores, velocidade e efeitos",
+          "description": "Escolha cores que combinam com a identidade visual da sua loja, ajuste a velocidade da rolagem para textos longos ou curtos, e use efeitos como desfoque ou modo LED real para se destacar."
+        }
+      ]
+    },
+    "LojaWhenToUse": {
+      "title": "Quando usar um letreiro de LED na loja",
+      "items": [
+        {
+          "title": "Anunciar que a loja está ABERTA ou FECHADA",
+          "description": "Coloque um celular ou tablet na vitrine com a mensagem \"ABERTO\" em verde e troque para \"FECHADO\" em vermelho no final do expediente. Clientes que passam tarde sabem na hora se vale a pena entrar."
+        },
+        {
+          "title": "Divulgar ofertas e promoções relâmpago",
+          "description": "Promoções de fim de semana, queima de estoque, descontos progressivos. Edite o letreiro em segundos para \"OFERTA 30% OFF SÓ HOJE\" e atraia compras por impulso de quem passa na rua."
+        },
+        {
+          "title": "Black Friday, Natal e datas sazonais",
+          "description": "Em campanhas de Black Friday ou Natal, um letreiro digital reforça a mensagem sem o custo de imprimir cartazes novos a cada semana. Configure cores temáticas (vermelho/verde no Natal) e mude rapidamente quando a campanha terminar."
+        },
+        {
+          "title": "Inauguração e divulgação de novidades",
+          "description": "Loja nova abrindo? Produto novo chegando? Use o letreiro com mensagem chamativa como \"NOVIDADES\" ou \"GRANDE INAUGURAÇÃO\" para gerar curiosidade nos primeiros dias."
+        }
+      ]
+    },
+    "LojaHowTo": {
+      "title": "Como criar um letreiro para loja em 3 passos",
+      "steps": [
+        {
+          "step": "1. Digite a mensagem da sua loja",
+          "description": "No simulador acima, digite o texto que vai aparecer no letreiro. Use letras maiúsculas para destacar palavras importantes (OFERTA, ABERTO, NATAL) ou frases completas como \"GRANDE PROMOÇÃO DE FIM DE ANO\". O letreiro mostra o texto em rolagem contínua."
+        },
+        {
+          "step": "2. Escolha as cores e a velocidade",
+          "description": "Selecione a cor do texto e do fundo conforme a identidade da sua loja. Verde e vermelho funcionam bem para ABERTO/FECHADO. Amarelo sobre preto chama atenção para OFERTA. Ajuste a velocidade conforme o tamanho do texto: mais rápido para frases curtas, mais lento para textos longos."
+        },
+        {
+          "step": "3. Coloque na vitrine usando um celular ou tela",
+          "description": "Abra o letreiro no navegador de um celular antigo, tablet ou TV (via HDMI no computador). Use o botão \"Tela Cheia\" para esconder a barra do navegador e deixar só o letreiro aparecendo. Posicione o aparelho virado para a rua."
+        }
+      ]
+    },
+    "LojaCompare": {
+      "title": "Letreiro digital vs. cartaz impresso e placa de LED física",
+      "intro": "Vale a pena substituir o cartaz impresso ou o painel de LED físico por um letreiro digital online? Veja as diferenças práticas para uma loja de pequeno e médio porte.",
+      "items": [
+        {
+          "title": "Custo: R$ 0 vs. R$ 50-5.000",
+          "description": "Cartaz impresso custa entre R$ 5 e R$ 50 cada (e estraga com o tempo). Painel de LED físico de bom tamanho custa R$ 500 a R$ 5.000. O letreiro digital online é totalmente gratuito, e você só precisa de uma tela que já tem."
+        },
+        {
+          "title": "Tempo para mudar a mensagem",
+          "description": "Cartaz impresso: imprimir e trocar leva horas. Painel físico: software dedicado, às vezes complicado. Letreiro online: digite o novo texto e a mensagem muda na hora."
+        },
+        {
+          "title": "Movimento e animação",
+          "description": "Cartaz impresso é estático e perde força depois de poucos dias. Painel físico tem animação mas custa caro. Letreiro digital tem texto em rolagem e efeitos visuais (modo LED real, desfoque) que mantêm a atenção dos clientes."
+        },
+        {
+          "title": "Tela já existente",
+          "description": "Você pode usar um celular antigo, tablet, notebook ou TV velha que está parada. Basta abrir o site e colocar em tela cheia. Não precisa de instalação física, sem furos na parede, sem fiação."
+        }
+      ]
+    },
+    "LojaFAQ": {
+      "title": "Perguntas frequentes sobre letreiro para loja",
+      "questions": [
+        {
+          "question": "Preciso instalar algum programa para usar o letreiro de LED para loja?",
+          "answer": "Não. O letreiro funciona direto no navegador (Chrome, Safari, Firefox, Edge) em computador, celular ou tablet. Basta abrir o site, digitar a mensagem e colocar em tela cheia. Não tem download, não tem instalação, não tem cadastro."
+        },
+        {
+          "question": "Posso usar um celular antigo na vitrine como letreiro?",
+          "answer": "Sim, e é uma das maneiras mais práticas. Abra o letreiro no navegador do celular antigo, ative o modo tela cheia, coloque o celular no carregador e posicione na vitrine virado para a rua. Funciona o dia inteiro."
+        },
+        {
+          "question": "Como faço o letreiro mostrar \"OFERTA\" ou outra mensagem?",
+          "answer": "Digite o texto no campo de entrada do simulador (por exemplo: OFERTA 50% OFF). O letreiro vai mostrar a mensagem em rolagem contínua. Você pode trocar quantas vezes quiser ao longo do dia."
+        },
+        {
+          "question": "O letreiro funciona offline depois de aberto?",
+          "answer": "Depois que a página carrega, o letreiro continua funcionando mesmo se a conexão cair temporariamente — desde que você não feche o navegador ou recarregue a página. Para uso contínuo na vitrine, recomendamos um Wi-Fi estável."
+        },
+        {
+          "question": "Posso compartilhar a configuração do meu letreiro com outra loja?",
+          "answer": "Sim. A configuração (texto, cores, velocidade) fica codificada na própria URL do navegador. Basta copiar o endereço e enviar pelo WhatsApp ou e-mail — quem abrir vai ver o mesmo letreiro configurado."
+        }
+      ]
+    },
+    "LojaRelated": {
+      "title": "Continue explorando",
+      "intro": "Veja mais possibilidades do letreiro de LED online:",
+      "led": {
+        "title": "→ Modo LED Realista",
+        "description": "Conheça o modo de simulação de painel de LED com pontos físicos, brilho e efeito de matriz real."
+      },
+      "home": {
+        "title": "→ Página inicial · Simulador",
+        "description": "Volte para a página inicial e explore todos os recursos do simulador de letreiro digital."
+      }
+    },
+    "AnimadoPage": {
+      "h1": "Letreiro Animado Online · Texto em Movimento com Efeitos Visuais",
+      "subTitle": "Crie um letreiro animado com texto em rolagem contínua, efeitos de brilho LED e desfoque. Perfeito para vitrines de loja, stories de Instagram, vídeos do TikTok, festas e qualquer situação em que você queira chamar atenção com movimento. Sem hardware, sem cadastro, direto no navegador."
+    },
+    "AnimadoFeatures": {
+      "title": "Por que usar um letreiro animado em vez de texto estático",
+      "items": [
+        {
+          "title": "Movimento atrai mais atenção que texto parado",
+          "description": "O olho humano é treinado para detectar movimento. Um letreiro animado em rolagem contínua tem taxa de visualização muito maior que cartazes estáticos — vale tanto na vitrine quanto numa story de Instagram."
+        },
+        {
+          "title": "Múltiplos efeitos prontos",
+          "description": "Use o modo padrão (texto em rolagem suave), o modo Desfoque (efeito de borrão estilizado) ou o modo LED realista (matriz de pontos com brilho). Cada efeito dá uma cara diferente ao mesmo texto."
+        },
+        {
+          "title": "Sem software de animação",
+          "description": "Não precisa After Effects, Premiere ou qualquer ferramenta de motion design. Digite o texto, escolha o efeito e o letreiro já está animado em tempo real no navegador."
+        },
+        {
+          "title": "Personalização instantânea",
+          "description": "Mude cores, velocidade, fonte e efeito em segundos. Veja o resultado animando ao vivo enquanto você ajusta — sem precisar renderizar ou esperar."
+        }
+      ]
+    },
+    "AnimadoWhenToUse": {
+      "title": "Onde usar um letreiro animado",
+      "items": [
+        {
+          "title": "Stories e Reels nas redes sociais",
+          "description": "Grave a tela com o letreiro rolando para usar como pano de fundo de stories no Instagram, Reels, TikTok ou Shorts. O movimento mantém o espectador prestando atenção até o final do vídeo."
+        },
+        {
+          "title": "Vitrine de loja com mensagem em movimento",
+          "description": "Coloque um celular ou tablet na vitrine com o letreiro animado. Quem passa pela rua é fisgado pelo movimento e lê a mensagem — taxa de conversão muito maior que cartaz impresso."
+        },
+        {
+          "title": "Telão de eventos, festas e lives",
+          "description": "Use o letreiro num telão ou TV durante festas, eventos corporativos, lives no YouTube ou cultos. Mensagens animadas de boas-vindas, agradecimento ou patrocinadores rolam continuamente."
+        },
+        {
+          "title": "Apresentações e ambientes de trabalho",
+          "description": "Telão de recepção de empresa, mural digital em escolas, mensagens motivacionais em ambientes de trabalho. O letreiro animado roda 24/7 sem manutenção."
+        }
+      ]
+    },
+    "AnimadoHowTo": {
+      "title": "Como criar um letreiro animado em 3 passos",
+      "steps": [
+        {
+          "step": "1. Digite o texto animado",
+          "description": "No simulador acima, escreva a mensagem que vai rolar continuamente. Pode ser uma frase curta (BEM-VINDO, OFERTA) ou um texto longo — o letreiro animado adapta automaticamente à largura da tela."
+        },
+        {
+          "step": "2. Escolha o efeito de animação",
+          "description": "Alterne entre modo Padrão (rolagem suave), Desfoque (efeito de borrão estilizado) ou LED (matriz de pontos com brilho realista). Cada efeito muda totalmente a sensação do mesmo texto."
+        },
+        {
+          "step": "3. Ajuste cores e velocidade ao vivo",
+          "description": "Veja a animação rolando ao vivo enquanto ajusta cor do texto, cor de fundo e velocidade de rolagem. Quando ficar bom, copie a URL para salvar a configuração ou exporte como GIF/vídeo."
+        }
+      ]
+    },
+    "AnimadoCompare": {
+      "title": "Letreiro animado vs. animação profissional e texto estático",
+      "intro": "Quando vale a pena usar um letreiro animado online em vez de gravar um vídeo profissional ou colocar texto parado? Compare as três opções.",
+      "items": [
+        {
+          "title": "Engajamento visual",
+          "description": "Texto estático: o olho passa rápido. Vídeo profissional: alto engajamento, mas caro. Letreiro animado online: alto engajamento, custo zero — o equilíbrio ideal para conteúdo recorrente."
+        },
+        {
+          "title": "Custo de produção",
+          "description": "Vídeo animado profissional: de R$ 200 a R$ 2.000 por peça. Letreiro animado online: gratuito, ilimitado. Para quem produz conteúdo todo dia, a economia é enorme."
+        },
+        {
+          "title": "Tempo até estar pronto",
+          "description": "Animação em After Effects: horas ou dias. Letreiro animado online: segundos. Para mensagens diárias de redes sociais ou vitrines, o tempo de produção é o fator decisivo."
+        },
+        {
+          "title": "Edição depois de pronto",
+          "description": "Vídeo renderizado: precisa reabrir o projeto, editar e re-renderizar. Letreiro online: o texto e cores são variáveis ao vivo — basta editar e a animação já roda com o novo conteúdo."
+        }
+      ]
+    },
+    "AnimadoFAQ": {
+      "title": "Perguntas frequentes sobre letreiro animado",
+      "questions": [
+        {
+          "question": "Como salvar o letreiro animado como GIF ou vídeo?",
+          "answer": "O simulador tem botões de exportação para GIF (~370 KB, ideal para WhatsApp e Instagram) e vídeo WebM (~500 KB, suportado em TikTok, Reels e YouTube). Basta clicar em exportar — o arquivo baixa automaticamente."
+        },
+        {
+          "question": "Posso usar o letreiro animado em vídeos do TikTok ou Reels?",
+          "answer": "Sim, e é uma das aplicações mais populares. Exporte como vídeo WebM ou grave a tela do navegador. O letreiro animado fica como pano de fundo ou overlay em cima do seu vídeo principal."
+        },
+        {
+          "question": "Existe limite de tamanho do texto animado?",
+          "answer": "O texto pode ter até 100 caracteres por configuração. Para textos mais longos, o letreiro continua animando — basta esperar a mensagem inteira rolar antes de repetir."
+        },
+        {
+          "question": "Posso compartilhar uma configuração de letreiro animado?",
+          "answer": "Sim. A configuração (texto, cores, velocidade, efeito) fica codificada na URL. Copie o endereço e mande pelo WhatsApp — quem abrir vai ver o mesmo letreiro animado configurado."
+        },
+        {
+          "question": "O letreiro animado funciona num telão grande?",
+          "answer": "Sim. Use o botão de tela cheia para esconder a barra do navegador. O letreiro animado adapta automaticamente à resolução — funciona em projetor, TV de 50\\\", telão de eventos ou qualquer tela conectada por HDMI."
+        }
+      ]
+    },
+    "AnimadoRelated": {
+      "title": "Continue explorando",
+      "intro": "Veja mais formas de usar o letreiro animado online:",
+      "led": {
+        "title": "→ Modo LED Realista",
+        "description": "Combine a animação com a simulação de painel de LED físico — matriz de pontos, brilho e efeito de letreiro luminoso real."
+      },
+      "home": {
+        "title": "→ Página inicial · Simulador",
+        "description": "Volte para a página inicial e explore todos os recursos do simulador de letreiro digital."
+      }
+    },
+    "AniversarioPage": {
+      "h1": "Letreiro de Aniversário Online · PARABÉNS Animado Grátis",
+      "subTitle": "Crie um letreiro de aniversário animado com mensagens como PARABÉNS, FELIZ ANIVERSÁRIO ou o nome do aniversariante. Perfeito para festas, decoração de mesa, vídeos de stories e telões em salões de festa. Use no celular, tablet ou TV — sem instalação, sem cadastro, direto no navegador."
+    },
+    "AniversarioFeatures": {
+      "title": "Por que usar um letreiro digital de aniversário",
+      "items": [
+        {
+          "title": "Decoração instantânea com nome personalizado",
+          "description": "Digite o nome do aniversariante e a mensagem aparece animada na hora. Sem precisar encomendar faixa personalizada ou esperar entrega — tudo pronto em segundos."
+        },
+        {
+          "title": "Combina com qualquer tema de festa",
+          "description": "Escolha cores que combinem com o tema: rosa para festa infantil, dourado para 15 anos, vermelho/preto para festa adulto. O letreiro adapta ao visual da decoração."
+        },
+        {
+          "title": "Reutilizável em todas as festas",
+          "description": "Não é um item descartável. A cada aniversário na família, basta mudar o nome e a mensagem. Economia de longo prazo comparado a comprar decoração nova toda vez."
+        },
+        {
+          "title": "Funciona em qualquer tela existente",
+          "description": "TV da sala, celular antigo, tablet do filho, projetor de salão de festa. O letreiro digital roda em qualquer dispositivo com navegador — não precisa comprar nada novo."
+        }
+      ]
+    },
+    "AniversarioWhenToUse": {
+      "title": "Quando usar um letreiro de aniversário",
+      "items": [
+        {
+          "title": "Festa de aniversário infantil",
+          "description": "Coloque a TV da sala mostrando \"PARABÉNS [NOME]\" em cores temáticas (princesa, super-herói, animais). As crianças adoram ver o nome próprio piscando na tela durante o parabéns."
+        },
+        {
+          "title": "Aniversário adulto, 30, 40 ou 50 anos",
+          "description": "Decoração elegante e moderna para aniversários redondos. Cores sóbrias (preto, dourado, prata), mensagem personalizada, fica como pano de fundo das fotos durante toda a festa."
+        },
+        {
+          "title": "Festa de 15 anos (debutante)",
+          "description": "Mensagem \"FELIZ 15 ANOS [NOME]\" em rosa, dourado ou cor do tema da festa. Use num telão do salão para que todos os convidados vejam durante a entrada da debutante."
+        },
+        {
+          "title": "Stories de Instagram parabenizando alguém",
+          "description": "Faça um letreiro animado com \"FELIZ ANIVERSÁRIO [NOME]\", exporte como vídeo e poste no story. Muito mais marcante que uma foto estática com texto."
+        }
+      ]
+    },
+    "AniversarioHowTo": {
+      "title": "Como criar um letreiro de aniversário em 3 passos",
+      "steps": [
+        {
+          "step": "1. Digite a mensagem com o nome",
+          "description": "Escreva \"PARABÉNS [NOME]\" ou \"FELIZ ANIVERSÁRIO [NOME]\" no campo de texto do simulador. Use letras maiúsculas para destacar — o letreiro de aniversário mostra o texto em rolagem contínua."
+        },
+        {
+          "step": "2. Escolha cores do tema da festa",
+          "description": "Rosa e dourado para festa infantil ou de 15 anos, vermelho/preto para festa adulto, azul/branco para chá de bebê. Veja a combinação ao vivo antes de confirmar."
+        },
+        {
+          "step": "3. Coloque na TV ou projetor da festa",
+          "description": "Abra o letreiro de aniversário no navegador da TV (via Chromecast, HDMI ou navegador integrado). Use modo tela cheia para ficar imponente. Deixe rodando durante toda a festa."
+        }
+      ]
+    },
+    "AniversarioCompare": {
+      "title": "Letreiro digital de aniversário vs. faixa de papel e decoração tradicional",
+      "intro": "Vale a pena substituir a faixa de papel ou os balões com letras por um letreiro digital de aniversário? Compare as opções de decoração.",
+      "items": [
+        {
+          "title": "Personalização",
+          "description": "Faixa de papel: nome impresso fixo. Balões com letras: trabalhoso montar. Letreiro digital: digita o nome e aparece animado na hora — sem encomenda, sem espera."
+        },
+        {
+          "title": "Reutilização",
+          "description": "Faixa e balões: descartáveis, uso único. Letreiro digital: a mesma tela serve para todas as festas de aniversário da família e dos amigos por anos."
+        },
+        {
+          "title": "Custo total",
+          "description": "Decoração impressa personalizada: R$ 30 a R$ 100 por festa. Balões com letras: R$ 50 a R$ 150. Letreiro digital: zero custo recorrente, infinitas festas."
+        },
+        {
+          "title": "Movimento e impacto visual",
+          "description": "Decoração estática: bonita mas passiva. Letreiro digital animado: o movimento chama atenção dos convidados e fica como pano de fundo perfeito para fotos e vídeos da festa."
+        }
+      ]
+    },
+    "AniversarioFAQ": {
+      "title": "Perguntas frequentes sobre letreiro de aniversário",
+      "questions": [
+        {
+          "question": "Como personalizar o nome do aniversariante no letreiro?",
+          "answer": "Digite o nome diretamente no campo de texto do simulador, junto com a mensagem. Exemplo: \"PARABÉNS MARIA\" ou \"FELIZ ANIVERSÁRIO PEDRO\". O letreiro mostra a mensagem completa em rolagem contínua."
+        },
+        {
+          "question": "Posso deixar o letreiro de aniversário rodando durante toda a festa?",
+          "answer": "Sim. Depois que a página carrega, o letreiro continua animando sozinho enquanto o dispositivo estiver ligado. Plugue na tomada e deixe rodando durante toda a festa de aniversário."
+        },
+        {
+          "question": "Funciona em TV via Chromecast ou HDMI?",
+          "answer": "Sim. Abra o site no Chrome do computador ou celular, faça espelhamento via Chromecast ou conecte o computador na TV por HDMI. O letreiro fica em tela cheia na TV."
+        },
+        {
+          "question": "Posso salvar o letreiro de aniversário como vídeo para stories?",
+          "answer": "Sim. O simulador exporta como vídeo WebM (~500 KB) ou GIF (~370 KB), formatos suportados por Instagram, WhatsApp e TikTok. Use no story parabenizando o aniversariante."
+        },
+        {
+          "question": "Que cores combinam com cada tema de festa?",
+          "answer": "Princesa/infantil: rosa e dourado. Super-herói: vermelho/azul/amarelo. 15 anos: rosa, dourado e branco. Adulto sóbrio: preto, dourado e prata. Chá de bebê: azul ou rosa pastel. Experimente combinações ao vivo no simulador."
+        }
+      ]
+    },
+    "AniversarioRelated": {
+      "title": "Continue explorando",
+      "intro": "Veja outras maneiras de usar o letreiro digital:",
+      "led": {
+        "title": "→ Modo LED Realista",
+        "description": "Simule um painel de LED real para a festa, com matriz de pontos físicos e brilho de letreiro luminoso."
+      },
+      "home": {
+        "title": "→ Página inicial · Simulador",
+        "description": "Volte para a página inicial e explore todos os recursos do simulador de letreiro digital."
+      }
+    },
+    "NatalPage": {
+      "h1": "Letreiro de Natal Online · FELIZ NATAL Animado em Vermelho e Verde",
+      "subTitle": "Crie um letreiro de Natal animado com mensagens como FELIZ NATAL, BOAS FESTAS ou PROMOÇÃO DE NATAL. Cores natalinas tradicionais (vermelho, verde e dourado), efeitos LED brilhantes. Ideal para loja na época de fim de ano, decoração de casa, vídeos festivos ou pano de fundo de TV durante a ceia."
+    },
+    "NatalFeatures": {
+      "title": "Por que usar um letreiro digital de Natal",
+      "items": [
+        {
+          "title": "Cores natalinas tradicionais prontas",
+          "description": "Vermelho, verde, dourado e branco em combinações que remetem ao Natal. Não precisa pensar em paleta de cores — escolha a combinação e o letreiro de Natal fica festivo em segundos."
+        },
+        {
+          "title": "Atualiza fácil para Ano Novo",
+          "description": "Depois do Natal, basta editar a mensagem para \"FELIZ 2027\" ou \"PRÓSPERO ANO NOVO\". A mesma decoração digital serve para os dois fim de ano sem reimprimir nada."
+        },
+        {
+          "title": "Sem comprar enfeite caro de fim de ano",
+          "description": "Faixas, painéis luminosos e decorações natalinas custam de R$ 50 a R$ 500 por temporada. O letreiro de Natal online é gratuito — economize para comprar mais presentes."
+        },
+        {
+          "title": "Combina com luzes pisca-pisca físicas",
+          "description": "Use o letreiro digital ao lado das luzes natalinas tradicionais. O efeito LED do simulador complementa as luzes físicas, criando uma decoração coerente com texto animado."
+        }
+      ]
+    },
+    "NatalWhenToUse": {
+      "title": "Onde usar um letreiro de Natal",
+      "items": [
+        {
+          "title": "Vitrine de loja em dezembro",
+          "description": "Mensagens como \"FELIZ NATAL\", \"PROMOÇÃO DE NATAL 30% OFF\" ou \"ABERTO ATÉ 22h ATÉ A VÉSPERA\" num celular ou tablet na vitrine. Atrai compras de última hora de quem passa na rua."
+        },
+        {
+          "title": "Decoração de mesa da ceia de Natal",
+          "description": "Tablet ou TV pequena na sala mostrando \"FELIZ NATAL [SOBRENOME DA FAMÍLIA]\" durante a ceia. Cria atmosfera festiva e fica como pano de fundo perfeito para fotos da família."
+        },
+        {
+          "title": "Promoções de Natal e Black Friday natalina",
+          "description": "Lojas online ou físicas usam o letreiro de Natal animado para destacar ofertas de fim de ano. \"NATAL: ATÉ 50% OFF\" ou \"FRETE GRÁTIS ATÉ 24/12\" em rolagem contínua."
+        },
+        {
+          "title": "Pano de fundo de TV para fotos festivas",
+          "description": "Deixe o letreiro de Natal rodando na TV durante a ceia para que as fotos tirem com um pano de fundo natalino animado. Mais charme que decoração estática."
+        }
+      ]
+    },
+    "NatalHowTo": {
+      "title": "Como criar um letreiro de Natal em 3 passos",
+      "steps": [
+        {
+          "step": "1. Escolha a mensagem natalina",
+          "description": "Digite \"FELIZ NATAL\", \"BOAS FESTAS\", \"FELIZ NATAL E PRÓSPERO ANO NOVO\" ou uma promoção de fim de ano. Use letras maiúsculas para destacar — o letreiro de Natal mostra o texto em rolagem contínua."
+        },
+        {
+          "step": "2. Use cores natalinas (vermelho/verde/dourado)",
+          "description": "Combinações clássicas: texto vermelho sobre fundo verde, texto branco sobre fundo vermelho, texto dourado sobre fundo preto. Veja a animação ao vivo e ajuste até ficar festivo."
+        },
+        {
+          "step": "3. Ative o modo LED para efeito de pisca-pisca",
+          "description": "O modo LED simula uma matriz de pontos brilhantes — visualmente parecido com as luzes natalinas tradicionais. Combine com pisca-pisca físico ao lado para uma decoração natalina coerente."
+        }
+      ]
+    },
+    "NatalCompare": {
+      "title": "Letreiro digital de Natal vs. decoração impressa e luzes físicas",
+      "intro": "Vale a pena adicionar um letreiro digital de Natal à decoração tradicional? Compare com as opções clássicas.",
+      "items": [
+        {
+          "title": "Decoração reutilizável ano após ano",
+          "description": "Faixa de \"FELIZ NATAL\" impressa: amassa, descolore, precisa reimprimir todo ano. Letreiro digital: usa toda fim de ano por anos seguidos, atualiza para Ano Novo sem custo."
+        },
+        {
+          "title": "Complementa luzes natalinas tradicionais",
+          "description": "Luzes pisca-pisca dão atmosfera mas não passam mensagem. Letreiro digital adiciona texto animado (FELIZ NATAL, PROMOÇÕES, mensagens da família) à decoração luminosa existente."
+        },
+        {
+          "title": "Custo zero recorrente",
+          "description": "Decoração natalina nova: R$ 50 a R$ 500 por temporada. Painel LED físico de loja: R$ 500+. Letreiro digital: zero custo, sem desgaste, sem armazenagem depois do Natal."
+        },
+        {
+          "title": "Compartilhável como cartão digital",
+          "description": "Crie um letreiro \"FELIZ NATAL\" personalizado, exporte como GIF ou vídeo e envie pelo WhatsApp para familiares. Cartão de Natal moderno, animado, gratuito."
+        }
+      ]
+    },
+    "NatalFAQ": {
+      "title": "Perguntas frequentes sobre letreiro de Natal",
+      "questions": [
+        {
+          "question": "Posso usar o letreiro de Natal para Ano Novo também?",
+          "answer": "Sim. Depois do Natal, basta editar a mensagem para \"FELIZ 2027\" ou \"PRÓSPERO ANO NOVO\". As cores natalinas (vermelho/verde) funcionam ou troque para dourado/branco para Ano Novo."
+        },
+        {
+          "question": "Que mensagem natalina funciona melhor numa loja?",
+          "answer": "Mensagens diretas vendem mais: \"PROMOÇÃO DE NATAL 30% OFF\", \"FRETE GRÁTIS ATÉ 24/12\", \"ABERTO ATÉ 22h ATÉ A VÉSPERA\". Mensagem de boa vontade (\"FELIZ NATAL\") combina depois do horário comercial."
+        },
+        {
+          "question": "Como combinar o letreiro com luzes pisca-pisca físicas?",
+          "answer": "Posicione o celular/tablet com o letreiro de Natal junto das luzes pisca-pisca tradicionais. Use o modo LED do simulador para um efeito visual similar — o conjunto fica coerente como decoração luminosa."
+        },
+        {
+          "question": "Posso enviar o letreiro de Natal como cartão pelo WhatsApp?",
+          "answer": "Sim. Exporte como GIF (~370 KB) ou vídeo WebM (~500 KB) — formatos suportados pelo WhatsApp. Ou copie a URL e mande o link direto, quem abrir vê o letreiro animando ao vivo."
+        },
+        {
+          "question": "As cores vermelho/verde combinam com qualquer fundo?",
+          "answer": "Vermelho sobre verde escuro é o clássico (alto contraste, fácil de ler de longe). Branco sobre vermelho também funciona bem. Evite vermelho sobre verde claro — contraste fraco prejudica a leitura."
+        }
+      ]
+    },
+    "NatalRelated": {
+      "title": "Continue explorando",
+      "intro": "Veja outras maneiras de usar o letreiro digital nas festas de fim de ano:",
+      "led": {
+        "title": "→ Modo LED Realista",
+        "description": "Simule um painel de LED natalino com matriz de pontos brilhantes — visualmente parecido com luzes pisca-pisca tradicionais."
+      },
+      "home": {
+        "title": "→ Página inicial · Simulador",
+        "description": "Volte para a página inicial e explore todos os recursos do simulador de letreiro digital."
+      }
     }
   },
   "Footer": {

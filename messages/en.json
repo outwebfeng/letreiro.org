@@ -12,6 +12,26 @@
       "title": "Online LED Sign · Free Marquee Generator in the Browser",
       "description": "Create an online LED sign with scrolling text — perfect for shops, events and social media. Customize colors, speed and effects. Free in the browser.",
       "keywords": "online LED sign, LED display online, LED marquee for shop, virtual LED panel, scrolling text online, digital LED board"
+    },
+    "letreiroParaLoja": {
+      "title": "Free LED Sign for Store · Online Digital Signage Generator",
+      "description": "Create LED signs for your store free. Online digital signage with animated messages: OPEN, SALE, promotions. No signup, runs in the browser.",
+      "keywords": "LED sign for store, store sign online, digital signage for retail, free LED sign, online store sign, retail LED display, shop window display"
+    },
+    "letreiroAnimado": {
+      "title": "Free Animated Text Sign Online · Scrolling Marquee with Effects",
+      "description": "Create an animated text sign online with scrolling motion, LED glow, and blur effects. Perfect for shop windows, Instagram stories, TikTok videos. Free.",
+      "keywords": "animated text sign, scrolling marquee online, animated LED sign, moving text generator, animated sign for video, free animated text"
+    },
+    "letreiroDeAniversario": {
+      "title": "Free Birthday Sign Online · Animated HAPPY BIRTHDAY Marquee",
+      "description": "Create an animated birthday sign with a custom name. Perfect for parties, stories, and venue screens. Customize colors and message. Free, no signup.",
+      "keywords": "birthday sign online, happy birthday marquee, animated birthday banner, birthday party sign, sweet 16 sign, birthday LED sign"
+    },
+    "letreiroDeNatal": {
+      "title": "Free Christmas Sign Online · MERRY CHRISTMAS Animated Marquee",
+      "description": "Create an animated Christmas sign online with MERRY CHRISTMAS in red and green. Ideal for shops, home decor, social media, and holiday video backgrounds.",
+      "keywords": "Christmas sign online, merry christmas marquee, animated holiday sign, Christmas LED sign, holiday store display, Christmas video background"
     }
   },
   "Navigation": {
@@ -275,6 +295,494 @@
           "answer": "Yes. All the main features for creating digital signs with scrolling text are completely free."
         }
       ]
+    },
+    "LojaPage": {
+      "h1": "Free LED Sign for Stores · Online Digital Signage",
+      "subTitle": "Create a custom LED sign for your store in minutes. Online digital signage with animated messages to catch your customers' attention: OPEN, SALE, promotions, holiday campaigns. No hardware, no install, no signup — runs in the browser on any screen. Use it on the shop computer, an old phone in the window, or an old TV mounted on the wall."
+    },
+    "LojaFeatures": {
+      "title": "Why use a digital sign in your store",
+      "items": [
+        {
+          "title": "Catches the eye of passersby",
+          "description": "An animated sign with scrolling text grabs the attention of people walking past your window or door. Retail studies show that signs with motion get far higher viewing rates than static printed posters."
+        },
+        {
+          "title": "Change the message in seconds",
+          "description": "Instead of printing a new poster for every promotion, just edit the digital sign's text. Swap \"OPEN\" for \"50% SALE\" or \"CLOSED\" instantly, as many times a day as you want."
+        },
+        {
+          "title": "Uses screens you already own",
+          "description": "Use an old phone, tablet, laptop, or a TV connected via HDMI. No need to buy a physical LED panel — those cost anywhere from $100 to $1,000 depending on size. The online LED sign is completely free."
+        },
+        {
+          "title": "Customize colors, speed and effects",
+          "description": "Pick colors that match your store's branding, adjust scroll speed for long or short messages, and use effects like blur or realistic LED mode to stand out."
+        }
+      ]
+    },
+    "LojaWhenToUse": {
+      "title": "When to use an LED sign in your store",
+      "items": [
+        {
+          "title": "Show that the shop is OPEN or CLOSED",
+          "description": "Place a phone or tablet in the window showing \"OPEN\" in green, then swap to \"CLOSED\" in red at the end of the day. Customers walking by late know right away whether it's worth coming in."
+        },
+        {
+          "title": "Announce flash sales and promotions",
+          "description": "Weekend deals, stock clearance, tiered discounts. Edit the sign in seconds to \"30% OFF TODAY ONLY\" and trigger impulse purchases from people walking past."
+        },
+        {
+          "title": "Black Friday, Christmas and seasonal campaigns",
+          "description": "For Black Friday or Christmas campaigns, a digital sign reinforces the message without the cost of printing new posters every week. Set themed colors (red/green for Christmas) and change them quickly when the campaign ends."
+        },
+        {
+          "title": "Grand openings and new arrivals",
+          "description": "New store opening? New product line in stock? Use the sign with an attention-grabbing message like \"NEW ARRIVALS\" or \"GRAND OPENING\" to build curiosity in the first days."
+        }
+      ]
+    },
+    "LojaHowTo": {
+      "title": "How to create a store LED sign in 3 steps",
+      "steps": [
+        {
+          "step": "1. Type your store's message",
+          "description": "In the simulator above, type the text you want on the sign. Use uppercase letters to emphasize important words (SALE, OPEN, CHRISTMAS) or full phrases like \"BIG END-OF-YEAR SALE\". The sign shows the text in a continuous scroll."
+        },
+        {
+          "step": "2. Pick colors and speed",
+          "description": "Choose text and background colors that match your store's identity. Green and red work well for OPEN/CLOSED. Yellow on black grabs attention for SALE. Adjust scroll speed to match text length: faster for short phrases, slower for long ones."
+        },
+        {
+          "step": "3. Display it on a phone or screen in the window",
+          "description": "Open the sign in the browser of an old phone, tablet, or TV (via HDMI from a computer). Use the \"Fullscreen\" button to hide the browser bar and show only the sign. Position the device facing the street."
+        }
+      ]
+    },
+    "LojaCompare": {
+      "title": "Digital sign vs. printed poster and physical LED panel",
+      "intro": "Is it worth replacing your printed poster or physical LED panel with an online digital sign? Here are the practical differences for small and medium retail.",
+      "items": [
+        {
+          "title": "Cost: $0 vs. $10-1,000",
+          "description": "A printed poster costs $1 to $10 each (and wears out over time). A decent physical LED panel costs $100 to $1,000. The online digital sign is completely free, and you only need a screen you already own."
+        },
+        {
+          "title": "Time to change the message",
+          "description": "Printed poster: print and swap takes hours. Physical panel: dedicated software, sometimes complicated. Online sign: type the new text and the message changes instantly."
+        },
+        {
+          "title": "Motion and animation",
+          "description": "Printed posters are static and lose impact after a few days. Physical panels have animation but are expensive. Digital signs offer scrolling text and visual effects (realistic LED mode, blur) that keep customer attention."
+        },
+        {
+          "title": "Existing screens",
+          "description": "You can use an old phone, tablet, laptop, or unused TV. Just open the site and switch to fullscreen. No physical install, no holes in the wall, no wiring."
+        }
+      ]
+    },
+    "LojaFAQ": {
+      "title": "Frequently asked questions about store LED signs",
+      "questions": [
+        {
+          "question": "Do I need to install any software to use the LED sign for my store?",
+          "answer": "No. The sign runs directly in your browser (Chrome, Safari, Firefox, Edge) on a computer, phone, or tablet. Just open the site, type your message and switch to fullscreen. No downloads, no install, no signup."
+        },
+        {
+          "question": "Can I use an old phone in the window as a sign?",
+          "answer": "Yes, and it's one of the most practical setups. Open the sign in the old phone's browser, switch to fullscreen mode, plug the phone into a charger, and place it in the window facing the street. It runs all day."
+        },
+        {
+          "question": "How do I make the sign show \"SALE\" or another message?",
+          "answer": "Type your text into the simulator's input field (for example: SALE 50% OFF). The sign will display the message in a continuous scroll. You can change it as many times as you want throughout the day."
+        },
+        {
+          "question": "Does the sign work offline once it's loaded?",
+          "answer": "After the page loads, the sign keeps running even if the connection drops temporarily — as long as you don't close the browser or refresh the page. For continuous window use, we recommend a stable Wi-Fi connection."
+        },
+        {
+          "question": "Can I share my sign's configuration with another store?",
+          "answer": "Yes. The configuration (text, colors, speed) is encoded directly in the URL. Just copy the address and send it via WhatsApp or email — whoever opens it sees the same sign configured."
+        }
+      ]
+    },
+    "LojaRelated": {
+      "title": "Keep exploring",
+      "intro": "More ways to use the online LED sign:",
+      "led": {
+        "title": "→ Realistic LED Mode",
+        "description": "Try the realistic LED panel simulation with dot-matrix, glow, and a real LED feel."
+      },
+      "home": {
+        "title": "→ Home · Simulator",
+        "description": "Go back to the home page and explore all the digital sign simulator's features."
+      }
+    },
+    "AnimadoPage": {
+      "h1": "Animated Text Sign Online · Scrolling Marquee with Visual Effects",
+      "subTitle": "Create an animated sign with continuously scrolling text, LED glow, and blur effects. Perfect for shop windows, Instagram stories, TikTok videos, parties, and any moment you need to grab attention with motion. No hardware, no signup, runs in your browser."
+    },
+    "AnimadoFeatures": {
+      "title": "Why use an animated sign instead of static text",
+      "items": [
+        {
+          "title": "Motion catches the eye better than static text",
+          "description": "The human eye is wired to detect movement. A continuously scrolling animated sign gets far higher viewing rates than static posters — true for shop windows as well as Instagram stories."
+        },
+        {
+          "title": "Multiple built-in effects",
+          "description": "Use default mode (smooth scrolling text), Blur mode (stylized blur effect), or realistic LED mode (dot-matrix with glow). Each effect gives a different feel to the same text."
+        },
+        {
+          "title": "No animation software needed",
+          "description": "No After Effects, no Premiere, no motion-design tools. Type the text, pick the effect, and the sign animates live in the browser."
+        },
+        {
+          "title": "Instant customization",
+          "description": "Change colors, speed, font, and effect in seconds. See the result animating live as you tweak — no rendering, no waiting."
+        }
+      ]
+    },
+    "AnimadoWhenToUse": {
+      "title": "Where to use an animated sign",
+      "items": [
+        {
+          "title": "Stories and Reels on social media",
+          "description": "Screen-record the scrolling sign and use it as a background in Instagram Stories, Reels, TikTok, or Shorts. The motion keeps viewers watching until the end."
+        },
+        {
+          "title": "Shop window with a moving message",
+          "description": "Place a phone or tablet in the window with an animated sign. Passersby get hooked by the motion and read the message — far higher conversion than a static poster."
+        },
+        {
+          "title": "Event screens, parties, and livestreams",
+          "description": "Use the sign on a big screen during parties, corporate events, YouTube livestreams, or services. Welcome messages, sponsor names, or thank-yous scroll continuously."
+        },
+        {
+          "title": "Presentations and workplace screens",
+          "description": "Office reception screens, digital bulletin boards at schools, motivational messages at work. The animated sign runs 24/7 without maintenance."
+        }
+      ]
+    },
+    "AnimadoHowTo": {
+      "title": "How to create an animated sign in 3 steps",
+      "steps": [
+        {
+          "step": "1. Type the animated text",
+          "description": "In the simulator above, type the message that will scroll continuously. It can be a short phrase (WELCOME, SALE) or a longer text — the animated sign auto-adapts to screen width."
+        },
+        {
+          "step": "2. Pick an animation effect",
+          "description": "Switch between Default (smooth scroll), Blur (stylized blur effect), or LED (realistic dot-matrix with glow). Each effect transforms the same text completely."
+        },
+        {
+          "step": "3. Adjust colors and speed live",
+          "description": "Watch the animation roll while you tweak text color, background color, and scroll speed. When it looks good, copy the URL to save the config or export as GIF/video."
+        }
+      ]
+    },
+    "AnimadoCompare": {
+      "title": "Animated sign vs. professional animation and static text",
+      "intro": "When is it worth using an online animated sign instead of a pro motion-design video or just static text? Compare the three options.",
+      "items": [
+        {
+          "title": "Visual engagement",
+          "description": "Static text: eyes skip fast. Pro video: high engagement but expensive. Online animated sign: high engagement at zero cost — the sweet spot for recurring content."
+        },
+        {
+          "title": "Production cost",
+          "description": "Pro animated video: $50 to $500 per piece. Online animated sign: free, unlimited. For daily-content creators, the saving is huge."
+        },
+        {
+          "title": "Time to ready",
+          "description": "After Effects animation: hours or days. Online animated sign: seconds. For daily social posts or shop windows, production time is the deciding factor."
+        },
+        {
+          "title": "Editing after the fact",
+          "description": "Rendered video: you reopen the project, edit, and re-render. Online sign: text and colors are live variables — just edit and the animation runs with the new content."
+        }
+      ]
+    },
+    "AnimadoFAQ": {
+      "title": "Frequently asked questions about animated signs",
+      "questions": [
+        {
+          "question": "How do I save the animated sign as a GIF or video?",
+          "answer": "The simulator has export buttons for GIF (~370 KB, great for WhatsApp and Instagram) and WebM video (~500 KB, supported by TikTok, Reels, and YouTube). Click export — the file downloads automatically."
+        },
+        {
+          "question": "Can I use the animated sign in TikTok or Reels videos?",
+          "answer": "Yes, and it's one of the most popular use cases. Export as WebM or screen-record the browser. The animated sign works as a background or overlay on top of your main video."
+        },
+        {
+          "question": "Is there a length limit for the animated text?",
+          "answer": "Text can be up to 100 characters per configuration. For longer texts, the sign keeps animating — just wait for the full message to scroll past before it repeats."
+        },
+        {
+          "question": "Can I share an animated sign configuration?",
+          "answer": "Yes. The config (text, colors, speed, effect) is encoded in the URL. Copy the address and send it via WhatsApp — whoever opens it sees the same animated sign configured."
+        },
+        {
+          "question": "Does the animated sign work on a big screen?",
+          "answer": "Yes. Use the fullscreen button to hide the browser bar. The animated sign auto-adapts to resolution — works on projectors, 50\\\" TVs, event screens, or any display connected via HDMI."
+        }
+      ]
+    },
+    "AnimadoRelated": {
+      "title": "Keep exploring",
+      "intro": "More ways to use the online animated sign:",
+      "led": {
+        "title": "→ Realistic LED Mode",
+        "description": "Combine animation with realistic LED panel simulation — dot-matrix, glow, and a true LED-marquee feel."
+      },
+      "home": {
+        "title": "→ Home · Simulator",
+        "description": "Go back to the home page and explore all the digital sign simulator's features."
+      }
+    },
+    "AniversarioPage": {
+      "h1": "Birthday Sign Online · Animated HAPPY BIRTHDAY Marquee Free",
+      "subTitle": "Create an animated birthday sign with messages like HAPPY BIRTHDAY or the birthday person's name. Perfect for parties, table décor, story videos, and venue screens. Use it on a phone, tablet, or TV — no install, no signup, straight from the browser."
+    },
+    "AniversarioFeatures": {
+      "title": "Why use a digital birthday sign",
+      "items": [
+        {
+          "title": "Instant decoration with a personalized name",
+          "description": "Type the birthday person's name and the message appears animated immediately. No ordering a custom banner or waiting for delivery — everything ready in seconds."
+        },
+        {
+          "title": "Matches any party theme",
+          "description": "Pick colors to match the theme: pink for kids' parties, gold for sweet 16, red/black for adult parties. The sign adapts to your décor's look and feel."
+        },
+        {
+          "title": "Reusable for every party",
+          "description": "Not disposable. Every birthday in the family or friend group, just change the name and message. Long-term savings vs. buying new décor each time."
+        },
+        {
+          "title": "Works on any existing screen",
+          "description": "Living-room TV, old phone, kid's tablet, venue projector. The digital sign runs on any device with a browser — nothing new to buy."
+        }
+      ]
+    },
+    "AniversarioWhenToUse": {
+      "title": "When to use a birthday sign",
+      "items": [
+        {
+          "title": "Kids' birthday party",
+          "description": "Put the living-room TV showing \"HAPPY BIRTHDAY [NAME]\" in themed colors (princess, superhero, animals). Kids love seeing their own name flashing on screen during the happy-birthday song."
+        },
+        {
+          "title": "Adult birthday: 30, 40, or 50 years",
+          "description": "Elegant, modern décor for milestone birthdays. Sober colors (black, gold, silver), personalized message, sits as backdrop in photos throughout the party."
+        },
+        {
+          "title": "Sweet 16 / quinceañera",
+          "description": "Message \"HAPPY 15 [NAME]\" in pink, gold, or the party theme color. Use it on a venue screen so all guests see it during the debutante's entrance."
+        },
+        {
+          "title": "Instagram stories wishing someone happy birthday",
+          "description": "Make an animated sign with \"HAPPY BIRTHDAY [NAME]\", export as video, post to your story. Far more memorable than a static photo with text."
+        }
+      ]
+    },
+    "AniversarioHowTo": {
+      "title": "How to create a birthday sign in 3 steps",
+      "steps": [
+        {
+          "step": "1. Type the message with the name",
+          "description": "Write \"HAPPY BIRTHDAY [NAME]\" or your chosen phrase in the simulator text field. Use uppercase to emphasize — the birthday sign shows the text in continuous scroll."
+        },
+        {
+          "step": "2. Pick theme colors",
+          "description": "Pink and gold for kids' or sweet 16 parties, red/black for adult parties, blue/white for baby showers. See the combo live before confirming."
+        },
+        {
+          "step": "3. Display on the party TV or projector",
+          "description": "Open the sign in the TV browser (via Chromecast, HDMI, or smart TV browser). Use fullscreen mode for impact. Let it run throughout the party."
+        }
+      ]
+    },
+    "AniversarioCompare": {
+      "title": "Digital birthday sign vs. paper banner and traditional décor",
+      "intro": "Is it worth replacing a paper banner or letter balloons with a digital birthday sign? Compare your décor options.",
+      "items": [
+        {
+          "title": "Personalization",
+          "description": "Paper banner: name printed once, fixed. Letter balloons: laborious to set up. Digital sign: type the name and it appears animated immediately — no ordering, no waiting."
+        },
+        {
+          "title": "Reusability",
+          "description": "Banners and balloons: disposable, single use. Digital sign: the same screen works for every birthday in the family and friend group, for years."
+        },
+        {
+          "title": "Total cost",
+          "description": "Custom printed décor: $10 to $50 per party. Letter balloons: $20 to $80. Digital sign: zero recurring cost, infinite parties."
+        },
+        {
+          "title": "Motion and visual impact",
+          "description": "Static décor: pretty but passive. Animated digital sign: motion catches guests' eyes and serves as a perfect backdrop for party photos and videos."
+        }
+      ]
+    },
+    "AniversarioFAQ": {
+      "title": "Frequently asked questions about birthday signs",
+      "questions": [
+        {
+          "question": "How do I personalize the birthday person's name on the sign?",
+          "answer": "Type the name directly in the simulator's text field, along with the message. Example: \"HAPPY BIRTHDAY MARIA\" or \"HAPPY BIRTHDAY PETER\". The sign shows the full message in continuous scroll."
+        },
+        {
+          "question": "Can I leave the birthday sign running for the whole party?",
+          "answer": "Yes. Once the page loads, the sign keeps animating on its own as long as the device is on. Plug it in and let it run throughout the entire birthday party."
+        },
+        {
+          "question": "Does it work on a TV via Chromecast or HDMI?",
+          "answer": "Yes. Open the site in Chrome on your computer or phone, cast via Chromecast, or plug the computer into the TV via HDMI. The sign goes fullscreen on the TV."
+        },
+        {
+          "question": "Can I save the birthday sign as a video for stories?",
+          "answer": "Yes. The simulator exports as WebM video (~500 KB) or GIF (~370 KB), formats supported by Instagram, WhatsApp, and TikTok. Use it in your birthday wishes story."
+        },
+        {
+          "question": "What colors match each party theme?",
+          "answer": "Princess/kids: pink and gold. Superhero: red/blue/yellow. Sweet 16: pink, gold, white. Sober adult: black, gold, silver. Baby shower: pastel blue or pink. Try combos live in the simulator."
+        }
+      ]
+    },
+    "AniversarioRelated": {
+      "title": "Keep exploring",
+      "intro": "More ways to use the digital sign:",
+      "led": {
+        "title": "→ Realistic LED Mode",
+        "description": "Simulate a real LED panel for the party, with physical dot-matrix and the glow of a true LED marquee."
+      },
+      "home": {
+        "title": "→ Home · Simulator",
+        "description": "Go back to the home page and explore all the digital sign simulator's features."
+      }
+    },
+    "NatalPage": {
+      "h1": "Christmas Sign Online · MERRY CHRISTMAS Animated in Red and Green",
+      "subTitle": "Create an animated Christmas sign with messages like MERRY CHRISTMAS, HAPPY HOLIDAYS, or CHRISTMAS SALE. Traditional holiday colors (red, green, gold), bright LED effects. Ideal for shops during the holidays, home decoration, festive videos, or TV background during Christmas dinner."
+    },
+    "NatalFeatures": {
+      "title": "Why use a digital Christmas sign",
+      "items": [
+        {
+          "title": "Traditional Christmas colors ready to go",
+          "description": "Red, green, gold, and white in combinations that scream Christmas. No need to think about palettes — pick a combo and the Christmas sign looks festive in seconds."
+        },
+        {
+          "title": "Easy update for New Year",
+          "description": "After Christmas, just edit the message to \"HAPPY 2027\" or \"HAPPY NEW YEAR\". The same digital décor works for both holidays without reprinting anything."
+        },
+        {
+          "title": "No need to buy expensive holiday décor",
+          "description": "Banners, light panels, and Christmas decorations cost $10 to $100 per season. The online Christmas sign is free — save your budget for more presents."
+        },
+        {
+          "title": "Pairs with physical string lights",
+          "description": "Use the digital sign next to traditional Christmas string lights. The simulator's LED effect complements physical lights, creating a coherent display with animated text."
+        }
+      ]
+    },
+    "NatalWhenToUse": {
+      "title": "Where to use a Christmas sign",
+      "items": [
+        {
+          "title": "Shop window in December",
+          "description": "Messages like \"MERRY CHRISTMAS\", \"30% OFF CHRISTMAS SALE\", or \"OPEN UNTIL 10 PM CHRISTMAS EVE\" on a phone or tablet in the window. Pulls in last-minute holiday shoppers walking past."
+        },
+        {
+          "title": "Christmas dinner table décor",
+          "description": "Tablet or small TV in the dining room showing \"MERRY CHRISTMAS [FAMILY NAME]\" during dinner. Creates a festive vibe and serves as a perfect photo backdrop for family pictures."
+        },
+        {
+          "title": "Christmas sales and holiday Black Friday",
+          "description": "Online or brick-and-mortar shops use the animated Christmas sign to highlight holiday deals. \"CHRISTMAS: UP TO 50% OFF\" or \"FREE SHIPPING UNTIL 12/24\" in continuous scroll."
+        },
+        {
+          "title": "TV background for festive photos",
+          "description": "Let the Christmas sign run on the TV during dinner so family photos have an animated holiday backdrop. More charming than static decoration."
+        }
+      ]
+    },
+    "NatalHowTo": {
+      "title": "How to create a Christmas sign in 3 steps",
+      "steps": [
+        {
+          "step": "1. Pick the Christmas message",
+          "description": "Type \"MERRY CHRISTMAS\", \"HAPPY HOLIDAYS\", \"MERRY CHRISTMAS & HAPPY NEW YEAR\", or a holiday promotion. Use uppercase for impact — the Christmas sign shows the text in continuous scroll."
+        },
+        {
+          "step": "2. Use holiday colors (red/green/gold)",
+          "description": "Classic combos: red text on dark green, white text on red, gold text on black. Watch the animation live and adjust until it looks festive."
+        },
+        {
+          "step": "3. Enable LED mode for the string-lights effect",
+          "description": "LED mode simulates a glowing dot-matrix — visually similar to traditional Christmas string lights. Pair it with physical string lights for a cohesive holiday look."
+        }
+      ]
+    },
+    "NatalCompare": {
+      "title": "Digital Christmas sign vs. printed décor and physical lights",
+      "intro": "Is it worth adding a digital Christmas sign to your traditional decoration? Compare with the classics.",
+      "items": [
+        {
+          "title": "Reusable décor year after year",
+          "description": "Printed \"MERRY CHRISTMAS\" banner: gets wrinkled, fades, needs reprinting every year. Digital sign: use it every holiday season for years, easy update to New Year at no cost."
+        },
+        {
+          "title": "Complements traditional string lights",
+          "description": "String lights set the mood but carry no message. The digital sign adds animated text (MERRY CHRISTMAS, SALES, family messages) to your existing light setup."
+        },
+        {
+          "title": "Zero recurring cost",
+          "description": "New holiday décor: $10 to $100 per season. Physical LED shop panel: $100+. Digital sign: zero cost, no wear, no storage after Christmas."
+        },
+        {
+          "title": "Shareable as a digital card",
+          "description": "Create a personalized \"MERRY CHRISTMAS\" sign, export as GIF or video, and send via WhatsApp to family. Modern, animated, free Christmas card."
+        }
+      ]
+    },
+    "NatalFAQ": {
+      "title": "Frequently asked questions about Christmas signs",
+      "questions": [
+        {
+          "question": "Can I use the Christmas sign for New Year too?",
+          "answer": "Yes. After Christmas, just edit the message to \"HAPPY 2027\" or \"HAPPY NEW YEAR\". Holiday colors (red/green) still work, or switch to gold/white for New Year."
+        },
+        {
+          "question": "What Christmas message works best in a shop?",
+          "answer": "Direct messages sell more: \"30% OFF CHRISTMAS SALE\", \"FREE SHIPPING UNTIL 12/24\", \"OPEN UNTIL 10 PM CHRISTMAS EVE\". Goodwill messages (\"MERRY CHRISTMAS\") work better after business hours."
+        },
+        {
+          "question": "How do I pair the sign with physical string lights?",
+          "answer": "Position the phone/tablet showing the Christmas sign right next to your traditional string lights. Use LED mode for a visually similar effect — the combo looks cohesive as holiday lighting."
+        },
+        {
+          "question": "Can I send the Christmas sign as a card via WhatsApp?",
+          "answer": "Yes. Export as GIF (~370 KB) or WebM video (~500 KB) — formats supported by WhatsApp. Or copy the URL and send the link directly; whoever opens it sees the sign animating live."
+        },
+        {
+          "question": "Do red/green colors work on any background?",
+          "answer": "Red on dark green is the classic (high contrast, easy to read from afar). White on red also works well. Avoid red on light green — weak contrast hurts readability."
+        }
+      ]
+    },
+    "NatalRelated": {
+      "title": "Keep exploring",
+      "intro": "More ways to use the digital sign for the holiday season:",
+      "led": {
+        "title": "→ Realistic LED Mode",
+        "description": "Simulate a holiday LED panel with a glowing dot-matrix — visually similar to traditional string lights."
+      },
+      "home": {
+        "title": "→ Home · Simulator",
+        "description": "Go back to the home page and explore all the digital sign simulator's features."
+      }
     }
   },
   "Footer": {

@@ -7,7 +7,7 @@ import './globals.css';
 
 import { Suspense } from 'react';
 
-import { GOOGLE_ADSENSE_ACCOUNT } from '@/lib/env';
+import { GOOGLE_ADSENSE_ACCOUNT, GOOGLE_ADSENSE_URL } from '@/lib/env';
 import GoogleAdScript from '@/components/ad/GoogleAdScript';
 import SeoScript from '@/components/seo/SeoScript';
 import { CookieConsentProvider } from '@/components/cookie/CookieConsentProvider';
@@ -46,6 +46,11 @@ const dotGothic16 = DotGothic16({
 });
 
 const FONT_VARS = `${vt323.variable} ${pressStart2p.variable} ${silkscreen.variable} ${dotGothic16.variable}`;
+const GOOGLE_ADSENSE_SCRIPT_URL =
+  GOOGLE_ADSENSE_URL ||
+  (GOOGLE_ADSENSE_ACCOUNT
+    ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${GOOGLE_ADSENSE_ACCOUNT}`
+    : undefined);
 
 export default function RootLayout({
   children,
@@ -77,7 +82,7 @@ export default function RootLayout({
             />
             <Suspense fallback={<Loading />}>{children}</Suspense>
             <CookieBanner />
-            <GoogleAdScript />
+            <GoogleAdScript src={GOOGLE_ADSENSE_SCRIPT_URL} />
             <SeoScript />
           </CookieConsentProvider>
         </NextIntlClientProvider>
