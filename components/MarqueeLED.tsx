@@ -180,7 +180,10 @@ function MarqueeLEDComponent({
     } transition-all duration-200`;
 
   return (
-    <div id='marqueeLED' className='mb-8 rounded-lg bg-white p-6 shadow-lg'>
+    <div
+      id='marqueeLED'
+      className='mb-8 min-h-[720px] rounded-lg bg-white p-6 shadow-lg sm:min-h-[560px]'
+    >
       {showTemplates && (
         <TemplateQuickPicker onApply={applyTemplate} onReset={resetToDefault} />
       )}
@@ -249,10 +252,7 @@ function MarqueeLEDComponent({
         </div>
       )}
 
-      <div
-        className='grid gap-4 auto-rows-min'
-        style={{ contain: 'layout paint', contentVisibility: 'auto', minHeight: '16rem' }}
-      >
+      <div className='grid auto-rows-min gap-4' style={{ contain: 'layout paint' }}>
         <div
           ref={fullscreenRef}
           className='w-full h-64 relative aspect-[4/1] min-h-[16rem] flex items-center justify-center'

@@ -3,10 +3,10 @@
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 
+import MarqueeLED from '@/components/MarqueeLED';
 import SceneNavSection from '@/components/SceneNav';
 
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
-const MarqueeLED = dynamic(() => import('@/components/MarqueeLED'), { ssr: false });
 
 export default function LEDModeContent() {
   const homeT = useTranslations('Home');
