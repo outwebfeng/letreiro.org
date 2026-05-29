@@ -3,6 +3,8 @@
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 
+import SceneNavSection from '@/components/SceneNav';
+
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
 const MarqueeLED = dynamic(() => import('@/components/MarqueeLED'), { ssr: false });
 
@@ -20,13 +22,13 @@ export default function LEDModeContent() {
             {homeT('LedPage.subTitle')}
           </div>
         </div>
-        
-        <MarqueeLED 
-          initialDisplayMode="led"
+
+        <MarqueeLED
+          initialDisplayMode='led'
           availableDisplayModes={[]}
           showSpeedControl={false}
-          showFullscreenButton={true}
-          showGeneratorButton={true}
+          showFullscreenButton
+          showGeneratorButton
         />
 
         <div className='mb-8 space-y-6 sm:mb-12 sm:space-y-8'>
@@ -66,10 +68,12 @@ export default function LEDModeContent() {
                 </details>
               ))}
             </div>
+
+            <SceneNavSection />
           </section>
         </div>
         <ScrollToTop />
       </div>
     </div>
   );
-} 
+}

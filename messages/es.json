@@ -102,6 +102,28 @@
     "revoke": "Revocar consentimiento"
   },
   "Home": {
+    "SceneNav": {
+      "title": "Letreros por ocasión",
+      "intro": "Plantillas listas de letrero LED para cada momento — elige una y personalízala en segundos:",
+      "items": {
+        "loja": {
+          "label": "Letrero para Tienda",
+          "blurb": "Panel LED con ABIERTO, ofertas y horarios para la vidriera de tu local."
+        },
+        "animado": {
+          "label": "Letrero Animado",
+          "blurb": "Texto en movimiento continuo con efectos visuales para llamar la atención."
+        },
+        "aniversario": {
+          "label": "Letrero de Cumpleaños",
+          "blurb": "Mensajes animados de FELIZ CUMPLEAÑOS para fiestas y celebraciones."
+        },
+        "natal": {
+          "label": "Letrero de Navidad",
+          "blurb": "FELIZ NAVIDAD animado en rojo y verde para decorar las fiestas."
+        }
+      }
+    },
     "title": "Letrero LED Online — Generador de Cartel LED Gratis",
     "subTitle": "Crea tu letrero LED en segundos, directo en el navegador. Una alternativa virtual a los paneles LED, carteles LED y letreros luminosos tradicionales — sin hardware, sin registro, 100% gratis. Personaliza texto, colores, velocidad de desplazamiento y efectos.",
     "marquee": {

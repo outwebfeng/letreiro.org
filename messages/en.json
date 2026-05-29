@@ -102,6 +102,28 @@
     "revoke": "Revoke consent"
   },
   "Home": {
+    "SceneNav": {
+      "title": "LED signs by occasion",
+      "intro": "Ready-made LED sign templates for every moment — pick one and customize it in seconds:",
+      "items": {
+        "loja": {
+          "label": "LED Sign for Stores",
+          "blurb": "LED panel with OPEN, offers, and hours for your store window."
+        },
+        "animado": {
+          "label": "Animated Text Sign",
+          "blurb": "Continuous scrolling text with visual effects that grab attention."
+        },
+        "aniversario": {
+          "label": "Birthday Sign",
+          "blurb": "Animated HAPPY BIRTHDAY messages for parties and celebrations."
+        },
+        "natal": {
+          "label": "Christmas Sign",
+          "blurb": "Animated MERRY CHRISTMAS in red and green for the holidays."
+        }
+      }
+    },
     "title": "LED Marquee Online — Free Digital LED Sign Generator",
     "subTitle": "Create your own LED sign in seconds, right in the browser. A virtual alternative to physical LED panels, LED boards and luminous signs — no hardware, no signup, 100% free. Customize text, colors, scrolling speed and effects.",
     "marquee": {

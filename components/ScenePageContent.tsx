@@ -3,8 +3,9 @@
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 
-import { Link } from '@/app/navigation';
 import MarqueeLED from '@/components/MarqueeLED';
+import { SceneNavCards } from '@/components/SceneNav';
+import { Link } from '@/app/navigation';
 
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
 
@@ -38,10 +39,7 @@ export default function ScenePageContent({ scope }: ScenePageContentProps) {
 
         <div className='mb-8 space-y-6 sm:mb-12 sm:space-y-8'>
           <section className='rounded-lg bg-white p-6 shadow-lg'>
-            <h2
-              id='scene-features'
-              className='mb-6 border-b-2 border-[#FF782C] pb-2 text-2xl font-bold text-[#FF782C]'
-            >
+            <h2 id='scene-features' className='mb-6 border-b-2 border-[#FF782C] pb-2 text-2xl font-bold text-[#FF782C]'>
               {t(`${scope}Features.title`)}
             </h2>
             <div className='space-y-4'>
@@ -140,25 +138,22 @@ export default function ScenePageContent({ scope }: ScenePageContentProps) {
               {t(`${scope}Related.title`)}
             </h2>
             <p className='mb-4 leading-relaxed text-black/80'>{t(`${scope}Related.intro`)}</p>
-            <div className='grid gap-4 sm:grid-cols-2'>
+            <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
               <Link
                 href='/letreiro-de-led'
                 className='block rounded-md bg-gradient-to-r from-orange-50 to-yellow-50 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md'
               >
-                <h3 className='mb-2 text-xl font-semibold text-[#FF782C]'>
-                  {t(`${scope}Related.led.title`)}
-                </h3>
+                <h3 className='mb-2 text-xl font-semibold text-[#FF782C]'>{t(`${scope}Related.led.title`)}</h3>
                 <p className='leading-relaxed text-black/80'>{t(`${scope}Related.led.description`)}</p>
               </Link>
               <Link
                 href='/'
                 className='block rounded-md bg-gradient-to-r from-orange-50 to-yellow-50 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md'
               >
-                <h3 className='mb-2 text-xl font-semibold text-[#FF782C]'>
-                  {t(`${scope}Related.home.title`)}
-                </h3>
+                <h3 className='mb-2 text-xl font-semibold text-[#FF782C]'>{t(`${scope}Related.home.title`)}</h3>
                 <p className='leading-relaxed text-black/80'>{t(`${scope}Related.home.description`)}</p>
               </Link>
+              <SceneNavCards excludeScope={scope} />
             </div>
           </section>
         </div>

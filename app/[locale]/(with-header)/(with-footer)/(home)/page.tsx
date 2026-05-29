@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 
 import MarqueeLED from '@/components/MarqueeLED';
+import SceneNavSection from '@/components/SceneNav';
 
 const ScrollToTop = dynamic(() => import('@/components/page/ScrollToTop'), { ssr: false });
 
@@ -14,12 +15,10 @@ export default function Page() {
     <div className='relative w-full'>
       <div className='relative mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8'>
         <div className='mb-4 flex flex-col items-center text-center sm:mb-6 lg:mx-auto'>
-          <h1 className='mb-2 text-2xl font-extrabold text-[#FF782C] sm:mb-3 sm:text-3xl md:text-4xl lg:text-6xl animate-hardware'>
+          <h1 className='animate-hardware mb-2 text-2xl font-extrabold text-[#FF782C] sm:mb-3 sm:text-3xl md:text-4xl lg:text-6xl'>
             {t('title')}
           </h1>
-          <div className='max-w-6xl text-xs font-medium text-black/70 sm:text-sm md:text-base'>
-            {t('subTitle')}
-          </div>
+          <div className='max-w-6xl text-xs font-medium text-black/70 sm:text-sm md:text-base'>{t('subTitle')}</div>
         </div>
 
         <div className='-mt-2 sm:-mt-4'>
@@ -133,6 +132,8 @@ export default function Page() {
                 </details>
               ))}
             </div>
+
+            <SceneNavSection />
           </section>
         </div>
         <ScrollToTop />

@@ -84,21 +84,19 @@ export async function generateSceneMetadata({
   };
 }
 
-export async function buildSceneJsonLd({
-  locale,
-  routePath,
-  metadataNamespace,
-}: SceneMetadataArgs) {
+export async function buildSceneJsonLd({ locale, routePath, metadataNamespace }: SceneMetadataArgs) {
   const t = await getTranslations({ locale, namespace: metadataNamespace });
   const canonicalUrl = `${BASE_URL}${localePath(locale)}${routePath}`;
+  const inLanguage = IN_LANGUAGE[locale] ?? 'pt-BR';
+  const imageUrl = `${BASE_URL}/images/og-image-${locale}.png`;
+  const homeUrl = `${BASE_URL}${localePath(locale)}`;
 
-  return {
-    '@context': 'https://schema.org',
+  const webPage = {
     '@type': 'WebPage',
     name: t('title'),
     description: t('description'),
     url: canonicalUrl,
-    inLanguage: IN_LANGUAGE[locale] ?? 'pt-BR',
+    inLanguage,
     isPartOf: {
       '@type': 'WebSite',
       name: 'Letreiro.org',
@@ -106,7 +104,7 @@ export async function buildSceneJsonLd({
     },
     primaryImageOfPage: {
       '@type': 'ImageObject',
-      url: `${BASE_URL}/images/og-image-${locale}.png`,
+      url: imageUrl,
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -115,7 +113,7 @@ export async function buildSceneJsonLd({
           '@type': 'ListItem',
           position: 1,
           name: 'Letreiro.org',
-          item: `${BASE_URL}${localePath(locale)}`,
+          item: homeUrl,
         },
         {
           '@type': 'ListItem',
@@ -125,5 +123,35 @@ export async function buildSceneJsonLd({
         },
       ],
     },
+  };
+
+  // CreativeWork:把该场景的 LED 招牌示意为一件免费创意作品。about 轻量引用工具实体
+  // (首页声明的 SoftwareApplication),不重复声明 offers 等,避免与首页实体冲突。
+  const creativeWork = {
+    '@type': 'CreativeWork',
+    name: t('title'),
+    description: t('description'),
+    url: canonicalUrl,
+    inLanguage,
+    keywords: t('keywords'),
+    image: imageUrl,
+    isAccessibleForFree: true,
+    creator: {
+      '@type': 'Organization',
+      name: 'Letreiro.org',
+      url: BASE_URL,
+    },
+    about: {
+      '@type': 'SoftwareApplication',
+      name: 'Letreiro.org',
+      applicationCategory: 'MultimediaApplication',
+      operatingSystem: 'Web',
+      url: homeUrl,
+    },
+  };
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [webPage, creativeWork],
   };
 }
