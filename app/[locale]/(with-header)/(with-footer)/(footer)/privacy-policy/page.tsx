@@ -24,8 +24,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       canonical: canonicalUrl,
       languages: {
         'pt-BR': `${BASE_URL}${ROUTE_PATH}`,
-        'en': `${BASE_URL}/en${ROUTE_PATH}`,
-        'es': `${BASE_URL}/es${ROUTE_PATH}`,
+        en: `${BASE_URL}/en${ROUTE_PATH}`,
+        es: `${BASE_URL}/es${ROUTE_PATH}`,
         'x-default': `${BASE_URL}${ROUTE_PATH}`,
       },
     },
@@ -36,7 +36,7 @@ export default function Page() {
   const t = useTranslations('FooterNavigation.privacyPolicy');
 
   return (
-    <div className='prose mx-auto max-w-full p-4 sm:max-w-3xl sm:p-6'>
+    <div className='mx-auto max-w-full p-4 leading-relaxed text-black/80 sm:max-w-3xl sm:p-6'>
       <h1 className='mb-4 text-2xl font-bold sm:text-3xl'>{t('1-h1')}</h1>
       <p className='mb-4 text-sm sm:text-base'>{t('1-p')}</p>
 
